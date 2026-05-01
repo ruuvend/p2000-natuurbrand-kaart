@@ -1,17 +1,25 @@
-name: P2000 Meldingen Ophalen
+name: Haal P2000 meldingen op
+
 on:
   schedule:
     - cron: '*/5 * * * *'
   workflow_dispatch:
+
 jobs:
   fetch:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+
     steps:
-      - uses: actions/checkout@v4
-      - run: python3 scripts/fetch_meldingen.py
-      - run: |
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Haal meldingen op en update JSON
+        run: python3 scripts/fetch_meldingen.py
+
+      - name: Commit als er nieuwe meldingen zijn
+        run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/meldingen.json data/geocache.json
