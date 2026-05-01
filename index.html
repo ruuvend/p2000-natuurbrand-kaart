@@ -16,7 +16,6 @@
     #refresh-btn { font-size: 12px; padding: 4px 10px; cursor: pointer; border: 1px solid #ddd; border-radius: 8px; background: #fff; }
     #refresh-btn:hover { background: #f5f4f0; }
     #loading { padding: 8px 16px; font-size: 13px; color: #185FA5; background: #E6F1FB; display: none; align-items: center; gap: 8px; }
-    #progress { font-size: 12px; color: #185FA5; margin-left: 4px; }
     .spinner { width: 14px; height: 14px; border: 2px solid #B5D4F4; border-top-color: #378ADD; border-radius: 50%; animation: spin 0.8s linear infinite; flex-shrink: 0; }
     @keyframes spin { to { transform: rotate(360deg); } }
     #error-msg { padding: 10px 16px; font-size: 13px; color: #A32D2D; background: #FCEBEB; display: none; }
@@ -48,7 +47,6 @@
   <div id="loading" style="display:flex;">
     <div class="spinner"></div>
     <span>Meldingen laden...</span>
-    <span id="progress"></span>
   </div>
   <div id="error-msg"></div>
   <div id="map-container">
@@ -83,7 +81,7 @@ function samenvoegen(meldingen) {
         g.count++; g.teksten.push(m.tekst); g.tijden.push(m.tijd); gevonden = true; break;
       }
     }
-    if (!gevonden) groepen.push({ lat: m.lat, lon: m.lon, locatie: m.locatie, teksten: [m.tekst], tijden: [m.tijd], count: 1 });
+    if (!gevonden) groepen.push({ lat: m.lat, lon: m.lon, locatie: m.plaats, teksten: [m.tekst], tijden: [m.tijd], count: 1 });
   }
   return groepen;
 }
@@ -129,74 +127,43 @@ function toonOpKaart(groepen) {
   map.fitBounds(L.latLngBounds(groepen.map(g => [g.lat, g.lon])).pad(0.3));
 }
 
-async function geocodeer(plaatsnaam) {
-  try {
-    const r = await fetch(`https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(plaatsnaam+', Nederland')}&format=json&limit=1&countrycodes=nl`, { headers: { 'Accept-Language': 'nl' } });
-    const d = await r.json();
-    if (d.length > 0) return { lat: parseFloat(d[0].lat), lon: parseFloat(d[0].lon) };
-  } catch(e) {}
-  return null;
-}
-
-function extractPlaats(beschrijving) {
-  const schoon = (beschrijving || '').replace(/<[^>]+>/g, '').trim();
-  const match = schoon.match(/^([^,\n]+)/);
-  return match ? match[1].trim() : schoon;
-}
-
 function formatTijd(isoString) {
   try { return new Date(isoString).toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' }); }
   catch(e) { return ''; }
 }
-
-// Geocoding cache in geheugen (werkt altijd, ook als localStorage geblokkeerd is)
-const geoCache = {};
 
 // ── Hoofdfunctie: laad data/meldingen.json ────────────────────────────────────
 async function laadMeldingen() {
   document.getElementById('loading').style.display = 'flex';
   document.getElementById('error-msg').style.display = 'none';
   document.getElementById('status').textContent = 'Laden...';
-  document.getElementById('progress').textContent = '';
 
   try {
     const resp = await fetch('data/meldingen.json?t=' + Date.now());
     if (!resp.ok) throw new Error('data/meldingen.json niet gevonden (HTTP ' + resp.status + ')');
     const meldingen = await resp.json();
 
-    document.getElementById('progress').textContent = `— ${meldingen.length} meldingen, locaties bepalen...`;
+    // Alleen meldingen met geldige coördinaten
+    const geldig = meldingen
+      .filter(m => m.lat && m.lon)
+      .map(m => ({
+        lat: m.lat,
+        lon: m.lon,
+        plaats: m.plaats || '?',
+        tekst: m.title || '',
+        tijd: formatTijd(m.pubDate),
+      }));
 
-    const verwerkt = [];
-
-    for (const m of meldingen) {
-      const plaats = extractPlaats(m.description || '');
-      if (!geoCache[plaats]) {
-        const coords = await geocodeer(plaats);
-        if (coords) geoCache[plaats] = coords;
-        await new Promise(r => setTimeout(r, 100));
-      }
-      if (geoCache[plaats]) {
-        verwerkt.push({
-          locatie: plaats,
-          tekst: m.title || '',
-          tijd: formatTijd(m.pubDate),
-          lat: geoCache[plaats].lat,
-          lon: geoCache[plaats].lon,
-        });
-      }
-    }
-
-    toonOpKaart(samenvoegen(verwerkt));
+    toonOpKaart(samenvoegen(geldig));
 
     const nu = new Date().toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' });
-    document.getElementById('status').textContent = `Bijgewerkt om ${nu} (${verwerkt.length}/${meldingen.length} gelokaliseerd)`;
+    document.getElementById('status').textContent = `Bijgewerkt om ${nu} — ${geldig.length}/${meldingen.length} gelokaliseerd`;
   } catch(err) {
     document.getElementById('error-msg').style.display = 'block';
     document.getElementById('error-msg').textContent = 'Fout: ' + err.message;
     document.getElementById('status').textContent = 'Fout';
   } finally {
     document.getElementById('loading').style.display = 'none';
-    document.getElementById('progress').textContent = '';
   }
 }
 
