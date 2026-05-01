@@ -2,7 +2,7 @@
 """
 Haalt P2000 brandweermeldingen op via RSS, geocodeert de locaties,
 en slaat alles op in data/meldingen.json inclusief lat/lon.
-Bewaart de laatste 12 uur aan meldingen.
+Bewaart de laatste 30 dagen aan meldingen.
 """
 
 import json
