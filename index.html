@@ -60,7 +60,24 @@
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
-const BRAND_TERMEN = ['natuurbrand','bermbrand','heidebrand','veenbrand','bosbrand','grasbrand','rietbrand','struikbrand','duinbrand','brand buitengebied','brand in het bos','brand in de berm','brand in de heide','brand in het veen','brand in het riet'];
+// Echte P2000-codes (altijd hoofdletters in ruwe berichten, maar we vergelijken lowercase)
+const BRAND_TERMEN = [
+  // Officiële P2000-incidentcodes
+  'br bos', 'br heide', 'br duin', 'br berm', 'br veen',
+  'br gras', 'br riet', 'br struik',
+  // Varianten met "brand"
+  'brand bos', 'brand heide', 'brand duin', 'brand berm',
+  'brand veen', 'brand gras', 'brand riet',
+  // 112-nu.nl schrijft codes soms voluit
+  'berm/bosschage', 'bosschage',
+  'brandmelding buiten', 'brand buiten',
+  // Afkortingen
+  'nwbrrn',           // natuurbrand
+  'nbr',              // natuurbrand (alternatief)
+  // Gewone termen als fallback
+  'natuurbrand', 'bermbrand', 'heidebrand', 'veenbrand',
+  'bosbrand', 'grasbrand', 'rietbrand', 'duinbrand',
+];
 
 const PROXY = 'https://api.rss2json.com/v1/api.json?rss_url=';
 
@@ -171,7 +188,15 @@ function formatTijd(pubDate) {
   try { return new Date(pubDate).toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' }); } catch(e) { return ''; }
 }
 
-function extractPlaats(titel) {
+function extractPlaats(item) {
+  // De RSS description bevat "Plaatsnaam, Straatnaam" — gebruik dat als eerste keus
+  const desc = (item.description || '').replace(/<[^>]+>/g, '').trim();
+  if (desc && desc.length > 0 && desc.length < 80) {
+    const match = desc.match(/^([^,\n]+)/);
+    if (match) return match[1].trim();
+  }
+  // Fallback: pak eerste deel van de titel vóór het eerste streepje
+  const titel = (item.title || '');
   const match = titel.match(/^([^,\-–]+)/);
   return match ? match[1].trim() : titel.trim();
 }
@@ -196,7 +221,7 @@ async function geocodeerBatch(items) {
   const plaatsCache = {};
 
   for (const item of items) {
-    const plaats = extractPlaats(item.title || '');
+    const plaats = extractPlaats(item);
     if (!plaatsCache[plaats]) {
       plaatsCache[plaats] = await geocodeer(plaats);
       await new Promise(r => setTimeout(r, 120)); // kleine pauze voor Nominatim fair-use
