@@ -275,11 +275,11 @@ def main():
             bestaande_links.add(item['link'])
             nieuw += 1
 
-    # Opschonen: ouder dan 12 uur verwijderen
+    # Opschonen: ouder dan 30 dagen verwijderen
     voor = len(bestaande)
     bestaande = [
         m for m in bestaande
-        if datetime.fromisoformat(m['pubDate']) >= grens
+        if datetime.fromisoformat(m['pubDate']).astimezone(timezone.utc) >= grens
     ]
     print(f'Nieuw: {nieuw} | Opgeschoond: {voor - len(bestaande)} | Totaal: {len(bestaande)}')
 
