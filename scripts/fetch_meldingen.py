@@ -288,6 +288,16 @@ def main():
 
     sla_op(DATA_FILE, bestaande)
     sla_geocache_op(geocache)
+
+    # Schrijf status.json — altijd, ook als er geen nieuwe meldingen zijn
+    status = {
+        'laatste_run': nu.isoformat(),
+        'nieuw': nieuw,
+        'totaal': len(bestaande),
+    }
+    with open('data/status.json', 'w', encoding='utf-8') as f:
+        json.dump(status, f, ensure_ascii=False, indent=2)
+
     print(f'✅ Klaar — {DATA_FILE} bijgewerkt')
 
 if __name__ == '__main__':
