@@ -42,7 +42,7 @@
     <h1>P2000 Natuurbranden — Laatste 12 uur</h1>
     <span id="count-badge">0 meldingen</span>
     <span id="status">Laden...</span>
-    <button id="refresh-btn" onclick="laadMeldingen()">↺ Vernieuwen</button>
+    <button id="refresh-btn" onclick="vernieuwen()">↺ Vernieuwen</button>
   </div>
   <div id="loading" style="display:flex;">
     <div class="spinner"></div>
@@ -81,7 +81,7 @@ function samenvoegen(meldingen) {
         g.count++; g.teksten.push(m.tekst); g.tijden.push(m.tijd); gevonden = true; break;
       }
     }
-    if (!gevonden) groepen.push({ lat: m.lat, lon: m.lon, locatie: m.plaats, teksten: [m.tekst], tijden: [m.tijd], count: 1 });
+    if (!gevonden) groepen.push({ lat: m.lat, lon: m.lon, locatie: m.plaats, straat: m.straat, teksten: [m.tekst], tijden: [m.tijd], count: 1 });
   }
   return groepen;
 }
@@ -109,16 +109,20 @@ function toonOpKaart(groepen) {
       radius: 8 + g.count * 3, fillColor: kleur,
       color: '#fff', weight: 2, opacity: 1, fillOpacity: 0.88
     }).addTo(map);
-    circle.bindPopup(`<b style="font-size:13px;">🔥 ${g.locatie}</b><br/>
-      <span style="font-size:11px;color:#666;">${g.count} melding${g.count>1?'en':''}</span><br/>
+    const locLabel = g.straat ? `${g.straat}, ${g.locatie}` : g.locatie;
+    circle.bindPopup(`
+      <b style="font-size:13px;">🔥 ${g.locatie}</b><br/>
+      ${g.straat ? `<span style="font-size:11px;color:#555;">📍 ${g.straat}</span><br/>` : ''}
+      <span style="font-size:11px;color:#888;">${g.count} melding${g.count>1?'en':''}</span>
       <div style="margin-top:6px;font-size:11px;line-height:1.6;">${g.teksten.slice(0,4).map(t=>'• '+t).join('<br/>')}</div>
-      <div style="margin-top:4px;font-size:10px;color:#888;">Tijden: ${g.tijden.slice(0,4).join(', ')}</div>`);
+      <div style="margin-top:4px;font-size:10px;color:#aaa;">Tijden: ${g.tijden.slice(0,4).join(', ')}</div>
+    `);
     markers.push(circle);
 
     const card = document.createElement('div');
     card.className = 'melding-card';
     card.innerHTML = `<div class="melding-titel"><span class="brand-dot"></span>${g.locatie}</div>
-      <div class="melding-meta">${g.teksten[0]}<br/>${g.tijden[0]}</div>
+      <div class="melding-meta">${g.straat ? `📍 ${g.straat}<br/>` : ''}${g.tijden[0]}</div>
       ${g.count>1?`<span class="melding-count">${g.count} meldingen samengevoegd</span>`:''}`;
     card.onclick = () => { map.setView([g.lat, g.lon], 12); circle.openPopup(); };
     sidebar.appendChild(card);
@@ -150,6 +154,7 @@ async function laadMeldingen() {
         lat: m.lat,
         lon: m.lon,
         plaats: m.plaats || '?',
+        straat: m.straat || '',
         tekst: m.title || '',
         tijd: formatTijd(m.pubDate),
       }));
@@ -165,6 +170,36 @@ async function laadMeldingen() {
   } finally {
     document.getElementById('loading').style.display = 'none';
   }
+}
+
+// ── Vernieuwen: herlaad JSON én trigger GitHub Actions workflow ───────────────
+const GITHUB_OWNER = '';   // ← vul jouw GitHub gebruikersnaam in
+const GITHUB_REPO  = '';   // ← vul jouw repository naam in
+
+async function vernieuwen() {
+  const btn = document.getElementById('refresh-btn');
+  btn.disabled = true;
+  btn.textContent = '↺ Bezig...';
+
+  // Trigger GitHub Actions workflow als owner/repo zijn ingesteld
+  if (GITHUB_OWNER && GITHUB_REPO) {
+    try {
+      await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/actions/workflows/fetch-meldingen.yml/dispatches`, {
+        method: 'POST',
+        headers: { 'Accept': 'application/vnd.github+json', 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ref: 'main' })
+      });
+      document.getElementById('status').textContent = 'Workflow gestart, even wachten...';
+      // Wacht 15 seconden zodat de workflow kan draaien
+      await new Promise(r => setTimeout(r, 15000));
+    } catch(e) {
+      console.log('Workflow trigger mislukt (geen token):', e);
+    }
+  }
+
+  await laadMeldingen();
+  btn.disabled = false;
+  btn.textContent = '↺ Vernieuwen';
 }
 
 laadMeldingen();
