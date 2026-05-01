@@ -207,11 +207,21 @@ async function haalFeed(feed) {
     const resp = await fetch(PROXY + encodeURIComponent(feed.url));
     const data = await resp.json();
     if (!data.items || data.status !== 'ok') return [];
+
+    // Debug: log titels in console zodat je kunt zien wat binnenkomt
+    if (feed.url.includes('/brandweer/rss')) {
+      console.group('RSS titels (brandweer):');
+      data.items.slice(0, 10).forEach(i => console.log(i.title, '|', i.pubDate));
+      console.groupEnd();
+    }
+
     return data.items.filter(item => {
-      const tekst = (item.title || '') + ' ' + (item.description || '');
-      return isNatuurbrand(tekst) && binnenTwaalf(item.pubDate);
+      const tekst = ((item.title || '') + ' ' + (item.description || '')).toLowerCase();
+      const match = BRAND_TERMEN.some(term => tekst.includes(term));
+      if (match) console.log('Match gevonden:', item.title);
+      return match && binnenTwaalf(item.pubDate);
     });
-  } catch(e) { return []; }
+  } catch(e) { console.error('Feed fout:', feed.naam, e); return []; }
 }
 
 // Geocodeer in batches om Nominatim niet te overbelasten
