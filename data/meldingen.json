@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "title": "Met Spoed Meldkamer: Brandweer Limburg, Incidentkanaal 2 Brandmelding Berm/Bosschage - 234131",
+    "description": "P 2 BLB-02 BR berm/bosschage N266 - Rijksweg Noord 64,0 Nederweert 234131",
+    "link": "https://112-nu.nl/melding/17285717/nederweert/n266/64/brandweer-met-spoed.html",
+    "pubDate": "2026-05-01T12:11:30+00:00"
+  },
+  {
+    "title": "Met Grote Spoed BOB-19 Brandmelding Heide 225069",
+    "description": "P 1 BOB-19 BR heide Geuzendijk Budel 225069",
+    "link": "https://112-nu.nl/melding/17285685/budel/geuzendijk/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-05-01T12:05:18+00:00"
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Regio Den Haag, Incidentkanaal 3 Brandmelding Berm/Bosschage 157730",
+    "description": "P 1 BDH-03 BR berm/bosschage Jean Monnetpad 's-Gravenhage 157730",
+    "link": "https://112-nu.nl/melding/17285666/den-haag/jean-monnetpad/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-05-01T12:01:20+00:00"
+  },
+  {
+    "title": "Met Grote Spoed BOB-19 Brandmelding Heide 225168 225167",
+    "description": "P 1 BOB-19 BR heide Geuzendijk Budel 225168 225167",
+    "link": "https://112-nu.nl/melding/17285647/budel/geuzendijk/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-05-01T11:58:00+00:00"
+  },
+  {
+    "title": "Met Grote Spoed Brandmelding Berm/Bosschage Dr. Schaepmanstraat Ge",
+    "description": "P 1 BR berm/bosschage Waterstraat Dr. Schaepmanstraat Velp GE",
+    "link": "https://112-nu.nl/melding/17285623/velp/waterstraat/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-05-01T11:52:52+00:00"
+  },
+  {
+    "title": "Met Spoed Meldkamer: Brandweer Midden-Nederland, Incidentkanaal 2 Brandmelding Berm/Bosschage 256135",
+    "description": "P 2 BMD-02 BR berm/bosschage A6 Li 87,6 Lelystad 256135",
+    "link": "https://112-nu.nl/melding/17285616/lelystad/a6/876/brandweer-met-spoed.html",
+    "pubDate": "2026-05-01T11:52:03+00:00"
+  },
+  {
+    "title": "Met Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 1 Brandmelding Berm/Bosschage Dr. Schaepmanstraat Ge 075341",
+    "description": "P 2 BON-01 BR berm/bosschage Waterstraat Dr. Schaepmanstraat Velp GE 075341",
+    "link": "https://112-nu.nl/melding/17285596/velp/waterstraat/brandweer-met-spoed.html",
+    "pubDate": "2026-05-01T11:47:36+00:00"
+  },
+  {
+    "title": "Met Spoed Nwbrrn",
+    "description": "Prio 2 A12 Li 40,2 NWBRRN :",
+    "link": "https://112-nu.nl/melding/17285528/bodegraven-reeuwijk/a12/402/brandweer-met-spoed.html",
+    "pubDate": "2026-05-01T11:32:48+00:00"
+  }
+]
