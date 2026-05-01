@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>P2000 Natuurbranden — Laatste 12 uur</title>
+  <title>P2000 Natuurbranden</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -14,7 +14,8 @@
     #count-badge { background: #D85A30; color: #fff; font-size: 11px; font-weight: 500; padding: 2px 8px; border-radius: 10px; }
     #status { font-size: 12px; color: #888; margin-left: auto; }
     #refresh-btn { font-size: 12px; padding: 4px 10px; cursor: pointer; border: 1px solid #ddd; border-radius: 8px; background: #fff; }
-    #refresh-btn:hover { background: #f5f4f0; }
+    #refresh-btn:hover:not(:disabled) { background: #f5f4f0; }
+    #refresh-btn:disabled { opacity: 0.5; cursor: default; }
     #loading { padding: 8px 16px; font-size: 13px; color: #185FA5; background: #E6F1FB; display: none; align-items: center; gap: 8px; }
     .spinner { width: 14px; height: 14px; border: 2px solid #B5D4F4; border-top-color: #378ADD; border-radius: 50%; animation: spin 0.8s linear infinite; flex-shrink: 0; }
     @keyframes spin { to { transform: rotate(360deg); } }
@@ -26,11 +27,17 @@
     #sidebar::-webkit-scrollbar-thumb { background: #ccc; border-radius: 2px; }
     .melding-card { background: #fff; border: 1px solid #e5e3dc; border-radius: 8px; padding: 10px 12px; pointer-events: all; cursor: pointer; transition: border-color 0.15s; }
     .melding-card:hover { border-color: #aaa; }
+    .melding-card.oud { opacity: 0.7; }
     .melding-titel { font-size: 12px; font-weight: 500; margin-bottom: 4px; display: flex; align-items: center; gap: 6px; }
-    .brand-dot { display: inline-block; width: 8px; height: 8px; background: #D85A30; border-radius: 50%; flex-shrink: 0; }
+    .brand-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+    .brand-dot.recent { background: #E24B4A; }
+    .brand-dot.oud { background: #666; }
     .melding-meta { font-size: 11px; color: #666; line-height: 1.5; }
     .melding-count { font-size: 10px; background: #FAECE7; color: #993C1D; padding: 1px 6px; border-radius: 8px; display: inline-block; margin-top: 4px; }
     .geen-meldingen { background: #fff; border: 1px solid #e5e3dc; border-radius: 8px; padding: 14px; font-size: 12px; color: #666; text-align: center; pointer-events: all; }
+    #legenda { position: absolute; bottom: 28px; left: 10px; z-index: 1000; background: rgba(255,255,255,0.92); border: 1px solid #e5e3dc; border-radius: 8px; padding: 8px 12px; font-size: 11px; color: #555; display: flex; flex-direction: column; gap: 4px; }
+    .legenda-item { display: flex; align-items: center; gap: 6px; }
+    .legenda-dot { width: 10px; height: 10px; border-radius: 50%; border: 2px solid #fff; box-shadow: 0 0 0 1px #ccc; flex-shrink: 0; }
     #bronvermelding { position: absolute; bottom: 6px; left: 10px; font-size: 10px; color: #888; z-index: 1000; background: rgba(255,255,255,0.8); padding: 2px 6px; border-radius: 4px; }
     #bronvermelding a { color: #378ADD; text-decoration: none; }
   </style>
@@ -39,7 +46,7 @@
 <div id="app">
   <div id="header">
     <span style="font-size:20px;">🔥</span>
-    <h1>P2000 Natuurbranden — Laatste 12 uur</h1>
+    <h1>P2000 Natuurbranden</h1>
     <span id="count-badge">0 meldingen</span>
     <span id="status">Laden...</span>
     <button id="refresh-btn" onclick="vernieuwen()">↺ Vernieuwen</button>
@@ -52,6 +59,10 @@
   <div id="map-container">
     <div id="map"></div>
     <div id="sidebar"></div>
+    <div id="legenda">
+      <div class="legenda-item"><div class="legenda-dot" style="background:#E24B4A;"></div> Afgelopen uur</div>
+      <div class="legenda-item"><div class="legenda-dot" style="background:#555;"></div> Ouder dan 1 uur</div>
+    </div>
     <div id="bronvermelding">Bron: <a href="https://112-nu.nl" target="_blank">112-nu.nl</a></div>
   </div>
 </div>
@@ -66,6 +77,11 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 let markers = [];
 
 // ── Hulpfuncties ──────────────────────────────────────────────────────────────
+function isRecent(isoString) {
+  try { return (Date.now() - new Date(isoString).getTime()) < 60 * 60 * 1000; }
+  catch(e) { return false; }
+}
+
 function afstandKm(lat1, lon1, lat2, lon2) {
   const R = 6371, dLat = (lat2-lat1)*Math.PI/180, dLon = (lon2-lon1)*Math.PI/180;
   const a = Math.sin(dLat/2)**2 + Math.cos(lat1*Math.PI/180)*Math.cos(lat2*Math.PI/180)*Math.sin(dLon/2)**2;
@@ -78,10 +94,20 @@ function samenvoegen(meldingen) {
     let gevonden = false;
     for (const g of groepen) {
       if (afstandKm(m.lat, m.lon, g.lat, g.lon) <= 10) {
-        g.count++; g.teksten.push(m.tekst); g.tijden.push(m.tijd); gevonden = true; break;
+        g.count++;
+        g.teksten.push(m.tekst);
+        g.tijden.push(m.tijd);
+        // Groep is recent als minstens één melding recent is
+        if (m.recent) g.recent = true;
+        gevonden = true; break;
       }
     }
-    if (!gevonden) groepen.push({ lat: m.lat, lon: m.lon, locatie: m.plaats, straat: m.straat, teksten: [m.tekst], tijden: [m.tijd], count: 1 });
+    if (!gevonden) groepen.push({
+      lat: m.lat, lon: m.lon,
+      locatie: m.plaats, straat: m.straat,
+      teksten: [m.tekst], tijden: [m.tijd],
+      recent: m.recent, count: 1
+    });
   }
   return groepen;
 }
@@ -91,44 +117,86 @@ function toonOpKaart(groepen) {
   markers = [];
   const sidebar = document.getElementById('sidebar');
   sidebar.innerHTML = '';
-  document.getElementById('count-badge').textContent = groepen.length + ' melding' + (groepen.length !== 1 ? 'en' : '');
 
-  if (groepen.length === 0) {
+  const totaal = groepen.length;
+  const recent = groepen.filter(g => g.recent).length;
+  document.getElementById('count-badge').textContent =
+    totaal + ' melding' + (totaal !== 1 ? 'en' : '');
+
+  if (totaal === 0) {
     const card = document.createElement('div');
     card.className = 'geen-meldingen';
-    card.textContent = 'Geen actieve natuurbrandmeldingen in de afgelopen 12 uur.';
+    card.textContent = 'Geen natuurbrandmeldingen gevonden.';
     sidebar.appendChild(card);
     return;
   }
 
-  groepen.sort((a, b) => b.count - a.count);
+  // Sorteer: recente eerst, dan op count
+  groepen.sort((a, b) => {
+    if (a.recent !== b.recent) return b.recent - a.recent;
+    return b.count - a.count;
+  });
 
   groepen.forEach(g => {
-    const kleur = g.count >= 3 ? '#A32D2D' : g.count === 2 ? '#D85A30' : '#E24B4A';
+    const kleur  = g.recent
+      ? (g.count >= 3 ? '#A32D2D' : g.count === 2 ? '#D85A30' : '#E24B4A')
+      : (g.count >= 3 ? '#333' : g.count === 2 ? '#444' : '#666');
+    const radius = 8 + g.count * 3;
+
     const circle = L.circleMarker([g.lat, g.lon], {
-      radius: 8 + g.count * 3, fillColor: kleur,
-      color: '#fff', weight: 2, opacity: 1, fillOpacity: 0.88
+      radius, fillColor: kleur,
+      color: '#fff', weight: 2,
+      opacity: 1, fillOpacity: g.recent ? 0.9 : 0.6
     }).addTo(map);
-    const locLabel = g.straat ? `${g.straat}, ${g.locatie}` : g.locatie;
+
     circle.bindPopup(`
-      <b style="font-size:13px;">🔥 ${g.locatie}</b><br/>
-      ${g.straat ? `<span style="font-size:11px;color:#555;">📍 ${g.straat}</span><br/>` : ''}
-      <span style="font-size:11px;color:#888;">${g.count} melding${g.count>1?'en':''}</span>
-      <div style="margin-top:6px;font-size:11px;line-height:1.6;">${g.teksten.slice(0,4).map(t=>'• '+t).join('<br/>')}</div>
-      <div style="margin-top:4px;font-size:10px;color:#aaa;">Tijden: ${g.tijden.slice(0,4).join(', ')}</div>
-    `);
+      <div style="min-width:200px;font-family:'Segoe UI',system-ui,sans-serif;">
+        <div style="font-size:14px;font-weight:600;color:#1a1a1a;margin-bottom:2px;">
+          🔥 ${g.locatie}
+        </div>
+        ${g.straat ? `
+        <div style="font-size:12px;color:#555;margin-bottom:8px;">
+          📍 ${g.straat}
+        </div>` : '<div style="margin-bottom:8px;"></div>'}
+        <div style="display:flex;align-items:center;gap:6px;margin-bottom:8px;">
+          <span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${g.recent ? '#E24B4A' : '#666'};flex-shrink:0;"></span>
+          <span style="font-size:11px;color:#888;">${g.recent ? 'Afgelopen uur' : 'Ouder dan 1 uur'}</span>
+          ${g.count > 1 ? `<span style="font-size:10px;background:#FAECE7;color:#993C1D;padding:1px 6px;border-radius:8px;">${g.count}x</span>` : ''}
+        </div>
+        <div style="border-top:1px solid #f0f0f0;padding-top:8px;display:flex;flex-direction:column;gap:6px;">
+          ${g.teksten.slice(0,4).map((t, i) => `
+            <div style="font-size:11px;color:#333;">
+              <div style="color:#aaa;font-size:10px;margin-bottom:1px;">${g.tijden[i] || ''}</div>
+              <div>${t}</div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    `, { maxWidth: 280 });
     markers.push(circle);
 
     const card = document.createElement('div');
-    card.className = 'melding-card';
-    card.innerHTML = `<div class="melding-titel"><span class="brand-dot"></span>${g.locatie}</div>
-      <div class="melding-meta">${g.straat ? `📍 ${g.straat}<br/>` : ''}${g.tijden[0]}</div>
-      ${g.count>1?`<span class="melding-count">${g.count} meldingen samengevoegd</span>`:''}`;
-    card.onclick = () => { map.setView([g.lat, g.lon], 12); circle.openPopup(); };
+    card.className = 'melding-card' + (g.recent ? '' : ' oud');
+    card.innerHTML = `
+      <div class="melding-titel">
+        <span class="brand-dot ${g.recent ? 'recent' : 'oud'}"></span>
+        ${g.locatie}
+      </div>
+      <div class="melding-meta">
+        ${g.straat ? `📍 ${g.straat}<br/>` : ''}
+        ${g.tijden[0]}
+      </div>
+      ${g.count > 1 ? `<span class="melding-count">${g.count} meldingen samengevoegd</span>` : ''}
+    `;
+    card.onclick = () => { map.setView([g.lat, g.lon], 13); circle.openPopup(); };
     sidebar.appendChild(card);
   });
 
-  map.fitBounds(L.latLngBounds(groepen.map(g => [g.lat, g.lon])).pad(0.3));
+  // Zoom alleen naar recente meldingen als die er zijn, anders alle
+  const zoom_groepen = groepen.filter(g => g.recent).length > 0
+    ? groepen.filter(g => g.recent)
+    : groepen;
+  map.fitBounds(L.latLngBounds(zoom_groepen.map(g => [g.lat, g.lon])).pad(0.3));
 }
 
 function formatTijd(isoString) {
@@ -136,7 +204,7 @@ function formatTijd(isoString) {
   catch(e) { return ''; }
 }
 
-// ── Hoofdfunctie: laad data/meldingen.json ────────────────────────────────────
+// ── Data laden ────────────────────────────────────────────────────────────────
 async function laadMeldingen() {
   document.getElementById('loading').style.display = 'flex';
   document.getElementById('error-msg').style.display = 'none';
@@ -147,22 +215,24 @@ async function laadMeldingen() {
     if (!resp.ok) throw new Error('data/meldingen.json niet gevonden (HTTP ' + resp.status + ')');
     const meldingen = await resp.json();
 
-    // Alleen meldingen met geldige coördinaten
     const geldig = meldingen
       .filter(m => m.lat && m.lon)
       .map(m => ({
-        lat: m.lat,
-        lon: m.lon,
+        lat: m.lat, lon: m.lon,
         plaats: m.plaats || '?',
         straat: m.straat || '',
         tekst: m.title || '',
         tijd: formatTijd(m.pubDate),
+        recent: isRecent(m.pubDate),
       }));
 
     toonOpKaart(samenvoegen(geldig));
 
-    const nu = new Date().toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' });
-    document.getElementById('status').textContent = `Bijgewerkt om ${nu} — ${geldig.length}/${meldingen.length} gelokaliseerd`;
+    const nu = new Date().toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Amsterdam' });
+    const recentCount = geldig.filter(m => m.recent).length;
+    document.getElementById('status').textContent =
+      `Bijgewerkt om ${nu} · ${recentCount} recent · ${geldig.length} totaal`;
+
   } catch(err) {
     document.getElementById('error-msg').style.display = 'block';
     document.getElementById('error-msg').textContent = 'Fout: ' + err.message;
@@ -172,31 +242,10 @@ async function laadMeldingen() {
   }
 }
 
-// ── Vernieuwen: herlaad JSON én trigger GitHub Actions workflow ───────────────
-const GITHUB_OWNER = '';   // ← vul jouw GitHub gebruikersnaam in
-const GITHUB_REPO  = '';   // ← vul jouw repository naam in
-
 async function vernieuwen() {
   const btn = document.getElementById('refresh-btn');
   btn.disabled = true;
-  btn.textContent = '↺ Bezig...';
-
-  // Trigger GitHub Actions workflow als owner/repo zijn ingesteld
-  if (GITHUB_OWNER && GITHUB_REPO) {
-    try {
-      await fetch(`https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/actions/workflows/fetch-meldingen.yml/dispatches`, {
-        method: 'POST',
-        headers: { 'Accept': 'application/vnd.github+json', 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ref: 'main' })
-      });
-      document.getElementById('status').textContent = 'Workflow gestart, even wachten...';
-      // Wacht 15 seconden zodat de workflow kan draaien
-      await new Promise(r => setTimeout(r, 15000));
-    } catch(e) {
-      console.log('Workflow trigger mislukt (geen token):', e);
-    }
-  }
-
+  btn.textContent = '↺ Laden...';
   await laadMeldingen();
   btn.disabled = false;
   btn.textContent = '↺ Vernieuwen';
