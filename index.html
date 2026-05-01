@@ -268,35 +268,32 @@ async function vernieuwen() {
   btn.textContent = '↺ Vernieuwen';
 }
 
-// ── Laatste & volgende update ophalen via GitHub API ─────────────────────────
-const GITHUB_OWNER = 'ruuvend';
-const GITHUB_REPO  = 'p2000-natuurbrand-kaart';
-
+// ── Laatste & volgende update ophalen via status.json ────────────────────────
 async function laadUpdateInfo() {
   try {
-    const url = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/commits?path=data/meldingen.json&per_page=1`;
-    const resp = await fetch(url, { headers: { 'Accept': 'application/vnd.github+json' } });
+    const resp = await fetch('data/status.json?t=' + Date.now());
+    if (!resp.ok) throw new Error('status.json niet gevonden');
     const data = await resp.json();
 
-    if (data && data[0]) {
-      const commitTijd = new Date(data[0].commit.committer.date);
-      const nu = new Date();
+    const commitTijd = new Date(data.laatste_run);
+    const nu = new Date();
 
-      // Laatste update
-      const diff = Math.round((nu - commitTijd) / 60000); // minuten geleden
-      const tijdStr = commitTijd.toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Amsterdam' });
-      const geleden = diff < 1 ? 'zojuist' : diff === 1 ? '1 min geleden' : `${diff} min geleden`;
-      document.getElementById('laatste-update').textContent = `Laatste update: ${tijdStr} (${geleden})`;
+    // Laatste update
+    const diff = Math.round((nu - commitTijd) / 60000);
+    const tijdStr = commitTijd.toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Amsterdam' });
+    const geleden = diff < 1 ? 'zojuist' : diff === 1 ? '1 min geleden' : `${diff} min geleden`;
+    document.getElementById('laatste-update').textContent = `Laatste update: ${tijdStr} (${geleden})`;
 
-      // Volgende update: workflow draait elke 5 min, dus volgende run is commitTijd + 5 min afgerond
-      const volgende = new Date(commitTijd.getTime() + 5 * 60 * 1000);
-      const volgendeStr = volgende.toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Amsterdam' });
-      const overMinuten = Math.max(0, Math.round((volgende - nu) / 60000));
-      const overStr = overMinuten <= 0 ? 'elk moment' : `over ${overMinuten} min`;
-      document.getElementById('volgende-update').textContent = `Volgende update: ${volgendeStr} (${overStr})`;
-    }
+    // Volgende update: elke 5 minuten
+    const volgende = new Date(commitTijd.getTime() + 5 * 60 * 1000);
+    const volgendeStr = volgende.toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Amsterdam' });
+    const overMinuten = Math.max(0, Math.round((volgende - nu) / 60000));
+    const overStr = overMinuten <= 0 ? 'elk moment' : `over ${overMinuten} min`;
+    document.getElementById('volgende-update').textContent = `Volgende update: ${volgendeStr} (${overStr})`;
+
   } catch(e) {
     document.getElementById('laatste-update').textContent = 'Laatste update: onbekend';
+    document.getElementById('volgende-update').textContent = '';
   }
 }
 
