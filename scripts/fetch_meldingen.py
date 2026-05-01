@@ -93,8 +93,8 @@ def extract_locatie(description: str) -> tuple[str, str]:
         → ('Rijksweg Noord', 'Nederweert')
     'P 1 BDH-03 BR berm/bosschage Jean Monnetpad s-Gravenhage 157730'
         → ('Jean Monnetpad', 's-Gravenhage')
-    'P 2 BON-01 BR berm/bosschage Waterstraat Dr. Schaepmanstraat Velp GE 075341'
-        → ('Dr. Schaepmanstraat', 'Velp')
+    'P 1 BON-08 (Pel. GW NBB 1) BR bos (Uitbr.: hoog) Paasloerweg Paasloo'
+        → ('Paasloerweg', 'Paasloo')
     """
     import re
     schoon = re.sub(r'<[^>]+>', '', description).strip()
@@ -103,14 +103,15 @@ def extract_locatie(description: str) -> tuple[str, str]:
     schoon = re.sub(r'(\s+\d+)+\s*$', '', schoon).strip()
     # Verwijder 2-letter provincie-afkorting aan het einde (GE, NB, ZH etc.)
     schoon = re.sub(r'\s+[A-Z]{2}$', '', schoon).strip()
-    # Verwijder het P2000-prefix: "P 2 BLB-02 BR berm/bosschage"
-    schoon = re.sub(r'^P\s+\d+\s+[\w/-]+\s+BR\s+[\w/]+\s*', '', schoon, flags=re.IGNORECASE).strip()
-    # Fallback: verwijder alles t/m het eerste BR-trefwoord
-    for term in ['berm/bosschage','bosschage','br bos','br heide','br duin','br berm',
-                 'br veen','br gras','br riet','nwbrrn','natuurbrand']:
+    # Verwijder het P2000-prefix inclusief eenheidscode: "P 1 BON-08 (Pel. GW NBB 1) BR bos"
+    schoon = re.sub(r'^P\s+\d+\s+[\w/-]+(\s+\([^)]+\))?\s+BR\s+[\w/]+(\s+\([^)]+\))?\s*', '', schoon, flags=re.IGNORECASE).strip()
+    # Fallback: verwijder alles t/m het eerste BR-trefwoord (inclusief haakjes erna)
+    for term in ['br bos','br heide','br duin','br berm','br veen','br gras','br riet','nwbrrn','natuurbrand','bos (uitbr','heide (uitbr']:
         idx = schoon.lower().find(term)
         if idx != -1:
             schoon = schoon[idx + len(term):].strip()
+            # Verwijder ook resterende haakjes-inhoud aan het begin zoals "(Uitbr.: hoog)"
+            schoon = re.sub(r'^\([^)]*\)\s*', '', schoon).strip()
             break
 
     straat_suffixes = ['straat','weg','laan','pad','dijk','kade','plein',
@@ -118,9 +119,10 @@ def extract_locatie(description: str) -> tuple[str, str]:
 
     delen = schoon.split()
     plaats_idx = None
+    plaats = ''
     for i in range(len(delen) - 1, -1, -1):
-        woord = delen[i].lower().rstrip('.,')
-        if not woord or woord[0].isdigit():
+        woord = delen[i].lower().rstrip('.,)')
+        if not woord or woord[0].isdigit() or woord.startswith('('):
             continue
         if any(woord.endswith(s) for s in straat_suffixes):
             continue
@@ -136,18 +138,19 @@ def extract_locatie(description: str) -> tuple[str, str]:
     if plaats_idx is None:
         return ('', delen[-1] if delen else '')
 
-    # Straatnaam = alles voor de plaatsnaam, na eventuele rijkswegnummers
+    # Straatnaam = alles voor de plaatsnaam
     straat_delen = list(delen[:plaats_idx])
-    # Verwijder rijkswegen (A6, N266), richtingen (Li, Re) en hectometerpalen (87,6) aan het begin
+    # Verwijder rijkswegen (A6, N266), richtingen (Li, Re) en hectometerpalen aan het begin
     while straat_delen and (
-        re.match(r'^[AN]\d+$', straat_delen[0]) or          # A6, N266
-        straat_delen[0] in ['Li', 'Re', '-'] or              # richtingen
-        re.match(r'^\d+[,.]\d+$', straat_delen[0]) or       # 87,6
-        straat_delen[0][0].isdigit()                         # overige getallen
+        re.match(r'^[AN]\d+$', straat_delen[0]) or
+        straat_delen[0] in ['Li', 'Re', '-'] or
+        re.match(r'^\d+[,.]\d+$', straat_delen[0]) or
+        straat_delen[0][0].isdigit() or
+        straat_delen[0].startswith('(')
     ):
         straat_delen.pop(0)
-    # Verwijder ook losse hectometerpalen later in de string
-    straat_delen = [d for d in straat_delen if not re.match(r'^\d+[,.]\d+$', d)]
+    # Verwijder losse hectometerpalen en haakjes-stukken
+    straat_delen = [d for d in straat_delen if not re.match(r'^\d+[,.]\d+$', d) and not d.startswith('(')]
 
     straat = ' '.join(straat_delen).strip(' ,.-')
     return (straat, plaats)
@@ -193,7 +196,8 @@ def parse_rss(url: str) -> list[dict]:
             dt = parsedate_to_datetime(pub)
             if dt.tzinfo is None:
                 dt = dt.replace(tzinfo=timezone.utc)
-            iso = dt.astimezone(timezone.utc).isoformat()
+            # Bewaar originele tijd — niet omzetten naar UTC
+            iso = dt.isoformat()
         except Exception:
             iso = datetime.now(timezone.utc).isoformat()
 
