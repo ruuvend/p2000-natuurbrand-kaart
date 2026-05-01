@@ -22,5 +22,17 @@
   "Barbaragaarde, Bussum": {
     "lat": 52.2654714,
     "lon": 5.1855883
+  },
+  "Siebold Bargehassuspad, Leeuwarden": {
+    "lat": 53.223166,
+    "lon": 5.8001853
+  },
+  "Heideweg Loon op, Zand": {
+    "lat": 51.6106011,
+    "lon": 5.0705903
+  },
+  ":": {
+    "lat": 52.2434979,
+    "lon": 5.6343227
   }
 }
