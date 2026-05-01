@@ -1,5 +1,5 @@
 name: P2000 Meldingen Ophalen
-"on":
+on:
   schedule:
     - cron: '*/5 * * * *'
   workflow_dispatch:
