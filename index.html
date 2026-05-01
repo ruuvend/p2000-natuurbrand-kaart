@@ -128,7 +128,7 @@ function toonOpKaart(groepen) {
 }
 
 function formatTijd(isoString) {
-  try { return new Date(isoString).toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' }); }
+  try { return new Date(isoString).toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Amsterdam' }); }
   catch(e) { return ''; }
 }
 
