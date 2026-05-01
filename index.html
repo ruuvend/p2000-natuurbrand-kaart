@@ -16,7 +16,8 @@
     #refresh-btn { font-size: 12px; padding: 4px 10px; cursor: pointer; border: 1px solid #ddd; border-radius: 8px; background: #fff; }
     #refresh-btn:hover { background: #f5f4f0; }
     #loading { padding: 8px 16px; font-size: 13px; color: #185FA5; background: #E6F1FB; display: none; align-items: center; gap: 8px; }
-    .spinner { width: 14px; height: 14px; border: 2px solid #B5D4F4; border-top-color: #378ADD; border-radius: 50%; animation: spin 0.8s linear infinite; }
+    #progress { font-size: 12px; color: #185FA5; margin-left: 4px; }
+    .spinner { width: 14px; height: 14px; border: 2px solid #B5D4F4; border-top-color: #378ADD; border-radius: 50%; animation: spin 0.8s linear infinite; flex-shrink: 0; }
     @keyframes spin { to { transform: rotate(360deg); } }
     #error-msg { padding: 10px 16px; font-size: 13px; color: #A32D2D; background: #FCEBEB; display: none; }
     #map-container { position: relative; flex: 1; }
@@ -46,7 +47,8 @@
   </div>
   <div id="loading" style="display:flex;">
     <div class="spinner"></div>
-    <span>Meldingen ophalen van 112-nu.nl (laatste 12 uur)...</span>
+    <span>Alle regio's ophalen...</span>
+    <span id="progress"></span>
   </div>
   <div id="error-msg"></div>
   <div id="map-container">
@@ -59,8 +61,25 @@
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
 const BRAND_TERMEN = ['natuurbrand','bermbrand','heidebrand','veenbrand','bosbrand','grasbrand','rietbrand','struikbrand','duinbrand','brand buitengebied','brand in het bos','brand in de berm','brand in de heide','brand in het veen','brand in het riet'];
-const RSS_URL = 'https://112-nu.nl/brandweer/rss';
+
 const PROXY = 'https://api.rss2json.com/v1/api.json?rss_url=';
+
+// Alle 25 regio-feeds van 112-nu.nl
+const REGIO_FEEDS = [
+  { naam: 'Groningen',               url: 'https://112-nu.nl/regio/groningen/rss' },
+  { naam: 'Friesland',               url: 'https://112-nu.nl/regio/friesland/rss' },
+  { naam: 'Drenthe',                 url: 'https://112-nu.nl/regio/drenthe/rss' },
+  { naam: 'Overijssel',              url: 'https://112-nu.nl/regio/overijssel/rss' },
+  { naam: 'Flevoland',               url: 'https://112-nu.nl/regio/flevoland/rss' },
+  { naam: 'Gelderland',              url: 'https://112-nu.nl/regio/gelderland/rss' },
+  { naam: 'Utrecht',                 url: 'https://112-nu.nl/regio/utrecht/rss' },
+  { naam: 'Noord-Holland',           url: 'https://112-nu.nl/regio/noord-holland/rss' },
+  { naam: 'Zuid-Holland',            url: 'https://112-nu.nl/regio/zuid-holland/rss' },
+  { naam: 'Zeeland',                 url: 'https://112-nu.nl/regio/zeeland/rss' },
+  { naam: 'Noord-Brabant',           url: 'https://112-nu.nl/regio/noord-brabant/rss' },
+  { naam: 'Limburg',                 url: 'https://112-nu.nl/regio/limburg/rss' },
+  { naam: 'Brandweer',               url: 'https://112-nu.nl/brandweer/rss' },
+];
 
 const map = L.map('map').setView([52.3, 5.3], 8);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -95,23 +114,38 @@ function toonOpKaart(groepen) {
   const sidebar = document.getElementById('sidebar');
   sidebar.innerHTML = '';
   document.getElementById('count-badge').textContent = groepen.length + ' melding' + (groepen.length !== 1 ? 'en' : '');
+
   if (groepen.length === 0) {
     const card = document.createElement('div');
     card.className = 'geen-meldingen';
     card.textContent = 'Geen actieve natuurbrandmeldingen in de afgelopen 12 uur.';
     sidebar.appendChild(card); return;
   }
+
+  // Sorteer op aantal meldingen (meest actief bovenaan)
+  groepen.sort((a, b) => b.count - a.count);
+
   groepen.forEach(g => {
     const kleur = g.count >= 3 ? '#A32D2D' : g.count === 2 ? '#D85A30' : '#E24B4A';
-    const circle = L.circleMarker([g.lat, g.lon], { radius: 8 + g.count * 3, fillColor: kleur, color: '#fff', weight: 2, opacity: 1, fillOpacity: 0.88 }).addTo(map);
-    circle.bindPopup(`<b style="font-size:13px;">🔥 ${g.locatie}</b><br/><span style="font-size:11px;color:#666;">${g.count} melding${g.count>1?'en':''}</span><br/><div style="margin-top:6px;font-size:11px;line-height:1.6;">${g.teksten.slice(0,3).map(t=>'• '+t).join('<br/>')}</div><div style="margin-top:4px;font-size:10px;color:#888;">Tijden: ${g.tijden.slice(0,3).join(', ')}</div>`);
+    const circle = L.circleMarker([g.lat, g.lon], {
+      radius: 8 + g.count * 3, fillColor: kleur,
+      color: '#fff', weight: 2, opacity: 1, fillOpacity: 0.88
+    }).addTo(map);
+    circle.bindPopup(`<b style="font-size:13px;">🔥 ${g.locatie}</b><br/>
+      <span style="font-size:11px;color:#666;">${g.count} melding${g.count>1?'en':''}</span><br/>
+      <div style="margin-top:6px;font-size:11px;line-height:1.6;">${g.teksten.slice(0,4).map(t=>'• '+t).join('<br/>')}</div>
+      <div style="margin-top:4px;font-size:10px;color:#888;">Tijden: ${g.tijden.slice(0,4).join(', ')}</div>`);
     markers.push(circle);
+
     const card = document.createElement('div');
     card.className = 'melding-card';
-    card.innerHTML = `<div class="melding-titel"><span class="brand-dot"></span>${g.locatie}</div><div class="melding-meta">${g.teksten[0]}<br/>${g.tijden[0]}</div>${g.count>1?`<span class="melding-count">${g.count} meldingen samengevoegd</span>`:''}`;
+    card.innerHTML = `<div class="melding-titel"><span class="brand-dot"></span>${g.locatie}</div>
+      <div class="melding-meta">${g.teksten[0]}<br/>${g.tijden[0]}</div>
+      ${g.count>1?`<span class="melding-count">${g.count} meldingen samengevoegd</span>`:''}`;
     card.onclick = () => { map.setView([g.lat, g.lon], 12); circle.openPopup(); };
     sidebar.appendChild(card);
   });
+
   map.fitBounds(L.latLngBounds(groepen.map(g => [g.lat, g.lon])).pad(0.3));
 }
 
@@ -129,7 +163,7 @@ function isNatuurbrand(tekst) {
   return BRAND_TERMEN.some(term => t.includes(term));
 }
 
-function binnenEenUur(pubDate) {
+function binnenTwaalf(pubDate) {
   try { return (Date.now() - new Date(pubDate).getTime()) < 12 * 60 * 60 * 1000; } catch(e) { return false; }
 }
 
@@ -142,35 +176,81 @@ function extractPlaats(titel) {
   return match ? match[1].trim() : titel.trim();
 }
 
+// Haal één regio-feed op, geeft gefilterde items terug
+async function haalFeed(feed) {
+  try {
+    const resp = await fetch(PROXY + encodeURIComponent(feed.url));
+    const data = await resp.json();
+    if (!data.items || data.status !== 'ok') return [];
+    return data.items.filter(item => {
+      const tekst = (item.title || '') + ' ' + (item.description || '');
+      return isNatuurbrand(tekst) && binnenTwaalf(item.pubDate);
+    });
+  } catch(e) { return []; }
+}
+
+// Geocodeer in batches om Nominatim niet te overbelasten
+async function geocodeerBatch(items) {
+  const meldingen = [];
+  // Dedupleer plaatsnamen zodat we niet meerdere keren dezelfde geocoderen
+  const plaatsCache = {};
+
+  for (const item of items) {
+    const plaats = extractPlaats(item.title || '');
+    if (!plaatsCache[plaats]) {
+      plaatsCache[plaats] = await geocodeer(plaats);
+      await new Promise(r => setTimeout(r, 120)); // kleine pauze voor Nominatim fair-use
+    }
+    const coords = plaatsCache[plaats];
+    if (coords) {
+      meldingen.push({ locatie: plaats, tekst: item.title || '', tijd: formatTijd(item.pubDate), lat: coords.lat, lon: coords.lon });
+    }
+  }
+  return meldingen;
+}
+
 async function laadMeldingen() {
   document.getElementById('loading').style.display = 'flex';
   document.getElementById('error-msg').style.display = 'none';
   document.getElementById('status').textContent = 'Ophalen...';
+  document.getElementById('progress').textContent = '';
+
   try {
-    const resp = await fetch(PROXY + encodeURIComponent(RSS_URL));
-    const data = await resp.json();
-    if (!data.items || data.status !== 'ok') throw new Error('RSS feed niet beschikbaar');
+    // Haal alle regio-feeds parallel op
+    let gedaan = 0;
+    const updateProgress = () => {
+      gedaan++;
+      document.getElementById('progress').textContent = `(${gedaan}/${REGIO_FEEDS.length} regio's)`;
+    };
 
-    const relevant = data.items.filter(item => {
-      const tekst = (item.title || '') + ' ' + (item.description || '');
-      return isNatuurbrand(tekst) && binnenEenUur(item.pubDate);
-    });
+    const feedResultaten = await Promise.all(
+      REGIO_FEEDS.map(feed => haalFeed(feed).then(items => { updateProgress(); return items; }))
+    );
 
-    const meldingen = [];
-    await Promise.all(relevant.map(async item => {
-      const plaats = extractPlaats(item.title || '');
-      const coords = await geocodeer(plaats);
-      if (coords) meldingen.push({ locatie: plaats, tekst: item.title || '', tijd: formatTijd(item.pubDate), lat: coords.lat, lon: coords.lon });
-    }));
+    // Samenvoegen en dedupliceren op tekst
+    const alleItems = feedResultaten.flat();
+    const uniek = [];
+    const gezien = new Set();
+    for (const item of alleItems) {
+      const key = (item.title || '').trim().toLowerCase();
+      if (!gezien.has(key)) { gezien.add(key); uniek.push(item); }
+    }
 
-    toonOpKaart(samenvoegen(meldingen));
-    document.getElementById('status').textContent = 'Bijgewerkt om ' + new Date().toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' });
+    document.getElementById('progress').textContent = `— ${uniek.length} brandmeldingen gevonden, locaties bepalen...`;
+
+    const meldingen = await geocodeerBatch(uniek);
+    const groepen = samenvoegen(meldingen);
+    toonOpKaart(groepen);
+
+    const nu = new Date().toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' });
+    document.getElementById('status').textContent = `Bijgewerkt om ${nu} — ${REGIO_FEEDS.length} regio's`;
   } catch(err) {
     document.getElementById('error-msg').style.display = 'block';
     document.getElementById('error-msg').textContent = 'Fout bij ophalen: ' + err.message;
     document.getElementById('status').textContent = 'Fout';
   } finally {
     document.getElementById('loading').style.display = 'none';
+    document.getElementById('progress').textContent = '';
   }
 }
 
