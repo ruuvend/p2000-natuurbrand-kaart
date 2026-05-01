@@ -149,13 +149,8 @@ function formatTijd(isoString) {
   catch(e) { return ''; }
 }
 
-// Geocoding cache in localStorage zodat plaatsen niet steeds opnieuw worden opgezocht
-function geoCache() {
-  try { return JSON.parse(localStorage.getItem('p2000_geocache') || '{}'); } catch(e) { return {}; }
-}
-function geoSave(cache) {
-  try { localStorage.setItem('p2000_geocache', JSON.stringify(cache)); } catch(e) {}
-}
+// Geocoding cache in geheugen (werkt altijd, ook als localStorage geblokkeerd is)
+const geoCache = {};
 
 // ── Hoofdfunctie: laad data/meldingen.json ────────────────────────────────────
 async function laadMeldingen() {
@@ -171,32 +166,30 @@ async function laadMeldingen() {
 
     document.getElementById('progress').textContent = `— ${meldingen.length} meldingen, locaties bepalen...`;
 
-    const cache = geoCache();
     const verwerkt = [];
 
     for (const m of meldingen) {
       const plaats = extractPlaats(m.description || '');
-      if (!cache[plaats]) {
+      if (!geoCache[plaats]) {
         const coords = await geocodeer(plaats);
-        if (coords) cache[plaats] = coords;
+        if (coords) geoCache[plaats] = coords;
         await new Promise(r => setTimeout(r, 100));
       }
-      if (cache[plaats]) {
+      if (geoCache[plaats]) {
         verwerkt.push({
           locatie: plaats,
           tekst: m.title || '',
           tijd: formatTijd(m.pubDate),
-          lat: cache[plaats].lat,
-          lon: cache[plaats].lon,
+          lat: geoCache[plaats].lat,
+          lon: geoCache[plaats].lon,
         });
       }
     }
 
-    geoSave(cache);
     toonOpKaart(samenvoegen(verwerkt));
 
     const nu = new Date().toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' });
-    document.getElementById('status').textContent = `Bijgewerkt om ${nu}`;
+    document.getElementById('status').textContent = `Bijgewerkt om ${nu} (${verwerkt.length}/${meldingen.length} gelokaliseerd)`;
   } catch(err) {
     document.getElementById('error-msg').style.display = 'block';
     document.getElementById('error-msg').textContent = 'Fout: ' + err.message;
