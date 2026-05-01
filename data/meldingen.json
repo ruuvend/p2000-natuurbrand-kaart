@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Noord-Nederland, Incidentkanaal 2 Brandmelding Bos Camping Bungalowpark De Bronzen Emmer 038693 038367 038867 038868 038341 030386",
+    "description": "P 1 BNN-02 BR bos Camping Bungalowpark De Bronzen Emmer Mepperstraat Meppen 038693 038367 038867 038868 038341 030386",
+    "link": "https://112-nu.nl/melding/17288191/meppen/mepperstraat/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-05-01T19:52:18+00:00",
+    "plaats": "Meppen",
+    "straat": "Camping Bungalowpark De Bronzen Emmer Mepperstraat",
+    "lat": 52.7812658,
+    "lon": 6.6958864
+  },
+  {
+    "title": "Met Spoed Logistiek Meldkamer: Brandweer Zeeland/West-Brabant, Incidentkanaal 5 Brandmelding Bos (Uitbr.: Zeer Hoog)",
+    "description": "P 2 Logistiek BZB-05 BR bos (Uitbr.: zeer hoog) Balsedreef Bergen op Zoom",
+    "link": "https://112-nu.nl/melding/17288082/bergen-op-zoom/balsedreef/brandweer-met-spoed.html",
+    "pubDate": "2026-05-01T19:25:27+00:00",
+    "plaats": "Zoom",
+    "straat": "Balsedreef Bergen op",
+    "lat": 51.4848985,
+    "lon": 4.3486576
+  },
+  {
+    "title": "Met Spoed Meldkamer: Brandweer Zeeland/West-Brabant, Incidentkanaal 5 Brandmelding Bos (Uitbr.: Zeer Hoog)",
+    "description": "P 2 BZB-05 BR bos (Uitbr.: zeer hoog) Balsedreef Bergen op Zoom",
+    "link": "https://112-nu.nl/melding/17288060/bergen-op-zoom/balsedreef/brandweer-met-spoed.html",
+    "pubDate": "2026-05-01T19:21:39+00:00",
+    "plaats": "Zoom",
+    "straat": "Balsedreef Bergen op",
+    "lat": 51.4848985,
+    "lon": 4.3486576
+  }
+]
