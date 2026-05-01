@@ -22,16 +22,23 @@ RSS_URLS = [
 ]
 
 BRAND_TERMEN = [
-    'berm/bosschage', 'bosschage',
-    'br bos', 'br heide', 'br duin', 'br berm', 'br veen', 'br gras', 'br riet',
-    'brand bos', 'brand heide', 'brand duin', 'brand berm',
-    'brand veen', 'brand gras', 'brand riet',
-    'brandmelding buiten', 'brand buiten',
-    'nwbrrn', 'natuurbrand', 'bermbrand', 'heidebrand',
-    'veenbrand', 'bosbrand', 'grasbrand', 'rietbrand', 'duinbrand',
+    # Officiële P2000-codes voor échte natuurbranden
+    'br bos',        # bosbrand
+    'br heide',      # heidebrand
+    'br duin',       # duinbrand
+    'br veen',       # veenbrand
+    # Uitgeschreven varianten
+    'brand bos', 'brand heide', 'brand duin', 'brand veen',
+    'bosbrand', 'heidebrand', 'veenbrand', 'duinbrand',
+    'natuurbrand', 'nwbrrn',
 ]
 
 UITSLUITINGEN = [
+    # Geen berm/bosschage, gras, riet — dat zijn geen echte natuurbranden
+    'berm', 'bosschage', 'br berm', 'br gras', 'br riet',
+    'bermbrand', 'grasbrand', 'rietbrand',
+    'brand buiten', 'brandmelding buiten',
+    # Overige uitsluitingen
     'vrijhouden', 'testmelding', 'proefalarm',
     'brandmelding woning', 'woning (dak)', 'woning (brand)',
     'brandmelding wegvervoer', 'wegvervoer',
