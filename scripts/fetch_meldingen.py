@@ -194,10 +194,13 @@ def parse_rss(url: str) -> list[dict]:
 
         try:
             dt = parsedate_to_datetime(pub)
-            if dt.tzinfo is None:
-                dt = dt.replace(tzinfo=timezone.utc)
-            # Bewaar originele tijd — niet omzetten naar UTC
-            iso = dt.isoformat()
+            # 112-nu.nl levert Nederlandse lokale tijd maar labelt het als UTC (+00:00)
+            # We verwijderen de tijdzone-info en behandelen het als Europe/Amsterdam
+            from zoneinfo import ZoneInfo
+            amsterdam = ZoneInfo('Europe/Amsterdam')
+            dt_naive = dt.replace(tzinfo=None)
+            dt_local = dt_naive.replace(tzinfo=amsterdam)
+            iso = dt_local.isoformat()
         except Exception:
             iso = datetime.now(timezone.utc).isoformat()
 
