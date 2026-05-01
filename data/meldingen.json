@@ -1,116 +1,231 @@
-[
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 1 Brandmelding Bos (Uitbr.: Zeer Hoog) 210093 210091 213861 213061 210035 222841 223541",
-    "description": "P 1 BOB-01 BR bos (Uitbr.: zeer hoog) De Platanen Boekel 210093 210091 213861 213061 210035 222841 223541",
-    "link": "https://112-nu.nl/melding/17286100/boekel/de-platanen/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-05-01T13:28:00+00:00"
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Regio Den Haag, Incidentkanaal 1 Brandmelding Berm/Bosschage 163032",
-    "description": "P 1 BDH-01 BR berm/bosschage Laageind Driebruggen 163032",
-    "link": "https://112-nu.nl/melding/17286043/driebruggen/laageind/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-05-01T13:19:02+00:00"
-  },
-  {
-    "title": "Met Spoed Meldkamer: Brandweer Regio Rotterdam, Incidentkanaal 3 Brandmelding Buiten 170431",
-    "description": "P 2 BRT-03 BR buiten Galileistraat Rotterdam 170431",
-    "link": "https://112-nu.nl/melding/17286013/rotterdam/galilestraat/brandweer-met-spoed.html",
-    "pubDate": "2026-05-01T13:14:25+00:00"
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Regio Amsterdam, Incidentkanaal 3 Brandmelding Buiten 135131",
-    "description": "P 1 BAD-03 BR buiten Zonnestein Amstelveen 135131",
-    "link": "https://112-nu.nl/melding/17285983/amstelveen/zonnestein/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-05-01T13:08:59+00:00"
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Regio Den Haag, Incidentkanaal 3 Brandmelding Berm/Bosschage 164130",
-    "description": "P 1 BDH-03 BR berm/bosschage N446 Li Leiderdorp 164130",
-    "link": "https://112-nu.nl/melding/17285964/leiderdorp/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-05-01T13:05:27+00:00"
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Regio Den Haag, Incidentkanaal 2 Brandmelding Buiten 157230",
-    "description": "P 1 BDH-02 BR buiten Sophialaan 's-Gravenhage 157230",
-    "link": "https://112-nu.nl/melding/17285935/den-haag/sophialaan/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-05-01T12:59:56+00:00"
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 1 Brandmelding Berm/Bosschage) 089461 089586",
-    "description": "P 1 BON-01 BR berm/bosschage Zandbergseweg Rijswijk (GLD) 089461 089586",
-    "link": "https://112-nu.nl/melding/17285925/rijswijk/zandbergseweg/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-05-01T12:57:48+00:00"
-  },
-  {
-    "title": "Met Spoed Meldkamer: Brandweer Noord-Nederland, Incidentkanaal 4 Brandmelding Berm/Bosschage - 038733",
-    "description": "P 2 BNN-04 BR berm/bosschage N863 - Europaweg Nieuw-Schoonebeek 038733",
-    "link": "https://112-nu.nl/melding/17285910/nieuw-schoonebeek/europaweg/brandweer-met-spoed.html",
-    "pubDate": "2026-05-01T12:50:31+00:00"
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 1 Brandmelding Berm/Bosschage) 087131",
-    "description": "P 1 BON-01 BR berm/bosschage Zandbergseweg Rijswijk (GLD) 087131",
-    "link": "https://112-nu.nl/melding/17285906/rijswijk/zandbergseweg/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-05-01T12:50:11+00:00"
-  },
-  {
-    "title": "Met Spoed BOB-91 Brandmelding Heide (Ve: 1) 225026",
-    "description": "P 2 BOB-91 BR heide (VE: 1) Geuzendijk Budel 225026",
-    "link": "https://112-nu.nl/melding/17285826/budel/geuzendijk/brandweer-met-spoed.html",
-    "pubDate": "2026-05-01T12:32:40+00:00"
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Limburg, Incidentkanaal 2 (Middel Brandmelding) Brandmelding Berm/Bosschage - 234491 224241",
-    "description": "P 1 BLB-02 (Middel BR) BR berm/bosschage N266 - Rijksweg Noord 64,0 Nederweert 234491 224241",
-    "link": "https://112-nu.nl/melding/17285809/nederweert/n266/64/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-05-01T12:28:31+00:00"
-  },
-  {
-    "title": "Met Spoed Meldkamer: Brandweer Limburg, Incidentkanaal 2 Brandmelding Berm/Bosschage - 234131",
-    "description": "P 2 BLB-02 BR berm/bosschage N266 - Rijksweg Noord 64,0 Nederweert 234131",
-    "link": "https://112-nu.nl/melding/17285717/nederweert/n266/64/brandweer-met-spoed.html",
-    "pubDate": "2026-05-01T12:11:30+00:00"
-  },
-  {
-    "title": "Met Grote Spoed BOB-19 Brandmelding Heide 225069",
-    "description": "P 1 BOB-19 BR heide Geuzendijk Budel 225069",
-    "link": "https://112-nu.nl/melding/17285685/budel/geuzendijk/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-05-01T12:05:18+00:00"
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Regio Den Haag, Incidentkanaal 3 Brandmelding Berm/Bosschage 157730",
-    "description": "P 1 BDH-03 BR berm/bosschage Jean Monnetpad 's-Gravenhage 157730",
-    "link": "https://112-nu.nl/melding/17285666/den-haag/jean-monnetpad/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-05-01T12:01:20+00:00"
-  },
-  {
-    "title": "Met Grote Spoed BOB-19 Brandmelding Heide 225168 225167",
-    "description": "P 1 BOB-19 BR heide Geuzendijk Budel 225168 225167",
-    "link": "https://112-nu.nl/melding/17285647/budel/geuzendijk/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-05-01T11:58:00+00:00"
-  },
-  {
-    "title": "Met Grote Spoed Brandmelding Berm/Bosschage Dr. Schaepmanstraat Ge",
-    "description": "P 1 BR berm/bosschage Waterstraat Dr. Schaepmanstraat Velp GE",
-    "link": "https://112-nu.nl/melding/17285623/velp/waterstraat/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-05-01T11:52:52+00:00"
-  },
-  {
-    "title": "Met Spoed Meldkamer: Brandweer Midden-Nederland, Incidentkanaal 2 Brandmelding Berm/Bosschage 256135",
-    "description": "P 2 BMD-02 BR berm/bosschage A6 Li 87,6 Lelystad 256135",
-    "link": "https://112-nu.nl/melding/17285616/lelystad/a6/876/brandweer-met-spoed.html",
-    "pubDate": "2026-05-01T11:52:03+00:00"
-  },
-  {
-    "title": "Met Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 1 Brandmelding Berm/Bosschage Dr. Schaepmanstraat Ge 075341",
-    "description": "P 2 BON-01 BR berm/bosschage Waterstraat Dr. Schaepmanstraat Velp GE 075341",
-    "link": "https://112-nu.nl/melding/17285596/velp/waterstraat/brandweer-met-spoed.html",
-    "pubDate": "2026-05-01T11:47:36+00:00"
-  },
-  {
-    "title": "Met Spoed Nwbrrn",
-    "description": "Prio 2 A12 Li 40,2 NWBRRN :",
-    "link": "https://112-nu.nl/melding/17285528/bodegraven-reeuwijk/a12/402/brandweer-met-spoed.html",
-    "pubDate": "2026-05-01T11:32:48+00:00"
-  }
+#!/usr/bin/env python3
+"""
+Haalt P2000 brandweermeldingen op via RSS, geocodeert de locaties,
+en slaat alles op in data/meldingen.json inclusief lat/lon.
+Bewaart de laatste 12 uur aan meldingen.
+"""
+
+import json
+import os
+import time
+import urllib.request
+import urllib.parse
+import xml.etree.ElementTree as ET
+from datetime import datetime, timezone, timedelta
+from email.utils import parsedate_to_datetime
+
+# ── Instellingen ──────────────────────────────────────────────────────────────
+
+RSS_URLS = [
+    'https://112-nu.nl/brandweer/rss',
+    'https://112-nu.nl/hulpdiensten/rss',
 ]
+
+BRAND_TERMEN = [
+    'berm/bosschage', 'bosschage',
+    'br bos', 'br heide', 'br duin', 'br berm', 'br veen', 'br gras', 'br riet',
+    'brand bos', 'brand heide', 'brand duin', 'brand berm',
+    'brand veen', 'brand gras', 'brand riet',
+    'brandmelding buiten', 'brand buiten',
+    'nwbrrn', 'natuurbrand', 'bermbrand', 'heidebrand',
+    'veenbrand', 'bosbrand', 'grasbrand', 'rietbrand', 'duinbrand',
+]
+
+UITSLUITINGEN = [
+    'vrijhouden', 'testmelding', 'proefalarm',
+    'brandmelding woning', 'woning (dak)', 'woning (brand)',
+    'brandmelding wegvervoer', 'wegvervoer',
+    'trioworld', 'liftopsluiting', 'gaslucht', 'stank/hind',
+    'assistentie ambu', 'afhijsen', 'handmelder',
+    'openbaar meldsysteem', 'intrekken alarm',
+    'brandgerucht', 'nacontrole',
+]
+
+DATA_FILE    = 'data/meldingen.json'
+GEO_CACHE    = 'data/geocache.json'
+BEWAAR_UREN  = 12
+
+# ── Geocodering via Nominatim ─────────────────────────────────────────────────
+
+def laad_geocache() -> dict:
+    if not os.path.exists(GEO_CACHE):
+        return {}
+    try:
+        with open(GEO_CACHE, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+def sla_geocache_op(cache: dict):
+    os.makedirs(os.path.dirname(GEO_CACHE), exist_ok=True)
+    with open(GEO_CACHE, 'w', encoding='utf-8') as f:
+        json.dump(cache, f, ensure_ascii=False, indent=2)
+
+def geocodeer(plaatsnaam: str) -> dict | None:
+    """Zoek lat/lon op via Nominatim (OpenStreetMap). Geeft None terug bij mislukking."""
+    query = urllib.parse.quote(plaatsnaam + ', Nederland')
+    url = f'https://nominatim.openstreetmap.org/search?q={query}&format=json&limit=1&countrycodes=nl'
+    headers = {
+        'User-Agent': 'p2000-natuurbrand-kaart/1.0',
+        'Accept-Language': 'nl',
+    }
+    try:
+        req = urllib.request.Request(url, headers=headers)
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            resultaten = json.loads(resp.read())
+        if resultaten:
+            return {'lat': float(resultaten[0]['lat']), 'lon': float(resultaten[0]['lon'])}
+    except Exception as e:
+        print(f'  Geocodeer fout voor "{plaatsnaam}": {e}')
+    return None
+
+def extract_plaats(description: str) -> str:
+    """Haal plaatsnaam uit description: 'P 1 BR berm/bosschage Waterstraat Velp GE' → 'Velp'"""
+    # Description formaat: "P X CODE-omschrijving Straatnaam Plaatsnaam PostcodeOfAfkorting"
+    # Verwijder HTML tags
+    import re
+    schoon = re.sub(r'<[^>]+>', '', description).strip()
+    
+    # Probeer de plaatsnaam te vinden: woord voor eventuele postcode/afkorting aan het einde
+    # Typisch: "BR berm/bosschage Jean Monnetpad 's-Gravenhage 157730"
+    # Of: "BR heide Geuzendijk Budel 225069"
+    # We pakken het laatste 'echte' woord voor een getal
+    delen = schoon.split()
+    for i in range(len(delen) - 1, -1, -1):
+        if delen[i][0].isdigit():
+            continue
+        if len(delen[i]) <= 2 and delen[i].isupper():
+            continue  # sla afkortingen zoals "GE" over
+        # Pak dit woord als plaatsnaam (soms met voorgaand deel zoals "'s-")
+        if i > 0 and delen[i-1] in ["'s-", "'s"]:
+            return delen[i-1] + delen[i]
+        return delen[i]
+    
+    # Fallback: eerste woord na "P X"
+    match = re.match(r'^P \d+ (.+)$', schoon)
+    if match:
+        woorden = match.group(1).split()
+        if len(woorden) >= 2:
+            return woorden[-2] if woorden[-1][0].isdigit() else woorden[-1]
+    return schoon.split()[0] if schoon else ''
+
+# ── RSS ophalen ───────────────────────────────────────────────────────────────
+
+def is_natuurbrand(tekst: str) -> bool:
+    t = tekst.lower()
+    heeft_term = any(term in t for term in BRAND_TERMEN)
+    heeft_uitsluiting = any(u in t for u in UITSLUITINGEN)
+    return heeft_term and not heeft_uitsluiting
+
+def parse_rss(url: str) -> list[dict]:
+    headers = {'User-Agent': 'p2000-natuurbrand-kaart/1.0'}
+    req = urllib.request.Request(url, headers=headers)
+    try:
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            xml_data = resp.read()
+    except Exception as e:
+        print(f'Fout bij ophalen {url}: {e}')
+        return []
+
+    try:
+        root = ET.fromstring(xml_data)
+    except ET.ParseError as e:
+        print(f'XML parse fout: {e}')
+        return []
+
+    items = []
+    for item in root.findall('.//item'):
+        title = (item.findtext('title') or '').strip()
+        desc  = (item.findtext('description') or '').strip()
+        link  = (item.findtext('link') or '').strip()
+        pub   = (item.findtext('pubDate') or '').strip()
+
+        try:
+            dt = parsedate_to_datetime(pub)
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=timezone.utc)
+            iso = dt.astimezone(timezone.utc).isoformat()
+        except Exception:
+            iso = datetime.now(timezone.utc).isoformat()
+
+        items.append({'title': title, 'description': desc, 'link': link, 'pubDate': iso})
+
+    return items
+
+def laad_bestaande(pad: str) -> list[dict]:
+    if not os.path.exists(pad):
+        return []
+    try:
+        with open(pad, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except Exception:
+        return []
+
+def sla_op(pad: str, meldingen: list[dict]):
+    os.makedirs(os.path.dirname(pad), exist_ok=True)
+    with open(pad, 'w', encoding='utf-8') as f:
+        json.dump(meldingen, f, ensure_ascii=False, indent=2)
+
+# ── Hoofdprogramma ────────────────────────────────────────────────────────────
+
+def main():
+    nu    = datetime.now(timezone.utc)
+    grens = nu - timedelta(hours=BEWAAR_UREN)
+
+    bestaande      = laad_bestaande(DATA_FILE)
+    geocache       = laad_geocache()
+    bestaande_links = {m['link'] for m in bestaande}
+
+    print(f'Bestaande meldingen: {len(bestaande)} | Geocache: {len(geocache)} plaatsen')
+
+    # Haal nieuwe meldingen op
+    nieuw = 0
+    for url in RSS_URLS:
+        items = parse_rss(url)
+        print(f'{url}: {len(items)} items')
+        for item in items:
+            tekst = item['title'] + ' ' + item['description']
+            if item['link'] in bestaande_links:
+                continue
+            if not is_natuurbrand(tekst):
+                continue
+
+            # Geocodeer de locatie
+            plaats = extract_plaats(item['description'])
+            print(f'  ✅ Nieuw: {item["title"][:70]} | Plaats: {plaats}')
+
+            if plaats and plaats not in geocache:
+                coords = geocodeer(plaats)
+                if coords:
+                    geocache[plaats] = coords
+                    print(f'     📍 Geocodeerd: {plaats} → {coords}')
+                else:
+                    print(f'     ⚠️  Geocodering mislukt voor: {plaats}')
+                time.sleep(1)  # Nominatim fair-use: max 1 req/sec
+
+            coords = geocache.get(plaats)
+            item['plaats'] = plaats
+            item['lat']    = coords['lat'] if coords else None
+            item['lon']    = coords['lon'] if coords else None
+
+            bestaande.append(item)
+            bestaande_links.add(item['link'])
+            nieuw += 1
+
+    # Opschonen: ouder dan 12 uur verwijderen
+    voor = len(bestaande)
+    bestaande = [
+        m for m in bestaande
+        if datetime.fromisoformat(m['pubDate']) >= grens
+    ]
+    print(f'Nieuw: {nieuw} | Opgeschoond: {voor - len(bestaande)} | Totaal: {len(bestaande)}')
+
+    # Sorteer nieuwste eerst
+    bestaande.sort(key=lambda m: m['pubDate'], reverse=True)
+
+    sla_op(DATA_FILE, bestaande)
+    sla_geocache_op(geocache)
+    print(f'✅ Klaar — {DATA_FILE} bijgewerkt')
+
+if __name__ == '__main__':
+    main()
