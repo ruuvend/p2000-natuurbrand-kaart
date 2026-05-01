@@ -22,5 +22,17 @@
   "Nijverdalsebergweg, Nijverdal": {
     "lat": 52.3518975,
     "lon": 6.4315188
+  },
+  "Helenaveenseweg, Griendtsveen": {
+    "lat": 51.4447128,
+    "lon": 5.8775522
+  },
+  "Oude Sonsedijk, Best": {
+    "lat": 51.5107283,
+    "lon": 5.4232833
+  },
+  "Strandweg, Bruinisse": {
+    "lat": 51.6778009,
+    "lon": 4.1330727
   }
 }
