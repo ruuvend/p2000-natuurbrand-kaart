@@ -200,8 +200,13 @@ function toonOpKaart(groepen) {
 }
 
 function formatTijd(isoString) {
-  try { return new Date(isoString).toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Amsterdam' }); }
-  catch(e) { return ''; }
+  try {
+    // Tijd is al in Nederlandse lokale tijd opgeslagen — toon zonder omzetting
+    const dt = new Date(isoString);
+    const uren = String(dt.getHours()).padStart(2, '0');
+    const min  = String(dt.getMinutes()).padStart(2, '0');
+    return `${uren}:${min}`;
+  } catch(e) { return ''; }
 }
 
 // ── Data laden ────────────────────────────────────────────────────────────────
