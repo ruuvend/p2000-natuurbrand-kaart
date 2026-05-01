@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>P2000 Natuurbranden — Live Kaart</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: #f5f4f0;
+      color: #1a1a1a;
+    }
+
+    #app {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    #header {
+      padding: 12px 16px;
+      background: #fff;
+      border-bottom: 1px solid #e5e3dc;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      z-index: 1001;
+    }
+
+    #header h1 {
+      font-size: 16px;
+      font-weight: 500;
+      color: #1a1a1a;
+    }
+
+    #count-badge {
+      background: #D85A30;
+      color: #fff;
+      font-size: 11px;
+      font-weight: 500;
+      padding: 2px 8px;
+      border-radius: 10px;
+    }
+
+    #status {
+      font-size: 12px;
+      color: #888;
+      margin-left: auto;
+    }
+
+    #refresh-btn {
+      font-size: 12px;
+      padding: 4px 10px;
+      cursor: pointer;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background: #fff;
+      color: #1a1a1a;
+    }
+
+    #refresh-btn:hover { background: #f5f4f0; }
+
+    #loading {
+      padding: 8px 16px;
+      font-size: 13px;
+      color: #185FA5;
+      background: #E6F1FB;
+      display: none;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .spinner {
+      width: 14px;
+      height: 14px;
+      border: 2px solid #B5D4F4;
+      border-top-color: #378ADD;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    #error-msg {
+      padding: 10px 16px;
+      font-size: 13px;
+      color: #A32D2D;
+      background: #FCEBEB;
+      display: none;
+    }
+
+    #map-container {
+      position: relative;
+      flex: 1;
+    }
+
+    #map { width: 100%; height: 100%; }
+
+    #sidebar {
+      position: absolute;
+      right: 12px;
+      top: 12px;
+      width: 260px;
+      max-height: calc(100% - 24px);
+      overflow-y: auto;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      pointer-events: none;
+    }
+
+    #sidebar::-webkit-scrollbar { width: 4px; }
+    #sidebar::-webkit-scrollbar-thumb { background: #ccc; border-radius: 2px; }
+
+    .melding-card {
+      background: #fff;
+      border: 1px solid #e5e3dc;
+      border-radius: 8px;
+      padding: 10px 12px;
+      pointer-events: all;
+      cursor: pointer;
+      transition: border-color 0.15s;
+    }
+
+    .melding-card:hover { border-color: #aaa; }
+
+    .melding-titel {
+      font-size: 12px;
+      font-weight: 500;
+      color: #1a1a1a;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .brand-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background: #D85A30;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .melding-meta {
+      font-size: 11px;
+      color: #666;
+      line-height: 1.5;
+    }
+
+    .melding-count {
+      font-size: 10px;
+      background: #FAECE7;
+      color: #993C1D;
+      padding: 1px 6px;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 4px;
+    }
+
+    .geen-meldingen {
+      background: #fff;
+      border: 1px solid #e5e3dc;
+      border-radius: 8px;
+      padding: 12px;
+      font-size: 12px;
+      color: #666;
+      text-align: center;
+      pointer-events: all;
+    }
+
+    @media (max-width: 600px) {
+      #sidebar {
+        position: static;
+        width: 100%;
+        max-height: 200px;
+        padding: 8px;
+        background: #f5f4f0;
+      }
+      #map-container { flex: 1; }
+      #app { height: 100dvh; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="app">
+  <div id="header">
+    <span style="font-size:20px;">🔥</span>
+    <h1>P2000 Natuurbranden — Laatste uur</h1>
+    <span id="count-badge">0 meldingen</span>
+    <span id="status">Laden...</span>
+    <button id="refresh-btn" onclick="laadMeldingen()">↺ Vernieuwen</button>
+  </div>
+
+  <div id="loading" style="display:flex;">
+    <div class="spinner"></div>
+    <span>Meldingen ophalen via AI...</span>
+  </div>
+
+  <div id="error-msg"></div>
+
+  <div id="map-container">
+    <div id="map"></div>
+    <div id="sidebar"></div>
+  </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+  /* ── Kaart initialiseren ── */
+  const map = L.map('map').setView([52.3, 5.3], 8);
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://openstreetmap.org">OpenStreetMap</a>',
+    maxZoom: 18
+  }).addTo(map);
+
+  let markers = [];
+
+  /* ── Haversine afstand in km ── */
+  function afstandKm(lat1, lon1, lat2, lon2) {
+    const R = 6371;
+    const dLat = (lat2 - lat1) * Math.PI / 180;
+    const dLon = (lon2 - lon1) * Math.PI / 180;
+    const a = Math.sin(dLat / 2) ** 2
+      + Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180)
+      * Math.sin(dLon / 2) ** 2;
+    return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  }
+
+  /* ── Meldingen binnen 10 km samenvoegen ── */
+  function samenvoegen(meldingen) {
+    const groepen = [];
+    for (const m of meldingen) {
+      let gevonden = false;
+      for (const g of groepen) {
+        if (afstandKm(m.lat, m.lon, g.lat, g.lon) <= 10) {
+          g.count++;
+          g.teksten.push(m.tekst);
+          g.tijden.push(m.tijd);
+          gevonden = true;
+          break;
+        }
+      }
+      if (!gevonden) {
+        groepen.push({
+          lat: m.lat, lon: m.lon,
+          locatie: m.locatie,
+          teksten: [m.tekst],
+          tijden: [m.tijd],
+          count: 1
+        });
+      }
+    }
+    return groepen;
+  }
+
+  /* ── Markers & sidebar tonen ── */
+  function toonOpKaart(groepen) {
+    markers.forEach(m => map.removeLayer(m));
+    markers = [];
+
+    const sidebar = document.getElementById('sidebar');
+    sidebar.innerHTML = '';
+
+    const badge = document.getElementById('count-badge');
+    badge.textContent = groepen.length + ' melding' + (groepen.length !== 1 ? 'en' : '');
+
+    if (groepen.length === 0) {
+      const card = document.createElement('div');
+      card.className = 'geen-meldingen';
+      card.textContent = 'Geen actieve meldingen in het afgelopen uur.';
+      sidebar.appendChild(card);
+      return;
+    }
+
+    groepen.forEach(g => {
+      const kleur = g.count >= 3 ? '#A32D2D' : g.count === 2 ? '#D85A30' : '#E24B4A';
+      const radius = 8 + g.count * 3;
+
+      const circle = L.circleMarker([g.lat, g.lon], {
+        radius,
+        fillColor: kleur,
+        color: '#fff',
+        weight: 2,
+        opacity: 1,
+        fillOpacity: 0.88
+      }).addTo(map);
+
+      circle.bindPopup(`
+        <b style="font-size:13px;">🔥 ${g.locatie}</b><br/>
+        <span style="font-size:11px;color:#666;">${g.count} melding${g.count > 1 ? 'en' : ''}</span><br/>
+        <div style="margin-top:6px;font-size:11px;line-height:1.6;">
+          ${g.teksten.slice(0, 3).map(t => '• ' + t).join('<br/>')}
+        </div>
+        <div style="margin-top:4px;font-size:10px;color:#888;">
+          Tijden: ${g.tijden.slice(0, 3).join(', ')}
+        </div>
+      `);
+
+      markers.push(circle);
+
+      const card = document.createElement('div');
+      card.className = 'melding-card';
+      card.innerHTML = `
+        <div class="melding-titel">
+          <span class="brand-dot"></span>${g.locatie}
+        </div>
+        <div class="melding-meta">
+          ${g.teksten[0]}<br/>${g.tijden[0]}
+        </div>
+        ${g.count > 1 ? `<span class="melding-count">${g.count} meldingen samengevoegd</span>` : ''}
+      `;
+      card.onclick = () => { map.setView([g.lat, g.lon], 12); circle.openPopup(); };
+      sidebar.appendChild(card);
+    });
+
+    const bounds = L.latLngBounds(groepen.map(g => [g.lat, g.lon]));
+    map.fitBounds(bounds.pad(0.3));
+  }
+
+  /* ── Meldingen ophalen via Anthropic API ── */
+  async function laadMeldingen() {
+    document.getElementById('loading').style.display = 'flex';
+    document.getElementById('error-msg').style.display = 'none';
+    document.getElementById('status').textContent = 'Ophalen...';
+
+    const nu = new Date();
+    const tijdStr = nu.toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' });
+    const datumStr = nu.toLocaleDateString('nl-NL');
+
+    try {
+      const response = await fetch("https://api.anthropic.com/v1/messages", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          model: "claude-sonnet-4-20250514",
+          max_tokens: 1000,
+          tools: [{ type: "web_search_20250305", name: "web_search" }],
+          system: `Je bent een hulp die P2000 meldingen van natuurbranden opzoekt.
+Zoek naar recente P2000 meldingen van de afgelopen 60 minuten over: natuurbrand, bermbrand, heidebrand, veenbrand, bosbrand.
+Geef ALLEEN een JSON array terug, geen extra tekst, geen markdown backticks.
+Format: [{"locatie":"plaatsnaam","tekst":"korte omschrijving","tijd":"HH:MM","lat":52.123,"lon":5.456}]
+Gebruik echte Nederlandse coördinaten. Als je geen recente meldingen vindt, geef dan een lege array: []
+Maximaal 15 resultaten. Alleen meldingen van de laatste 60 minuten.`,
+          messages: [{
+            role: "user",
+            content: `Zoek p2000 meldingen van natuurbranden van het afgelopen uur. Huidige tijd: ${tijdStr}. Datum: ${datumStr}. Geef alleen JSON terug.`
+          }]
+        })
+      });
+
+      const data = await response.json();
+      const fullText = data.content.map(i => i.text || "").filter(Boolean).join("\n");
+      const clean = fullText.replace(/```json|```/g, "").trim();
+
+      let meldingen = [];
+      try {
+        const start = clean.indexOf('[');
+        const end = clean.lastIndexOf(']');
+        if (start !== -1 && end !== -1) {
+          meldingen = JSON.parse(clean.slice(start, end + 1));
+        }
+      } catch (e) {
+        meldingen = [];
+      }
+
+      // Valideer Nederlandse coördinaten
+      meldingen = meldingen.filter(m =>
+        m.lat && m.lon &&
+        m.lat > 50.5 && m.lat < 53.7 &&
+        m.lon > 3.3 && m.lon < 7.3
+      );
+
+      const groepen = samenvoegen(meldingen);
+      toonOpKaart(groepen);
+      document.getElementById('status').textContent = `Bijgewerkt om ${tijdStr}`;
+
+    } catch (err) {
+      const errEl = document.getElementById('error-msg');
+      errEl.style.display = 'block';
+      errEl.textContent = 'Fout bij ophalen van meldingen: ' + err.message;
+      document.getElementById('status').textContent = 'Fout';
+    } finally {
+      document.getElementById('loading').style.display = 'none';
+    }
+  }
+
+  // Eerste lading & automatisch vernieuwen elke 5 minuten
+  laadMeldingen();
+  setInterval(laadMeldingen, 5 * 60 * 1000);
+</script>
+</body>
+</html>
