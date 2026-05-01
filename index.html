@@ -92,6 +92,11 @@ function isRecent(isoString) {
   catch(e) { return false; }
 }
 
+function ouderDanVierUur(isoString) {
+  try { return (Date.now() - new Date(isoString).getTime()) > 4 * 60 * 60 * 1000; }
+  catch(e) { return false; }
+}
+
 function afstandKm(lat1, lon1, lat2, lon2) {
   const R = 6371, dLat = (lat2-lat1)*Math.PI/180, dLon = (lon2-lon1)*Math.PI/180;
   const a = Math.sin(dLat/2)**2 + Math.cos(lat1*Math.PI/180)*Math.cos(lat2*Math.PI/180)*Math.sin(dLon/2)**2;
@@ -116,6 +121,7 @@ function samenvoegen(meldingen) {
       lat: m.lat, lon: m.lon,
       locatie: m.plaats, straat: m.straat,
       teksten: [m.tekst], tijden: [m.tijd],
+      pubDate: m.pubDate,
       recent: m.recent, count: 1
     });
   }
@@ -141,17 +147,12 @@ function toonOpKaart(groepen) {
     return;
   }
 
-  // Sorteer: recente eerst, dan op count
-  groepen.sort((a, b) => {
-    if (a.recent !== b.recent) return b.recent - a.recent;
-    return b.count - a.count;
-  });
+  // Sorteer: nieuwste eerst
+  groepen.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
 
   groepen.forEach(g => {
-    const kleur  = g.recent
-      ? (g.count >= 3 ? '#A32D2D' : g.count === 2 ? '#D85A30' : '#E24B4A')
-      : (g.count >= 3 ? '#333' : g.count === 2 ? '#444' : '#666');
-    const radius = 8 + g.count * 3;
+    const kleur = g.recent ? '#E24B4A' : '#666';
+    const radius = 8; // vaste grootte ongeacht aantal meldingen
 
     const circle = L.circleMarker([g.lat, g.lon], {
       radius, fillColor: kleur,
@@ -211,11 +212,10 @@ function toonOpKaart(groepen) {
 
 function formatTijd(isoString) {
   try {
-    // Tijd is al in Nederlandse lokale tijd opgeslagen — toon zonder omzetting
-    const dt = new Date(isoString);
-    const uren = String(dt.getHours()).padStart(2, '0');
-    const min  = String(dt.getMinutes()).padStart(2, '0');
-    return `${uren}:${min}`;
+    return new Date(isoString).toLocaleTimeString('nl-NL', {
+      hour: '2-digit', minute: '2-digit',
+      timeZone: 'Europe/Amsterdam'
+    });
   } catch(e) { return ''; }
 }
 
@@ -231,13 +231,14 @@ async function laadMeldingen() {
     const meldingen = await resp.json();
 
     const geldig = meldingen
-      .filter(m => m.lat && m.lon)
+      .filter(m => m.lat && m.lon && !ouderDanVierUur(m.pubDate))
       .map(m => ({
         lat: m.lat, lon: m.lon,
         plaats: m.plaats || '?',
         straat: m.straat || '',
         tekst: m.title || '',
         tijd: formatTijd(m.pubDate),
+        pubDate: m.pubDate,
         recent: isRecent(m.pubDate),
       }));
 
