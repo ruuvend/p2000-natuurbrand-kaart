@@ -81,21 +81,10 @@ const BRAND_TERMEN = [
 
 const PROXY = 'https://api.rss2json.com/v1/api.json?rss_url=';
 
-// Alle 25 regio-feeds van 112-nu.nl
+// Werkende feeds via rss2json
 const REGIO_FEEDS = [
-  { naam: 'Groningen',               url: 'https://112-nu.nl/regio/groningen/rss' },
-  { naam: 'Friesland',               url: 'https://112-nu.nl/regio/friesland/rss' },
-  { naam: 'Drenthe',                 url: 'https://112-nu.nl/regio/drenthe/rss' },
-  { naam: 'Overijssel',              url: 'https://112-nu.nl/regio/overijssel/rss' },
-  { naam: 'Flevoland',               url: 'https://112-nu.nl/regio/flevoland/rss' },
-  { naam: 'Gelderland',              url: 'https://112-nu.nl/regio/gelderland/rss' },
-  { naam: 'Utrecht',                 url: 'https://112-nu.nl/regio/utrecht/rss' },
-  { naam: 'Noord-Holland',           url: 'https://112-nu.nl/regio/noord-holland/rss' },
-  { naam: 'Zuid-Holland',            url: 'https://112-nu.nl/regio/zuid-holland/rss' },
-  { naam: 'Zeeland',                 url: 'https://112-nu.nl/regio/zeeland/rss' },
-  { naam: 'Noord-Brabant',           url: 'https://112-nu.nl/regio/noord-brabant/rss' },
-  { naam: 'Limburg',                 url: 'https://112-nu.nl/regio/limburg/rss' },
-  { naam: 'Brandweer',               url: 'https://112-nu.nl/brandweer/rss' },
+  { naam: 'Brandweer Nederland', url: 'https://112-nu.nl/brandweer/rss' },
+  { naam: 'Alle meldingen',      url: 'https://112-nu.nl/hulpdiensten/rss' },
 ];
 
 const map = L.map('map').setView([52.3, 5.3], 8);
@@ -215,12 +204,26 @@ async function haalFeed(feed) {
       console.groupEnd();
     }
 
-    return data.items.filter(item => {
+    // Woorden die een vals positief aangeven (geen natuurbrand)
+    const UITSLUITINGEN = [
+      'vrijhouden', 'testmelding', 'proefalarm',
+      'brandmelding woning', 'woning (dak)', 'woning (brand)',
+      'brandmelding wegvervoer', 'wegvervoer',
+      'trioworld', 'liftopsluiting', 'gaslucht', 'stank/hind',
+      'assistentie ambu', 'afhijsen', 'handmelder',
+      'openbaar meldsysteem', 'intrekken alarm',
+      'brandgerucht', 'nacontrole',
+    ];
+
+    const filtered = data.items.filter(item => {
       const tekst = ((item.title || '') + ' ' + (item.description || '')).toLowerCase();
-      const match = BRAND_TERMEN.some(term => tekst.includes(term));
-      if (match) console.log('Match gevonden:', item.title);
-      return match && binnenTwaalf(item.pubDate);
+      const isMatch = BRAND_TERMEN.some(term => tekst.includes(term));
+      const isUitsluiting = UITSLUITINGEN.some(u => tekst.includes(u));
+      const match = isMatch && !isUitsluiting && binnenTwaalf(item.pubDate);
+      if (match) console.log('✅ Match:', item.title, '| desc:', item.description);
+      return match;
     });
+    return filtered;
   } catch(e) { console.error('Feed fout:', feed.naam, e); return []; }
 }
 
