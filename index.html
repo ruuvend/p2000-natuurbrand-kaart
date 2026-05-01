@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>P2000 Natuurbranden — Live Kaart</title>
+  <title>P2000 Natuurbranden — Laatste 12 uur</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -39,14 +39,14 @@
 <div id="app">
   <div id="header">
     <span style="font-size:20px;">🔥</span>
-    <h1>P2000 Natuurbranden — Laatste uur</h1>
+    <h1>P2000 Natuurbranden — Laatste 12 uur</h1>
     <span id="count-badge">0 meldingen</span>
     <span id="status">Laden...</span>
     <button id="refresh-btn" onclick="laadMeldingen()">↺ Vernieuwen</button>
   </div>
   <div id="loading" style="display:flex;">
     <div class="spinner"></div>
-    <span>Meldingen ophalen van 112-nu.nl...</span>
+    <span>Meldingen ophalen van 112-nu.nl (laatste 12 uur)...</span>
   </div>
   <div id="error-msg"></div>
   <div id="map-container">
@@ -98,7 +98,7 @@ function toonOpKaart(groepen) {
   if (groepen.length === 0) {
     const card = document.createElement('div');
     card.className = 'geen-meldingen';
-    card.textContent = 'Geen actieve natuurbrandmeldingen in het afgelopen uur.';
+    card.textContent = 'Geen actieve natuurbrandmeldingen in de afgelopen 12 uur.';
     sidebar.appendChild(card); return;
   }
   groepen.forEach(g => {
@@ -130,7 +130,7 @@ function isNatuurbrand(tekst) {
 }
 
 function binnenEenUur(pubDate) {
-  try { return (Date.now() - new Date(pubDate).getTime()) < 60 * 60 * 1000; } catch(e) { return false; }
+  try { return (Date.now() - new Date(pubDate).getTime()) < 12 * 60 * 60 * 1000; } catch(e) { return false; }
 }
 
 function formatTijd(pubDate) {
