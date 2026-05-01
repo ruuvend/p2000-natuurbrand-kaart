@@ -49,6 +49,12 @@
     <h1>P2000 Natuurbranden</h1>
     <span id="count-badge">0 meldingen</span>
     <span id="status">Laden...</span>
+    <div id="weer" style="display:flex;align-items:center;gap:12px;font-size:12px;color:#555;border-left:1px solid #e5e3dc;padding-left:12px;">
+      <span id="weer-temp" title="Temperatuur">🌡️ --°C</span>
+      <span id="weer-vocht" title="Luchtvochtigheid">💧 --%</span>
+      <span id="weer-wind" title="Windsnelheid">💨 -- km/u</span>
+      <span id="weer-plaats" style="color:#aaa;font-size:10px;"></span>
+    </div>
     <button id="refresh-btn" onclick="vernieuwen()">↺ Vernieuwen</button>
   </div>
   <div id="loading" style="display:flex;">
@@ -252,12 +258,45 @@ async function vernieuwen() {
   btn.disabled = true;
   btn.textContent = '↺ Laden...';
   await laadMeldingen();
+  await laadWeer();
   btn.disabled = false;
   btn.textContent = '↺ Vernieuwen';
 }
 
+// ── Weer ophalen via Open-Meteo (gratis, geen API-key) ────────────────────────
+async function laadWeer() {
+  try {
+    const url = 'https://api.open-meteo.com/v1/forecast' +
+      '?latitude=52.1&longitude=5.18' +
+      '&current=temperature_2m,relative_humidity_2m,wind_speed_10m' +
+      '&wind_speed_unit=kmh&timezone=Europe%2FAmsterdam';
+
+    const resp = await fetch(url);
+    const data = await resp.json();
+    const c = data.current;
+
+    document.getElementById('weer-temp').textContent  = `🌡️ ${Math.round(c.temperature_2m)}°C`;
+    document.getElementById('weer-wind').textContent  = `💨 ${Math.round(c.wind_speed_10m)} km/u`;
+
+    // Luchtvochtigheid: kleur op basis van brandgevaar
+    const vocht = c.relative_humidity_2m;
+    const vochtEl = document.getElementById('weer-vocht');
+    vochtEl.textContent = `💧 ${vocht}%`;
+    vochtEl.style.color  = vocht < 30 ? '#D85A30' : vocht < 50 ? '#E8A020' : '#555';
+    vochtEl.title        = vocht < 30 ? '⚠️ Kritiek laag — hoog brandgevaar!'
+                         : vocht < 50 ? '⚠️ Laag — verhoogd brandgevaar'
+                         : 'Normaal';
+
+    document.getElementById('weer-plaats').textContent = 'KNMI De Bilt';
+  } catch(e) {
+    console.log('Weer ophalen mislukt:', e);
+  }
+}
+
 laadMeldingen();
+laadWeer();
 setInterval(laadMeldingen, 5 * 60 * 1000);
+setInterval(laadWeer, 10 * 60 * 1000);
 </script>
 </body>
 </html>
