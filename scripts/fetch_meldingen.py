@@ -50,7 +50,7 @@ UITSLUITINGEN = [
 
 DATA_FILE    = 'data/meldingen.json'
 GEO_CACHE    = 'data/geocache.json'
-BEWAAR_UREN  = 12
+BEWAAR_DAGEN = 30   # bewaar 30 dagen geschiedenis
 
 # ── Geocodering via Nominatim ─────────────────────────────────────────────────
 
@@ -219,7 +219,7 @@ def sla_op(pad: str, meldingen: list[dict]):
 
 def main():
     nu    = datetime.now(timezone.utc)
-    grens = nu - timedelta(hours=BEWAAR_UREN)
+    grens = nu - timedelta(days=BEWAAR_DAGEN)
 
     bestaande      = laad_bestaande(DATA_FILE)
     geocache       = laad_geocache()
