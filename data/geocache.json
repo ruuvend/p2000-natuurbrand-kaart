@@ -1,0 +1,26 @@
+{
+  "Hogeschoorweg, Venlo": {
+    "lat": 51.3777619,
+    "lon": 6.1703286
+  },
+  "(Uitbr.: hoog) Paasloerweg, Paasloo": {
+    "lat": 52.8130673,
+    "lon": 6.0140375
+  },
+  "(Uitbr.: laag) Spoekweg Arnhemseweg, Beekbergen": {
+    "lat": 52.1592697,
+    "lon": 5.9637625
+  },
+  "(Uitbr.: normaal) Park Zypendaal, Arnhem": {
+    "lat": 52.0056642,
+    "lon": 5.8762345
+  },
+  "Drosteweg, Putten": {
+    "lat": 52.2295288,
+    "lon": 5.6328629
+  },
+  "Stn Rotterdam Lombardijen Spoor 4 (Hh), Rotterdam": {
+    "lat": 51.9244424,
+    "lon": 4.47775
+  }
+}

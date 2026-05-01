@@ -1,1 +1,72 @@
-[]
+[
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Limburg, Incidentkanaal 5 Brandmelding Buiten 233232",
+    "description": "P 1 BLB-05 BR buiten Hogeschoorweg Venlo 233232",
+    "link": "https://112-nu.nl/melding/17286360/venlo/hogeschoorweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-05-01T14:13:52+00:00",
+    "plaats": "Venlo",
+    "straat": "Hogeschoorweg",
+    "lat": 51.3777619,
+    "lon": 6.1703286
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 8 (Pel. Gw Nbb 1) Brandmelding Bos (Uitbr.: Hoog) 041097 041264 039167 041260 038993",
+    "description": "P 1 BON-08 (Pel. GW NBB 1) BR bos (Uitbr.: hoog) Paasloerweg Paasloo 041097 041264 039167 041260 038993",
+    "link": "https://112-nu.nl/melding/17286316/paasloo/paaslorweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-05-01T14:08:18+00:00",
+    "plaats": "Paasloo",
+    "straat": "(Uitbr.: hoog) Paasloerweg",
+    "lat": 52.8130673,
+    "lon": 6.0140375
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 7 Brandmelding Bos (Uitbr.: Hoog) 049094 041092 041093 039142 039143 041940 039141",
+    "description": "P 1 BON-07 BR bos (Uitbr.: hoog) Paasloerweg Paasloo 049094 041092 041093 039142 039143 041940 039141",
+    "link": "https://112-nu.nl/melding/17286313/paasloo/paaslorweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-05-01T14:07:51+00:00",
+    "plaats": "Paasloo",
+    "straat": "(Uitbr.: hoog) Paasloerweg",
+    "lat": 52.8130673,
+    "lon": 6.0140375
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 1 Brandmelding Bos (Uitbr.: Laag) 067146 069801",
+    "description": "P 1 BON-01 BR bos (Uitbr.: laag) Spoekweg Arnhemseweg Beekbergen 067146 069801",
+    "link": "https://112-nu.nl/melding/17286310/beekbergen/arnhemseweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-05-01T14:07:21+00:00",
+    "plaats": "Beekbergen",
+    "straat": "(Uitbr.: laag) Spoekweg Arnhemseweg",
+    "lat": 52.1592697,
+    "lon": 5.9637625
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 3 Brandmelding Bos (Uitbr.: Normaal) Park Zypendaal 079391 073641 073741 075362 073097",
+    "description": "P 1 BON-03 BR bos (Uitbr.: normaal) Park Zypendaal Arnhem 079391 073641 073741 075362 073097",
+    "link": "https://112-nu.nl/melding/17286290/arnhem/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-05-01T14:04:05+00:00",
+    "plaats": "Arnhem",
+    "straat": "(Uitbr.: normaal) Park Zypendaal",
+    "lat": 52.0056642,
+    "lon": 5.8762345
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 4 Brandmelding Berm/Bosschage 071441",
+    "description": "P 1 BON-04 BR berm/bosschage Drosteweg Putten 071441",
+    "link": "https://112-nu.nl/melding/17286217/putten/drosteweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-05-01T13:49:18+00:00",
+    "plaats": "Putten",
+    "straat": "Drosteweg",
+    "lat": 52.2295288,
+    "lon": 5.6328629
+  },
+  {
+    "title": "Met Spoed Meldkamer: Brandweer Regio Rotterdam, Incidentkanaal 6 Brandmelding Berm/Bosschage Stn Lombardijen Spoor 4 (Hh) 179237",
+    "description": "P 2 BRT-06 BR berm/bosschage Stn Rotterdam Lombardijen Spoor 4 (Hh) Rotterdam 179237",
+    "link": "https://112-nu.nl/melding/17286184/rotterdam/brandweer-met-spoed.html",
+    "pubDate": "2026-05-01T13:44:29+00:00",
+    "plaats": "Rotterdam",
+    "straat": "Stn Rotterdam Lombardijen Spoor 4 (Hh)",
+    "lat": 51.9244424,
+    "lon": 4.47775
+  }
+]
