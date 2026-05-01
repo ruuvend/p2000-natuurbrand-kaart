@@ -56,6 +56,10 @@
       <span id="weer-plaats" style="color:#aaa;font-size:10px;"></span>
     </div>
     <button id="refresh-btn" onclick="vernieuwen()">↺ Vernieuwen</button>
+    <div id="update-info" style="font-size:10px;color:#aaa;width:100%;padding-top:2px;">
+      <span id="laatste-update">Laatste update: ophalen...</span> ·
+      <span id="volgende-update">Volgende update: --:--</span>
+    </div>
   </div>
   <div id="loading" style="display:flex;">
     <div class="spinner"></div>
@@ -259,11 +263,44 @@ async function vernieuwen() {
   btn.textContent = '↺ Laden...';
   await laadMeldingen();
   await laadWeer();
+  await laadUpdateInfo();
   btn.disabled = false;
   btn.textContent = '↺ Vernieuwen';
 }
 
-// ── Weer ophalen via Open-Meteo (gratis, geen API-key) ────────────────────────
+// ── Laatste & volgende update ophalen via GitHub API ─────────────────────────
+const GITHUB_OWNER = 'ruuvend';
+const GITHUB_REPO  = 'p2000-natuurbrand-kaart';
+
+async function laadUpdateInfo() {
+  try {
+    const url = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/commits?path=data/meldingen.json&per_page=1`;
+    const resp = await fetch(url, { headers: { 'Accept': 'application/vnd.github+json' } });
+    const data = await resp.json();
+
+    if (data && data[0]) {
+      const commitTijd = new Date(data[0].commit.committer.date);
+      const nu = new Date();
+
+      // Laatste update
+      const diff = Math.round((nu - commitTijd) / 60000); // minuten geleden
+      const tijdStr = commitTijd.toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Amsterdam' });
+      const geleden = diff < 1 ? 'zojuist' : diff === 1 ? '1 min geleden' : `${diff} min geleden`;
+      document.getElementById('laatste-update').textContent = `Laatste update: ${tijdStr} (${geleden})`;
+
+      // Volgende update: workflow draait elke 5 min, dus volgende run is commitTijd + 5 min afgerond
+      const volgende = new Date(commitTijd.getTime() + 5 * 60 * 1000);
+      const volgendeStr = volgende.toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Amsterdam' });
+      const overMinuten = Math.max(0, Math.round((volgende - nu) / 60000));
+      const overStr = overMinuten <= 0 ? 'elk moment' : `over ${overMinuten} min`;
+      document.getElementById('volgende-update').textContent = `Volgende update: ${volgendeStr} (${overStr})`;
+    }
+  } catch(e) {
+    document.getElementById('laatste-update').textContent = 'Laatste update: onbekend';
+  }
+}
+
+
 async function laadWeer() {
   try {
     const url = 'https://api.open-meteo.com/v1/forecast' +
@@ -295,8 +332,10 @@ async function laadWeer() {
 
 laadMeldingen();
 laadWeer();
+laadUpdateInfo();
 setInterval(laadMeldingen, 5 * 60 * 1000);
 setInterval(laadWeer, 10 * 60 * 1000);
+setInterval(laadUpdateInfo, 60 * 1000); // elke minuut de tijden bijwerken
 </script>
 </body>
 </html>
