@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
 """
-Haalt P2000 brandweermeldingen op via RSS en slaat natuurbranden op in data/meldingen.json.
+Haalt P2000 brandweermeldingen op via RSS, geocodeert de locaties,
+en slaat alles op in data/meldingen.json inclusief lat/lon.
 Bewaart de laatste 12 uur aan meldingen.
 """
 
 import json
 import os
+import time
 import urllib.request
+import urllib.parse
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
@@ -38,10 +41,74 @@ UITSLUITINGEN = [
     'brandgerucht', 'nacontrole',
 ]
 
-DATA_FILE = 'data/meldingen.json'
-BEWAAR_UREN = 12
+DATA_FILE    = 'data/meldingen.json'
+GEO_CACHE    = 'data/geocache.json'
+BEWAAR_UREN  = 12
 
-# ── Hulpfuncties ──────────────────────────────────────────────────────────────
+# ── Geocodering via Nominatim ─────────────────────────────────────────────────
+
+def laad_geocache() -> dict:
+    if not os.path.exists(GEO_CACHE):
+        return {}
+    try:
+        with open(GEO_CACHE, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+def sla_geocache_op(cache: dict):
+    os.makedirs(os.path.dirname(GEO_CACHE), exist_ok=True)
+    with open(GEO_CACHE, 'w', encoding='utf-8') as f:
+        json.dump(cache, f, ensure_ascii=False, indent=2)
+
+def geocodeer(plaatsnaam: str) -> dict | None:
+    """Zoek lat/lon op via Nominatim (OpenStreetMap). Geeft None terug bij mislukking."""
+    query = urllib.parse.quote(plaatsnaam + ', Nederland')
+    url = f'https://nominatim.openstreetmap.org/search?q={query}&format=json&limit=1&countrycodes=nl'
+    headers = {
+        'User-Agent': 'p2000-natuurbrand-kaart/1.0',
+        'Accept-Language': 'nl',
+    }
+    try:
+        req = urllib.request.Request(url, headers=headers)
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            resultaten = json.loads(resp.read())
+        if resultaten:
+            return {'lat': float(resultaten[0]['lat']), 'lon': float(resultaten[0]['lon'])}
+    except Exception as e:
+        print(f'  Geocodeer fout voor "{plaatsnaam}": {e}')
+    return None
+
+def extract_plaats(description: str) -> str:
+    """Haal plaatsnaam uit description, bijv:
+    'P 2 BLB-02 BR berm/bosschage N266 Rijksweg Noord 64,0 Nederweert 234131' → 'Nederweert'
+    'P 1 BDH-03 BR berm/bosschage Jean Monnetpad s-Gravenhage 157730' → 's-Gravenhage'
+    """
+    import re
+    schoon = re.sub(r'<[^>]+>', '', description).strip()
+
+    # Verwijder reeksen getallen aan het einde (incidentnummers)
+    schoon = re.sub(r'(\s+\d+)+\s*$', '', schoon).strip()
+    # Verwijder 2-letter provincie-afkorting aan het einde (GE, NB, ZH, etc.)
+    schoon = re.sub(r'\s+[A-Z]{2}$', '', schoon).strip()
+
+    straat_suffixes = ['straat','weg','laan','pad','dijk','kade','plein',
+                       'singel','gracht','dreef','baan','steeg','allee']
+    delen = schoon.split()
+    for i in range(len(delen) - 1, -1, -1):
+        woord = delen[i].lower().rstrip('.,')
+        if not woord or woord[0].isdigit():
+            continue
+        if any(woord.endswith(s) for s in straat_suffixes):
+            continue
+        # Samengestelde plaatsnaam met 's- prefix
+        if i > 0 and delen[i-1] in ["'s-", "'s"]:
+            return delen[i-1] + delen[i]
+        return delen[i]
+
+    return delen[-1] if delen else ''
+
+# ── RSS ophalen ───────────────────────────────────────────────────────────────
 
 def is_natuurbrand(tekst: str) -> bool:
     t = tekst.lower()
@@ -49,9 +116,7 @@ def is_natuurbrand(tekst: str) -> bool:
     heeft_uitsluiting = any(u in t for u in UITSLUITINGEN)
     return heeft_term and not heeft_uitsluiting
 
-
 def parse_rss(url: str) -> list[dict]:
-    """Haalt RSS feed op en geeft lijst van items terug."""
     headers = {'User-Agent': 'p2000-natuurbrand-kaart/1.0'}
     req = urllib.request.Request(url, headers=headers)
     try:
@@ -76,22 +141,15 @@ def parse_rss(url: str) -> list[dict]:
 
         try:
             dt = parsedate_to_datetime(pub)
-            # Zorg voor timezone-aware datetime in UTC
             if dt.tzinfo is None:
                 dt = dt.replace(tzinfo=timezone.utc)
             iso = dt.astimezone(timezone.utc).isoformat()
         except Exception:
             iso = datetime.now(timezone.utc).isoformat()
 
-        items.append({
-            'title': title,
-            'description': desc,
-            'link': link,
-            'pubDate': iso,
-        })
+        items.append({'title': title, 'description': desc, 'link': link, 'pubDate': iso})
 
     return items
-
 
 def laad_bestaande(pad: str) -> list[dict]:
     if not os.path.exists(pad):
@@ -102,57 +160,71 @@ def laad_bestaande(pad: str) -> list[dict]:
     except Exception:
         return []
 
-
 def sla_op(pad: str, meldingen: list[dict]):
     os.makedirs(os.path.dirname(pad), exist_ok=True)
     with open(pad, 'w', encoding='utf-8') as f:
         json.dump(meldingen, f, ensure_ascii=False, indent=2)
 
-
 # ── Hoofdprogramma ────────────────────────────────────────────────────────────
 
 def main():
-    nu = datetime.now(timezone.utc)
+    nu    = datetime.now(timezone.utc)
     grens = nu - timedelta(hours=BEWAAR_UREN)
 
-    # Laad bestaande meldingen
-    bestaande = laad_bestaande(DATA_FILE)
-    print(f'Bestaande meldingen: {len(bestaande)}')
-
-    # Maak een set van bestaande links om duplicaten te voorkomen
+    bestaande      = laad_bestaande(DATA_FILE)
+    geocache       = laad_geocache()
     bestaande_links = {m['link'] for m in bestaande}
 
-    # Haal nieuwe meldingen op uit alle feeds
+    print(f'Bestaande meldingen: {len(bestaande)} | Geocache: {len(geocache)} plaatsen')
+
+    # Haal nieuwe meldingen op
     nieuw = 0
     for url in RSS_URLS:
         items = parse_rss(url)
-        print(f'{url}: {len(items)} items opgehaald')
+        print(f'{url}: {len(items)} items')
         for item in items:
             tekst = item['title'] + ' ' + item['description']
             if item['link'] in bestaande_links:
-                continue  # al bekend
+                continue
             if not is_natuurbrand(tekst):
-                continue  # geen natuurbrand
-            print(f'  ✅ Nieuwe melding: {item["title"][:80]}')
+                continue
+
+            # Geocodeer de locatie
+            plaats = extract_plaats(item['description'])
+            print(f'  ✅ Nieuw: {item["title"][:70]} | Plaats: {plaats}')
+
+            if plaats and plaats not in geocache:
+                coords = geocodeer(plaats)
+                if coords:
+                    geocache[plaats] = coords
+                    print(f'     📍 Geocodeerd: {plaats} → {coords}')
+                else:
+                    print(f'     ⚠️  Geocodering mislukt voor: {plaats}')
+                time.sleep(1)  # Nominatim fair-use: max 1 req/sec
+
+            coords = geocache.get(plaats)
+            item['plaats'] = plaats
+            item['lat']    = coords['lat'] if coords else None
+            item['lon']    = coords['lon'] if coords else None
+
             bestaande.append(item)
             bestaande_links.add(item['link'])
             nieuw += 1
 
-    # Verwijder meldingen ouder dan 12 uur
-    voor_opschonen = len(bestaande)
+    # Opschonen: ouder dan 12 uur verwijderen
+    voor = len(bestaande)
     bestaande = [
         m for m in bestaande
         if datetime.fromisoformat(m['pubDate']) >= grens
     ]
-    opgeschoond = voor_opschonen - len(bestaande)
+    print(f'Nieuw: {nieuw} | Opgeschoond: {voor - len(bestaande)} | Totaal: {len(bestaande)}')
 
-    # Sorteer op tijd (nieuwste eerst)
+    # Sorteer nieuwste eerst
     bestaande.sort(key=lambda m: m['pubDate'], reverse=True)
 
-    print(f'Nieuw: {nieuw} | Opgeschoond: {opgeschoond} | Totaal: {len(bestaande)}')
     sla_op(DATA_FILE, bestaande)
-    print(f'Opgeslagen in {DATA_FILE}')
-
+    sla_geocache_op(geocache)
+    print(f'✅ Klaar — {DATA_FILE} bijgewerkt')
 
 if __name__ == '__main__':
     main()
