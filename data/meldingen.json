@@ -1,5 +1,45 @@
 [
   {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Limburg, Incidentkanaal 3 Brandmelding Bos (Team Digitale Verkenning) (Uitbr.: Hoog) 236183",
+    "description": "P 1 BLB-03 BR bos (Team Digitale Verkenning) (Uitbr.: hoog) Lingsforterweg Arcen 236183",
+    "link": "https://112-nu.nl/melding/17286703/arcen/lingsforterweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-05-01T15:08:58+00:00",
+    "plaats": "Arcen",
+    "straat": "hoog) Lingsforterweg",
+    "lat": 51.476261,
+    "lon": 6.1785077
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 4 Brandmelding Bos (Uitbr.: Zeer Hoog) 069904 069693 069901 061141 061041 061241 061242 069801 069991",
+    "description": "P 1 BON-04 BR bos (Uitbr.: zeer hoog) Plaggenweg Harderwijk 069904 069693 069901 061141 061041 061241 061242 069801 069991",
+    "link": "https://112-nu.nl/melding/17286701/harderwijk/plaggenweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-05-01T15:08:30+00:00",
+    "plaats": "Harderwijk",
+    "straat": "Plaggenweg",
+    "lat": 52.3269246,
+    "lon": 5.6461786
+  },
+  {
+    "title": "Met Grote Spoed BON-13 (Pel. Gw Nbb 1) Brandmelding Bos (Uitbr.: Zeer Hoog) 072097 071662 062162 072762 079266 073182 079269 069291 071741",
+    "description": "P 1 BON-13 (Pel. GW NBB 1) BR bos (Uitbr.: zeer hoog) Nieuw Milligenseweg Kootwijk 072097 071662 062162 072762 079266 073182 079269 069291 071741",
+    "link": "https://112-nu.nl/melding/17286674/kootwijk/nieuw-milligenseweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-05-01T15:04:37+00:00",
+    "plaats": "Kootwijk",
+    "straat": "Nieuw Milligenseweg",
+    "lat": 52.1870905,
+    "lon": 5.7715089
+  },
+  {
+    "title": "Met Grote Spoed BON-12 Brandmelding Bos (Uitbr.: Zeer Hoog) 079291 062541 079042 072141 062843 079295 071097",
+    "description": "P 1 BON-12 BR bos (Uitbr.: zeer hoog) Nieuw Milligenseweg Kootwijk 079291 062541 079042 072141 062843 079295 071097",
+    "link": "https://112-nu.nl/melding/17286669/kootwijk/nieuw-milligenseweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-05-01T15:04:19+00:00",
+    "plaats": "Kootwijk",
+    "straat": "Nieuw Milligenseweg",
+    "lat": 52.1870905,
+    "lon": 5.7715089
+  },
+  {
     "title": "Met Grote Spoed Meldkamer: Brandweer Limburg, Incidentkanaal 3 Brandmelding Bos (Uitbr.: Hoog) 236197 233261 231361 231381 233131 232231",
     "description": "P 1 BLB-03 BR bos (Uitbr.: hoog) Lingsforterweg Arcen 236197 233261 231361 231381 233131 232231",
     "link": "https://112-nu.nl/melding/17286610/arcen/lingsforterweg/brandweer-met-grote-spoed.html",
