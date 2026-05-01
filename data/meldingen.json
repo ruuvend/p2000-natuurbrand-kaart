@@ -1,1 +1,47 @@
-[]
+[
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 4 Brandmelding Berm/Bosschage 071441",
+    "description": "P 1 BON-04 BR berm/bosschage Drosteweg Putten 071441",
+    "link": "https://112-nu.nl/melding/17286217/putten/drosteweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-05-01T13:49:18+00:00",
+    "plaats": "Putten",
+    "lat": 52.2477301,
+    "lon": 5.5782739
+  },
+  {
+    "title": "Met Spoed Meldkamer: Brandweer Regio Rotterdam, Incidentkanaal 6 Brandmelding Berm/Bosschage Stn Lombardijen Spoor 4 (Hh) 179237",
+    "description": "P 2 BRT-06 BR berm/bosschage Stn Rotterdam Lombardijen Spoor 4 (Hh) Rotterdam 179237",
+    "link": "https://112-nu.nl/melding/17286184/rotterdam/brandweer-met-spoed.html",
+    "pubDate": "2026-05-01T13:44:29+00:00",
+    "plaats": "Rotterdam",
+    "lat": 51.9244424,
+    "lon": 4.47775
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Noord-Nederland, Incidentkanaal 2 Brandmelding Berm/Bosschage 012232",
+    "description": "P 1 BNN-02 BR berm/bosschage Noorderholt Siddeburen 012232",
+    "link": "https://112-nu.nl/melding/17286138/siddeburen/noorderholt/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-05-01T13:37:25+00:00",
+    "plaats": "Siddeburen",
+    "lat": 53.2470954,
+    "lon": 6.8644944
+  },
+  {
+    "title": "Met Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 1 Brandmelding Berm/Bosschage 085631",
+    "description": "P 2 BON-01 BR berm/bosschage Marten van Rossemsingel Zaltbommel 085631",
+    "link": "https://112-nu.nl/melding/17286133/zaltbommel/marten-van-rossemsingel/brandweer-met-spoed.html",
+    "pubDate": "2026-05-01T13:36:50+00:00",
+    "plaats": "Zaltbommel",
+    "lat": 51.782164,
+    "lon": 5.1898267
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 1 Brandmelding Bos (Uitbr.: Zeer Hoog) 210093 210091 213861 213061 210035 222841 223541",
+    "description": "P 1 BOB-01 BR bos (Uitbr.: zeer hoog) De Platanen Boekel 210093 210091 213861 213061 210035 222841 223541",
+    "link": "https://112-nu.nl/melding/17286100/boekel/de-platanen/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-05-01T13:28:00+00:00",
+    "plaats": "Boekel",
+    "lat": 51.6059273,
+    "lon": 5.6991123
+  }
+]
