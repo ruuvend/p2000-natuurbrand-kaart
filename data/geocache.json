@@ -70,5 +70,17 @@
   "Steenovenweg Oost West en, Middelbeers": {
     "lat": 51.4752103,
     "lon": 5.3102661
+  },
+  "Engerinksweg, Enschede": {
+    "lat": 52.2020387,
+    "lon": 6.9030543
+  },
+  "Voskuilerweg, Woudenberg": {
+    "lat": 52.0857283,
+    "lon": 5.4578452
+  },
+  "Broekstraat, Boxmeer": {
+    "lat": 51.64735,
+    "lon": 5.9029767
   }
 }
