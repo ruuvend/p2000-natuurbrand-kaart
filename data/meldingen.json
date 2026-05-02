@@ -1,5 +1,45 @@
 [
   {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Midden-Nederland, Incidentkanaal 1 Brandmelding Bos (Uitbr.: Zeer Hoog) 142091 259593 142144 142344 141244 141344 142301",
+    "description": "P 1 BMD-01 BR bos (Uitbr.: zeer hoog) Bosweg Laren NH 142091 259593 142144 142344 141244 141344 142301",
+    "link": "https://112-nu.nl/melding/17289979/lelystad/bosweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-05-02T09:27:43+02:00",
+    "plaats": "Laren",
+    "straat": "Bosweg",
+    "lat": 52.2339973,
+    "lon": 5.2249963
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Midden-Nederland, Incidentkanaal 1 Brandmelding Bos (Uitbr.: Zeer Hoog) Bosweg 142091 259593 142144 142344 141244 141344 142301",
+    "description": "P 1 BMD-01 BR bos (Uitbr.: zeer hoog) Bosweg Laren NH 142091 259593 142144 142344 141244 141344 142301",
+    "link": "https://112-nu.nl/melding/17289978/laren/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-05-02T09:27:43+02:00",
+    "plaats": "Laren",
+    "straat": "Bosweg",
+    "lat": 52.2339973,
+    "lon": 5.2249963
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 5 (Pel. Gw Nbb 1) Brandmelding Bos (Uitbr.: Zeer Hoog) Hoevelaken - 069292 072097 062561 071662 071161",
+    "description": "P 1 BON-05 (Pel. GW NBB 1) BR bos (Uitbr.: zeer hoog) Hoevelaken - Apeldoorn Uddel 069292 072097 062561 071662 071161",
+    "link": "https://112-nu.nl/melding/17289960/apeldoorn/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-05-02T09:23:02+02:00",
+    "plaats": "Uddel",
+    "straat": "Hoevelaken - Apeldoorn",
+    "lat": 52.2593938,
+    "lon": 5.7840992
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 2 Brandmelding Bos (Uitbr.: Zeer Hoog) Hoevelaken - 079291 079295 071097 079191 062541 079042 072141 062843 079189",
+    "description": "P 1 BON-02 BR bos (Uitbr.: zeer hoog) Hoevelaken - Apeldoorn Uddel 079291 079295 071097 079191 062541 079042 072141 062843 079189",
+    "link": "https://112-nu.nl/melding/17289957/apeldoorn/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-05-02T09:22:07+02:00",
+    "plaats": "Uddel",
+    "straat": "Hoevelaken - Apeldoorn",
+    "lat": 52.2593938,
+    "lon": 5.7840992
+  },
+  {
     "title": "Met Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 1 Brandmelding Heide (Uitbr.: Hoog) 225692",
     "description": "P 2 BOB-01 BR heide (Uitbr.: hoog) Geuzendijk Budel 225692",
     "link": "https://112-nu.nl/melding/17289783/budel/geuzendijk/brandweer-met-spoed.html",
