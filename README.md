@@ -21,13 +21,6 @@ Een live interactieve kaart die P2000 meldingen van natuurbranden in Nederland t
 
 - [Leaflet.js](https://leafletjs.com/) — interactieve kaart
 - [OpenStreetMap](https://openstreetmap.org/) — kaartlagen
-- [Anthropic API](https://anthropic.com/) — AI-gestuurde websearch voor P2000 meldingen
+- websearch voor P2000 meldingen
 - Haversine-formule voor afstandsberekening tussen meldingen
 
-## API-sleutel
-
-De Anthropic API wordt rechtstreeks vanuit de browser aangesproken. Voor productiegebruik raden we aan een backend proxy te gebruiken zodat de API-sleutel niet zichtbaar is in de browser.
-
-## Licentie
-
-MIT
