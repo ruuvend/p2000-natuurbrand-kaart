@@ -122,5 +122,13 @@
   "Klaterweg, Nunspeet": {
     "lat": 52.3744332,
     "lon": 5.8452152
+  },
+  "Anna Louwenweg Geerenweg, Eemnes": {
+    "lat": 52.2547415,
+    "lon": 5.286071
+  },
+  "Nulderpad, Zeewolde": {
+    "lat": 52.2902136,
+    "lon": 5.519691
   }
 }
