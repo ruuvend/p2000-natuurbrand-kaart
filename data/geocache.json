@@ -138,5 +138,9 @@
   "Zeeduinweg, Almere": {
     "lat": 52.3415451,
     "lon": 5.1367652
+  },
+  "Erfgooiersstraat, Hilversum": {
+    "lat": 52.2418431,
+    "lon": 5.183923
   }
 }
