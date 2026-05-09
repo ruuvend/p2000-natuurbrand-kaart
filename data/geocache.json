@@ -130,5 +130,13 @@
   "Nulderpad, Zeewolde": {
     "lat": 52.2902136,
     "lon": 5.519691
+  },
+  "Driebergen-Zeist - Maarn, Driebergen-Rijsenburg": {
+    "lat": 52.0522872,
+    "lon": 5.2834752
+  },
+  "Zeeduinweg, Almere": {
+    "lat": 52.3415451,
+    "lon": 5.1367652
   }
 }
