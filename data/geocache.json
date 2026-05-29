@@ -214,5 +214,17 @@
   "Dorresteinseweg, Amersfoort": {
     "lat": 52.1400225,
     "lon": 5.399693
+  },
+  "De Heldense Bossen, Helden": {
+    "lat": 51.3179379,
+    "lon": 6.0191879
+  },
+  "Houterpeelweg, Kessel": {
+    "lat": 51.3070115,
+    "lon": 6.0304642
+  },
+  "hoog) De Heldense Bossen, Helden": {
+    "lat": 51.3203339,
+    "lon": 6.000166
   }
 }
