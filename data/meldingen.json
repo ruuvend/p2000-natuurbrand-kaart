@@ -1,5 +1,15 @@
 [
   {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 1 Brandmelding Bos (Uitbr.: Laag) 072241",
+    "description": "P 1 BON-01 BR bos (Uitbr.: laag) Immenweg Ede 072241",
+    "link": "https://112-nu.nl/melding/17422547/lunteren/immenweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-05-31T22:54:44+02:00",
+    "plaats": "Ede",
+    "straat": "Immenweg",
+    "lat": 52.090352,
+    "lon": 5.7063162
+  },
+  {
     "title": "Met Grote Spoed Meldkamer: Brandweer Limburg, Incidentkanaal 1 (Zeer Groep . Brandmelding) Brandmelding Bos (Uitbr.: Hoog) - Midden 234361 234382",
     "description": "P 1 BLB-01 (Zeer gr. BR) BR bos (Uitbr.: hoog) N277 - Midden Peelweg Kessel 234361 234382",
     "link": "https://112-nu.nl/melding/17422083/kessel/peelweg/brandweer-met-grote-spoed.html",
@@ -958,15 +968,5 @@
     "straat": "Oude Sonsedijk",
     "lat": 51.5107283,
     "lon": 5.4232833
-  },
-  {
-    "title": "Met Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 6 Brandmelding Bos (Uitbr.: Laag) 055241",
-    "description": "P 2 BON-06 BR bos (Uitbr.: laag) Nijverdalsebergweg Nijverdal 055241",
-    "link": "https://112-nu.nl/melding/17288674/nijverdal/nijverdalsebergweg/brandweer-met-spoed.html",
-    "pubDate": "2026-05-01T22:02:42+02:00",
-    "plaats": "Nijverdal",
-    "straat": "Nijverdalsebergweg",
-    "lat": 52.3518975,
-    "lon": 6.4315188
   }
 ]
