@@ -1,5 +1,15 @@
 [
   {
+    "title": "P 5 BDH-467 (Oefening) Br Duin (Uitbr.: Hoog) 155040 155041 164430 164460",
+    "description": "P 5 BDH-467 (Oefening) BR duin (Uitbr.: hoog) De Wassenaarse Slag Wassenaar 155040 155041 164430 164460",
+    "link": "https://112-nu.nl/melding/17431568/wassenaar/de-wassenaarse-slag/brandweer.html",
+    "pubDate": "2026-06-02T20:01:02+02:00",
+    "plaats": "Wassenaar",
+    "straat": "De Wassenaarse Slag",
+    "lat": 52.1545824,
+    "lon": 4.3842795
+  },
+  {
     "title": "Met Grote Spoed SON-4421 (Gecoördineerde Regionale Incidentenbestrijdingsprocedure 3) (Systeemoefening) Brandmelding Bos (Aanhanger) Dauwpop Event Punt 059098 051081",
     "description": "P 1 SON-4421 (GRIP 3) (systeemoefening) BR bos (aanhanger) Dauwpop event Punt Luttenbergerweg Haarle 059098 051081",
     "link": "https://112-nu.nl/melding/17427059/haarle/luttenbergerweg/brandweer-met-grote-spoed.html",
@@ -608,15 +618,5 @@
     "straat": "Broekweg",
     "lat": 51.3980553,
     "lon": 5.440423
-  },
-  {
-    "title": "Met Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 8 Brandmelding Heide Ophalen Tent",
-    "description": "P 2 BOB-08 BR heide Ophalen tent",
-    "link": "https://112-nu.nl/melding/17296404/leende/brandweer-met-spoed.html",
-    "pubDate": "2026-05-03T19:36:12+02:00",
-    "plaats": "tent",
-    "straat": "Ophalen",
-    "lat": 52.0471612,
-    "lon": 4.2778719
   }
 ]
