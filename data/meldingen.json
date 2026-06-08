@@ -568,25 +568,5 @@
     "straat": "Zeeduinweg",
     "lat": 52.3415451,
     "lon": 5.1367652
-  },
-  {
-    "title": "Met Spoed Meldkamer: Brandweer Midden-Nederland, Incidentkanaal 2 Brandmelding Bos (Uitbr.: Normaal) Anna Louwenweg 090344",
-    "description": "P 2 BMD-02 BR bos (Uitbr.: normaal) Anna Louwenweg Geerenweg Eemnes 090344",
-    "link": "https://112-nu.nl/melding/17319232/eemnes/geerenweg/brandweer-met-spoed.html",
-    "pubDate": "2026-05-09T07:39:37+02:00",
-    "plaats": "Eemnes",
-    "straat": "Anna Louwenweg Geerenweg",
-    "lat": 52.2547415,
-    "lon": 5.286071
-  },
-  {
-    "title": "Met Spoed Meldkamer: Brandweer Midden-Nederland, Incidentkanaal 1 Brandmelding Bos (Uitbr.: Normaal) 254532",
-    "description": "P 2 BMD-01 BR bos (Uitbr.: normaal) Nulderpad Zeewolde 254532",
-    "link": "https://112-nu.nl/melding/17319196/zeewolde/nulderpad/brandweer-met-spoed.html",
-    "pubDate": "2026-05-09T07:07:33+02:00",
-    "plaats": "Zeewolde",
-    "straat": "Nulderpad",
-    "lat": 52.2902136,
-    "lon": 5.519691
   }
 ]
