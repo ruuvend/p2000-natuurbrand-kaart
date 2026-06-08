@@ -518,55 +518,5 @@
     "straat": "Noorderhoofdweg",
     "lat": 51.5488601,
     "lon": 3.4587074
-  },
-  {
-    "title": "Met Grote Spoed OD-51 (Pel. Nbb 1) Brandmelding Bos (Uitbr.: Normaal) 259593 142344 142744 258181 099005",
-    "description": "P 1 OD-51 (Pel. NBB 1) BR bos (Uitbr.: normaal) Erfgooiersstraat Hilversum 259593 142344 142744 258181 099005",
-    "link": "https://112-nu.nl/melding/17321115/hilversum/erfgooiersstraat/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-05-09T16:09:28+02:00",
-    "plaats": "Hilversum",
-    "straat": "Erfgooiersstraat",
-    "lat": 52.2418431,
-    "lon": 5.183923
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Midden-Nederland, Incidentkanaal 5 Brandmelding Bos (Uitbr.: Normaal) - - 095169",
-    "description": "P 1 BMD-05 BR bos (Uitbr.: normaal) Driebergen-Zeist - Maarn Driebergen-Rijsenburg 095169",
-    "link": "https://112-nu.nl/melding/17321058/huis-ter-heide/rijsenburg/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-05-09T15:59:00+02:00",
-    "plaats": "Driebergen-Rijsenburg",
-    "straat": "Driebergen-Zeist - Maarn",
-    "lat": 52.0522872,
-    "lon": 5.2834752
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Midden-Nederland, Incidentkanaal 2 Brandmelding Bos (Uitbr.: Normaal) 142144 141244 142091",
-    "description": "P 1 BMD-02 BR bos (Uitbr.: normaal) Erfgooiersstraat Hilversum 142144 141244 142091",
-    "link": "https://112-nu.nl/melding/17321038/hilversum/erfgooiersstraat/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-05-09T15:53:35+02:00",
-    "plaats": "Hilversum",
-    "straat": "Erfgooiersstraat",
-    "lat": 52.2418431,
-    "lon": 5.183923
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Midden-Nederland, Incidentkanaal 5 Brandmelding Bos (Uitbr.: Normaal) - - 098094 095444 096444",
-    "description": "P 1 BMD-05 BR bos (Uitbr.: normaal) Driebergen-Zeist - Maarn Driebergen-Rijsenburg 098094 095444 096444",
-    "link": "https://112-nu.nl/melding/17320919/huis-ter-heide/rijsenburg/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-05-09T15:32:02+02:00",
-    "plaats": "Driebergen-Rijsenburg",
-    "straat": "Driebergen-Zeist - Maarn",
-    "lat": 52.0522872,
-    "lon": 5.2834752
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Midden-Nederland, Incidentkanaal 4 Brandmelding Heide (Uitbr.: Normaal)",
-    "description": "P 1 BMD-04 BR heide (Uitbr.: normaal) Zeeduinweg Almere",
-    "link": "https://112-nu.nl/melding/17320910/almere/zeeduinweg/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-05-09T15:30:52+02:00",
-    "plaats": "Almere",
-    "straat": "Zeeduinweg",
-    "lat": 52.3415451,
-    "lon": 5.1367652
   }
 ]
