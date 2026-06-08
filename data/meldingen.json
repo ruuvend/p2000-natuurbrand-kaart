@@ -1,5 +1,15 @@
 [
   {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 1 Brandmelding Bos (Uitbr.: Normaal) 225195 221041 221941",
+    "description": "P 1 BOB-01 BR bos (Uitbr.: normaal) Oostappensedijk Ommel 225195 221041 221941",
+    "link": "https://112-nu.nl/melding/17459143/ommel/oostappensedijk/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-06-08T23:49:33+02:00",
+    "plaats": "Ommel",
+    "straat": "Oostappensedijk",
+    "lat": 51.4318112,
+    "lon": 5.7523408
+  },
+  {
     "title": "Met Spoed Nwbrrn Wegverkeer Onder Invloed",
     "description": "Prio 2 A12 Li 38,2 NWBRRN Wegverkeer onder invloed",
     "link": "https://112-nu.nl/melding/17454246/bodegraven-reeuwijk/a12/382/brandweer-met-spoed.html",
@@ -498,15 +508,5 @@
     "straat": "",
     "lat": 52.2434979,
     "lon": 5.6343227
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Zeeland/West-Brabant, Incidentkanaal 1 Brandmelding Duin Noorderhoofdweg 194636",
-    "description": "P 1 BZB-01 BR duin Noorderhoofdweg Westkapelle 194636",
-    "link": "https://112-nu.nl/melding/17322848/westkapelle/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-05-10T00:37:01+02:00",
-    "plaats": "Westkapelle",
-    "straat": "Noorderhoofdweg",
-    "lat": 51.5488601,
-    "lon": 3.4587074
   }
 ]
