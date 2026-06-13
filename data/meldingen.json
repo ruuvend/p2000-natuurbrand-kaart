@@ -518,15 +518,5 @@
     "straat": "St. Hubertuspark",
     "lat": 52.1024634,
     "lon": 4.3056954
-  },
-  {
-    "title": "Met Spoed Meldkamer: Brandweer Limburg, Incidentkanaal 1 Brandmelding Bos (Uitbr.: Laag) 221741",
-    "description": "P 2 BLB-01 BR bos (Uitbr.: laag) Geuzendijk Weert 221741",
-    "link": "https://112-nu.nl/melding/17341465/weert/geuzendijk/brandweer-met-spoed.html",
-    "pubDate": "2026-05-14T13:00:52+02:00",
-    "plaats": "Weert",
-    "straat": "Geuzendijk",
-    "lat": 51.2571528,
-    "lon": 5.6562708
   }
 ]
