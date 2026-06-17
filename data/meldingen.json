@@ -498,15 +498,5 @@
     "straat": "Sint-Jansteenstraat",
     "lat": null,
     "lon": null
-  },
-  {
-    "title": "Met Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 2 Brandmelding Bos (Uitbr.: Laag) Oprijlaan 083131 089285",
-    "description": "P 2 BON-02 BR bos (Uitbr.: laag) Oprijlaan Malden 083131 089285",
-    "link": "https://112-nu.nl/melding/17356893/malden/brandweer-met-spoed.html",
-    "pubDate": "2026-05-18T10:27:56+02:00",
-    "plaats": "Malden",
-    "straat": "Oprijlaan",
-    "lat": 51.8015784,
-    "lon": 5.8482292
   }
 ]
