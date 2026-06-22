@@ -478,25 +478,5 @@
     "straat": "Berkendonk",
     "lat": 51.477857,
     "lon": 5.7254084
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Noord-Holland, Incidentkanaal 5 Brandmelding Duin (Uitbr.: Normaal) Tilanuspad 121292 123302 123362 123062 123340 123330 122060 122002 121541 121201",
-    "description": "P 1 BNH-05 BR duin (Uitbr.: normaal) Tilanuspad Zandvoort 121292 123302 123362 123062 123340 123330 122060 122002 121541 121201",
-    "link": "https://112-nu.nl/melding/17380951/zandvoort/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-05-23T14:36:07+02:00",
-    "plaats": "Zandvoort",
-    "straat": "Tilanuspad",
-    "lat": 52.3480675,
-    "lon": 4.5163562
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 2 Brandmelding Bos (Officier Van Dienst - Brandweer) (Uitbr.: Laag) 089091",
-    "description": "P 1 BON-02 BR bos (OVD-B) (Uitbr.: laag) Johannaweg Nijmegen 089091",
-    "link": "https://112-nu.nl/melding/17380117/nijmegen/johannaweg/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-05-23T11:37:41+02:00",
-    "plaats": "Nijmegen",
-    "straat": "laag) Johannaweg",
-    "lat": 51.8474946,
-    "lon": 5.8637771
   }
 ]
