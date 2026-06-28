@@ -278,35 +278,5 @@
     "straat": "Welskerbos De",
     "lat": 51.8857224,
     "lon": 6.494137
-  },
-  {
-    "title": "Met Spoed Meldkamer: Brandweer Limburg, Incidentkanaal 2 Brandmelding Bos (Uitbr.: Hoog) Houterpeelweg 232131",
-    "description": "P 2 BLB-02 BR bos (Uitbr.: hoog) Houterpeelweg Kessel 232131",
-    "link": "https://112-nu.nl/melding/17413771/kessel/brandweer-met-spoed.html",
-    "pubDate": "2026-05-30T01:05:11+02:00",
-    "plaats": "Kessel",
-    "straat": "Houterpeelweg",
-    "lat": 51.3070115,
-    "lon": 6.0304642
-  },
-  {
-    "title": "Met Spoed Meldkamer: Brandweer Limburg, Incidentkanaal 2 Brandmelding Bos (Uitbr.: Hoog) Houterpeelweg 234731",
-    "description": "P 2 BLB-02 BR bos (Uitbr.: hoog) Houterpeelweg Kessel 234731",
-    "link": "https://112-nu.nl/melding/17413770/kessel/brandweer-met-spoed.html",
-    "pubDate": "2026-05-30T01:04:48+02:00",
-    "plaats": "Kessel",
-    "straat": "Houterpeelweg",
-    "lat": 51.3070115,
-    "lon": 6.0304642
-  },
-  {
-    "title": "Met Grote Spoed Brandmelding Bos (Tl-Handcrew) Houterpeelweg",
-    "description": "P 1  BR bos (TL-Handcrew) Houterpeelweg Kessel",
-    "link": "https://112-nu.nl/melding/17413629/kessel/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-05-30T00:14:51+02:00",
-    "plaats": "Kessel",
-    "straat": "Houterpeelweg",
-    "lat": 51.3070115,
-    "lon": 6.0304642
   }
 ]
