@@ -318,55 +318,5 @@
     "straat": "hoog) Houterpeelweg",
     "lat": 51.2912483,
     "lon": 6.05734
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Limburg, Incidentkanaal 2 Brandmelding Bos (Uitbr.: Hoog)",
-    "description": "P 1 BLB-02 BR bos (Uitbr.: hoog) De Heldense Bossen Helden",
-    "link": "https://112-nu.nl/melding/17413172/helden/de-heldense-bossen/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-05-29T21:24:45+02:00",
-    "plaats": "Helden",
-    "straat": "De Heldense Bossen",
-    "lat": 51.3179379,
-    "lon": 6.0191879
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Limburg, Incidentkanaal 6 Brandmelding Bos (Uitbr.: Hoog) Houterpeelweg 234341 234381",
-    "description": "P 1 BLB-06 BR bos (Uitbr.: hoog) Houterpeelweg Kessel 234341 234381",
-    "link": "https://112-nu.nl/melding/17413159/kessel/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-05-29T21:19:02+02:00",
-    "plaats": "Kessel",
-    "straat": "Houterpeelweg",
-    "lat": 51.3070115,
-    "lon": 6.0304642
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Limburg, Incidentkanaal 2 Brandmelding Bos (Team Digitale Verkenning) (Uitbr.: Hoog) 236183",
-    "description": "P 1 BLB-02 BR bos (Team Digitale Verkenning) (Uitbr.: hoog) De Heldense Bossen Helden 236183",
-    "link": "https://112-nu.nl/melding/17413142/helden/de-heldense-bossen/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-05-29T21:14:39+02:00",
-    "plaats": "Helden",
-    "straat": "hoog) De Heldense Bossen",
-    "lat": 51.3203339,
-    "lon": 6.000166
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Limburg, Incidentkanaal 2 Brandmelding Bos (Uitbr.: Hoog) 233288",
-    "description": "P 1 BLB-02 BR bos (Uitbr.: hoog) De Heldense Bossen Helden 233288",
-    "link": "https://112-nu.nl/melding/17413118/helden/de-heldense-bossen/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-05-29T21:07:32+02:00",
-    "plaats": "Helden",
-    "straat": "De Heldense Bossen",
-    "lat": 51.3179379,
-    "lon": 6.0191879
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Limburg, Incidentkanaal 2 Brandmelding Bos (Uitbr.: Hoog) 235191 234361 234382 232361 232381 233232 232831",
-    "description": "P 1 BLB-02 BR bos (Uitbr.: hoog) De Heldense Bossen Helden 235191 234361 234382 232361 232381 233232 232831",
-    "link": "https://112-nu.nl/melding/17413105/helden/de-heldense-bossen/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-05-29T21:04:37+02:00",
-    "plaats": "Helden",
-    "straat": "De Heldense Bossen",
-    "lat": 51.3179379,
-    "lon": 6.0191879
   }
 ]
