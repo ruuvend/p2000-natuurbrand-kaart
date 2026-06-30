@@ -1,5 +1,35 @@
 [
   {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Noord-Holland, Incidentkanaal 2 Brandmelding Bos (Uitbr.: Zeer Hoog) Parkeerplaats 106591 105984 105904 106561 106681 105902 106541 106542 105931 105932 104431 106699 106693 106692",
+    "description": "P 1 BNH-02 BR bos (Uitbr.: zeer hoog) PKP Boodtlaan De Koog 106591 105984 105904 106561 106681 105902 106541 106542 105931 105932 104431 106699 106693 106692",
+    "link": "https://112-nu.nl/melding/17569608/de-koog/boodtlaan/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-06-30T21:00:00+02:00",
+    "plaats": "Koog",
+    "straat": "PKP Boodtlaan De",
+    "lat": 51.8302162,
+    "lon": 4.6474344
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Midden-Nederland, Incidentkanaal 1 Brandmelding Bos (Uitbr.: Normaal) 092244",
+    "description": "P 1 BMD-01 BR bos (Uitbr.: normaal) Fornheselaan Den Dolder 092244",
+    "link": "https://112-nu.nl/melding/17569480/den-dolder/fornheselaan/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-06-30T20:20:20+02:00",
+    "plaats": "Dolder",
+    "straat": "Fornheselaan Den",
+    "lat": 52.1418434,
+    "lon": 5.2497182
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Midden-Nederland, Incidentkanaal 1 Brandmelding Bos (Uitbr.: Normaal) 098494 091044 090744",
+    "description": "P 1 BMD-01 BR bos (Uitbr.: normaal) Fornheselaan Den Dolder 098494 091044 090744",
+    "link": "https://112-nu.nl/melding/17569469/den-dolder/fornheselaan/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-06-30T20:18:58+02:00",
+    "plaats": "Dolder",
+    "straat": "Fornheselaan Den",
+    "lat": 52.1418434,
+    "lon": 5.2497182
+  },
+  {
     "title": "Met Grote Spoed Meldkamer: Brandweer Zeeland/West-Brabant, Incidentkanaal 1 Brandmelding Heide (Uitbr.: Normaal) Tweede Dijk 209331",
     "description": "P 1 BZB-01 BR heide (Uitbr.: normaal) Tweede dijk Goirle 209331",
     "link": "https://112-nu.nl/melding/17563112/goirle/brandweer-met-grote-spoed.html",
@@ -218,65 +248,5 @@
     "straat": "Immenweg",
     "lat": 52.090352,
     "lon": 5.7063162
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Limburg, Incidentkanaal 1 (Zeer Groep . Brandmelding) Brandmelding Bos (Uitbr.: Hoog) - Midden 234361 234382",
-    "description": "P 1 BLB-01 (Zeer gr. BR) BR bos (Uitbr.: hoog) N277 - Midden Peelweg Kessel 234361 234382",
-    "link": "https://112-nu.nl/melding/17422083/kessel/peelweg/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-05-31T20:33:50+02:00",
-    "plaats": "Kessel",
-    "straat": "Midden Peelweg",
-    "lat": 51.2912483,
-    "lon": 6.05734
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Limburg, Incidentkanaal 1 (Zeer Groep . Brandmelding) Brandmelding Bos (Uitbr.: Hoog) - Midden 232831",
-    "description": "P 1 BLB-01 (Zeer gr. BR) BR bos (Uitbr.: hoog) N277 - Midden Peelweg Kessel 232831",
-    "link": "https://112-nu.nl/melding/17422027/kessel/peelweg/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-05-31T20:16:58+02:00",
-    "plaats": "Kessel",
-    "straat": "Midden Peelweg",
-    "lat": 51.2912483,
-    "lon": 6.05734
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Limburg, Incidentkanaal 1 (Zeer Groep . Brandmelding) Brandmelding Bos (Uitbr.: Hoog) - Midden 236195 233232 234831 236121 236122 234391 234381 234690",
-    "description": "P 1 BLB-01 (Zeer gr. BR) BR bos (Uitbr.: hoog) N277 - Midden Peelweg Kessel 236195 233232 234831 236121 236122 234391 234381 234690",
-    "link": "https://112-nu.nl/melding/17422020/kessel/peelweg/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-05-31T20:15:11+02:00",
-    "plaats": "Kessel",
-    "straat": "Midden Peelweg",
-    "lat": 51.2912483,
-    "lon": 6.05734
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Limburg, Incidentkanaal 1 Brandmelding Bos (Team Digitale Verkenning) (Uitbr.: Hoog) - Midden 236183",
-    "description": "P 1 BLB-01 BR bos (Team Digitale Verkenning) (Uitbr.: hoog) N277 - Midden Peelweg Kessel 236183",
-    "link": "https://112-nu.nl/melding/17421937/kessel/peelweg/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-05-31T19:57:03+02:00",
-    "plaats": "Kessel",
-    "straat": "hoog) N277 - Midden Peelweg",
-    "lat": 51.2912483,
-    "lon": 6.05734
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Limburg, Incidentkanaal 1 Brandmelding Bos (Uitbr.: Hoog) - Midden 233291 232661 232682 233261 232631 232731",
-    "description": "P 1 BLB-01 BR bos (Uitbr.: hoog) N277 - Midden Peelweg Kessel 233291 232661 232682 233261 232631 232731",
-    "link": "https://112-nu.nl/melding/17421926/kessel/peelweg/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-05-31T19:54:19+02:00",
-    "plaats": "Kessel",
-    "straat": "Midden Peelweg",
-    "lat": 51.2912483,
-    "lon": 6.05734
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Noord-Nederland, Incidentkanaal 2 Brandmelding Heide Smeerveenweg 038293 038365 039165 038367 038331 039141 030386",
-    "description": "P 1 BNN-02 BR heide Smeerveenweg Beilen 038293 038365 039165 038367 038331 039141 030386",
-    "link": "https://112-nu.nl/melding/17421879/beilen/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-05-31T19:37:39+02:00",
-    "plaats": "Beilen",
-    "straat": "Smeerveenweg",
-    "lat": 52.8610999,
-    "lon": 6.5124319
   }
 ]

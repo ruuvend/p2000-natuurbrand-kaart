@@ -306,5 +306,13 @@
   "Tapuitenpad Den, Helder": {
     "lat": 52.9312751,
     "lon": 4.7215457
+  },
+  "PKP Boodtlaan De, Koog": {
+    "lat": 51.8302162,
+    "lon": 4.6474344
+  },
+  "Fornheselaan Den, Dolder": {
+    "lat": 52.1418434,
+    "lon": 5.2497182
   }
 }
