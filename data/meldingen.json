@@ -278,25 +278,5 @@
     "straat": "Smeerveenweg",
     "lat": 52.8610999,
     "lon": 6.5124319
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 1 Brandmelding Bos (Uitbr.: Laag) 066131",
-    "description": "P 1 BON-01 BR bos (Uitbr.: laag) Welskerbos De Heurne 066131",
-    "link": "https://112-nu.nl/melding/17420511/de-heurne/welskerbos/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-05-31T13:48:09+02:00",
-    "plaats": "Heurne",
-    "straat": "Welskerbos De",
-    "lat": 51.8857224,
-    "lon": 6.494137
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 1 Brandmelding Bos (Uitbr.: Laag) 495832 066041 069801",
-    "description": "P 1 BON-01 BR bos (Uitbr.: laag) Welskerbos De Heurne 495832 066041 069801",
-    "link": "https://112-nu.nl/melding/17420491/de-heurne/welskerbos/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-05-31T13:42:07+02:00",
-    "plaats": "Heurne",
-    "straat": "Welskerbos De",
-    "lat": 51.8857224,
-    "lon": 6.494137
   }
 ]
