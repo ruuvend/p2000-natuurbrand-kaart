@@ -330,5 +330,17 @@
   "Fazantlaan, Maarheeze": {
     "lat": 51.3062917,
     "lon": 5.6383464
+  },
+  "Voetbalvereniging Katwijk De Krom, Katwijk": {
+    "lat": 52.2100886,
+    "lon": 4.4312906
+  },
+  "Marathonpad, Katwijk": {
+    "lat": 52.2122023,
+    "lon": 4.428686
+  },
+  "Peelvenweg, Oploo": {
+    "lat": 51.6004804,
+    "lon": 5.8290665
   }
 }
