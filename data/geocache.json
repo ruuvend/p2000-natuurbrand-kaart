@@ -350,5 +350,9 @@
   "Postelseweg, Eersel": {
     "lat": 51.348563,
     "lon": 5.3028886
+  },
+  "RIJKSWEG-OOST, Laren": {
+    "lat": 52.2461943,
+    "lon": 5.216453
   }
 }
