@@ -328,25 +328,5 @@
     "straat": "Wegverkeer verkeersstremming stremming:",
     "lat": null,
     "lon": null
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Regio Rotterdam, Incidentkanaal 3 Brandmelding Bos (Uitbr.: Laag) 179099",
-    "description": "P 1 BRT-03 BR bos (Uitbr.: laag) Rondgang De Cordesstraat Hoek van Holland 179099",
-    "link": "https://112-nu.nl/melding/17460889/hoek-van-holland/de-cordesstraat/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-06-09T11:56:22+02:00",
-    "plaats": "Holland",
-    "straat": "Rondgang De Cordesstraat Hoek van",
-    "lat": 52.2434979,
-    "lon": 5.6343227
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Regio Rotterdam, Incidentkanaal 3 Brandmelding Bos 170131",
-    "description": "P 1 BRT-03 BR bos Rondgang De Cordesstraat Hoek van Holland 170131",
-    "link": "https://112-nu.nl/melding/17460874/hoek-van-holland/de-cordesstraat/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-06-09T11:52:41+02:00",
-    "plaats": "Holland",
-    "straat": "Rondgang De Cordesstraat Hoek van",
-    "lat": 52.2434979,
-    "lon": 5.6343227
   }
 ]
