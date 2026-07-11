@@ -1,5 +1,25 @@
 [
   {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 1 Brandmelding Bos (Uitbr.: Hoog) 225163 225282",
+    "description": "P 1 BOB-01 BR bos (Uitbr.: hoog) Grotelseheide Bakel 225163 225282",
+    "link": "https://112-nu.nl/melding/17619695/bakel/grotelseheide/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-07-11T15:55:56+02:00",
+    "plaats": "Bakel",
+    "straat": "Grotelseheide",
+    "lat": 51.5080332,
+    "lon": 5.6921682
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 1 Brandmelding Bos (Uitbr.: Hoog) 225195 225196 225162 225181 222741 223541 223441",
+    "description": "P 1 BOB-01 BR bos (Uitbr.: hoog) Grotelseheide Bakel 225195 225196 225162 225181 222741 223541 223441",
+    "link": "https://112-nu.nl/melding/17619608/bakel/grotelseheide/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-07-11T15:37:15+02:00",
+    "plaats": "Bakel",
+    "straat": "Grotelseheide",
+    "lat": 51.5080332,
+    "lon": 5.6921682
+  },
+  {
     "title": "Met Grote Spoed Meldkamer: Brandweer Regio Rotterdam, Incidentkanaal 1 Brandmelding Duin (Uitbr.: Hoog) Zh 179021 179091 179094 179981 179099 173931 174131 174231 172531 179197 173941 172340 172341 174561",
     "description": "P 1 BRT-01 BR duin (Uitbr.: hoog) Jonkerstee Ouddorp ZH 179021 179091 179094 179981 179099 173931 174131 174231 172531 179197 173941 172340 172341 174561",
     "link": "https://112-nu.nl/melding/17619231/ouddorp/jonkerstee/brandweer-met-grote-spoed.html",
