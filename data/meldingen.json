@@ -1,5 +1,25 @@
 [
   {
+    "title": "Met Grote Spoed BON-13 (Middel Brandmelding) Brandmelding Heide (Uitbr.: Normaal)",
+    "description": "P 1 BON-13 (Middel BR) BR heide (Uitbr.: normaal) 't Frusselt Vierhouten",
+    "link": "https://112-nu.nl/melding/17629561/vierhouten/t-frusselt/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-07-13T17:40:54+02:00",
+    "plaats": "Vierhouten",
+    "straat": "'t Frusselt",
+    "lat": 52.3302927,
+    "lon": 5.8219434
+  },
+  {
+    "title": "Met Grote Spoed BON-13 Brandmelding Heide (Uitbr.: Normaal) 069904 061661 061741 061641 069801 069991",
+    "description": "P 1 BON-13 BR heide (Uitbr.: normaal) 't Frusselt Vierhouten 069904 061661 061741 061641 069801 069991",
+    "link": "https://112-nu.nl/melding/17629516/vierhouten/t-frusselt/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-07-13T17:30:35+02:00",
+    "plaats": "Vierhouten",
+    "straat": "'t Frusselt",
+    "lat": 52.3302927,
+    "lon": 5.8219434
+  },
+  {
     "title": "Met Spoed BON-12 Brandmelding Bos (Uitbr.: Laag) 085131",
     "description": "P 2 BON-12 BR bos (Uitbr.: laag) Molenkampsweg Brakel 085131",
     "link": "https://112-nu.nl/melding/17628770/brakel/molenkampsweg/brandweer-met-spoed.html",
@@ -468,15 +488,5 @@
     "straat": "Vredepeelweg",
     "lat": 51.5627848,
     "lon": 5.9022716
-  },
-  {
-    "title": "Met Spoed 38.6 Nwbrrn",
-    "description": "Prio 2 38.6 A12 Li NWBRRN :",
-    "link": "https://112-nu.nl/melding/17479433/brandweer-met-spoed.html",
-    "pubDate": "2026-06-13T16:05:44+02:00",
-    "plaats": ":",
-    "straat": "",
-    "lat": 52.2434979,
-    "lon": 5.6343227
   }
 ]
