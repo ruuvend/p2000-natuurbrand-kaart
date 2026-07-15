@@ -426,5 +426,13 @@
   "Lage Kant, Breda": {
     "lat": 51.5879577,
     "lon": 4.8091159
+  },
+  "Kempenweg, Someren": {
+    "lat": 51.3880521,
+    "lon": 5.6663371
+  },
+  "Bussersdijk, Lierop": {
+    "lat": 51.4001596,
+    "lon": 5.6681595
   }
 }
