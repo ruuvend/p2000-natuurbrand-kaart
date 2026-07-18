@@ -1,5 +1,15 @@
 [
   {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 3 Brandmelding Bos (Uitbr.: Hoog) 225192 225194 225164 225084 222332 224741 222541",
+    "description": "P 1 BOB-03 BR bos (Uitbr.: hoog) Rendierveld Eindhoven 225192 225194 225164 225084 222332 224741 222541",
+    "link": "https://112-nu.nl/melding/17652006/eindhoven/rendierveld/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-07-18T16:18:48+02:00",
+    "plaats": "Eindhoven",
+    "straat": "Rendierveld",
+    "lat": 51.4136243,
+    "lon": 5.5040148
+  },
+  {
     "title": "Met Spoed Nwbrrn Wegverkeer Afgevallen Lading",
     "description": "Prio 2 A12 Li 38,1 NWBRRN Wegverkeer afgevallen lading",
     "link": "https://112-nu.nl/melding/17651665/bodegraven-reeuwijk/a12/381/brandweer-met-spoed.html",
@@ -668,15 +678,5 @@
     "straat": "GP286",
     "lat": 51.3955742,
     "lon": 4.3266976
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 1 Brandmelding Bos (Uitbr.: Normaal) 222941",
-    "description": "P 1 BOB-01 BR bos (Uitbr.: normaal) Vredepeelweg Overloon 222941",
-    "link": "https://112-nu.nl/melding/17502165/overloon/vredepeelweg/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-06-18T16:13:40+02:00",
-    "plaats": "Overloon",
-    "straat": "Vredepeelweg",
-    "lat": 51.5627848,
-    "lon": 5.9022716
   }
 ]

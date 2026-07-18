@@ -454,5 +454,9 @@
   "Blauwhoefseweg, Kruiningen": {
     "lat": 51.438718,
     "lon": 4.0416542
+  },
+  "Rendierveld, Eindhoven": {
+    "lat": 51.4136243,
+    "lon": 5.5040148
   }
 }
