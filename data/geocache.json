@@ -470,5 +470,9 @@
   "Oud Huizerweg, Naarden": {
     "lat": 52.3010718,
     "lon": 5.2222143
+  },
+  "Dauwbraampad, IJmuiden": {
+    "lat": 52.4521167,
+    "lon": 4.5740178
   }
 }
