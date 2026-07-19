@@ -1,5 +1,15 @@
 [
   {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 4 Brandmelding Heide (Uitbr.: Normaal) Eerderveldsweg 049094 041195 042260 053431 042241 055341",
+    "description": "P 1 BON-04 BR heide (Uitbr.: normaal) Eerderveldsweg Ommen 049094 041195 042260 053431 042241 055341",
+    "link": "https://112-nu.nl/melding/17655350/ommen/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-07-19T13:40:07+02:00",
+    "plaats": "Ommen",
+    "straat": "Eerderveldsweg",
+    "lat": 52.5079315,
+    "lon": 6.4615045
+  },
+  {
     "title": "Met Grote Spoed Meldkamer: Brandweer Limburg, Incidentkanaal 2 Brandmelding Bos (Uitbr.: Hoog) 234491 234361 234382 234432",
     "description": "P 1 BLB-02 BR bos (Uitbr.: hoog) Schoordijk Weert 234491 234361 234382 234432",
     "link": "https://112-nu.nl/melding/17654994/weert/schoordijk/brandweer-met-grote-spoed.html",
@@ -668,15 +678,5 @@
     "straat": "Dijk Achter het Flaauwe Werk",
     "lat": 51.8093104,
     "lon": 3.9359204
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Zeeland/West-Brabant, Incidentkanaal 3 Brandmelding Bos 201531",
-    "description": "P 1 BZB-03 BR bos Buitenlust Halsteren 201531",
-    "link": "https://112-nu.nl/melding/17506535/halsteren/buitenlust/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-06-19T13:43:07+02:00",
-    "plaats": "Halsteren",
-    "straat": "Buitenlust",
-    "lat": 51.5136427,
-    "lon": 4.3049433
   }
 ]
