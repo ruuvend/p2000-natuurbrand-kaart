@@ -490,5 +490,9 @@
   "Asdonkseweg, Aarle-Rixtel": {
     "lat": 51.5120822,
     "lon": 5.6727614
+  },
+  "Elshofweg, Nijmegen": {
+    "lat": 51.8060653,
+    "lon": 5.8412239
   }
 }

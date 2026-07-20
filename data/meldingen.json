@@ -1,5 +1,35 @@
 [
   {
+    "title": "Met Grote Spoed Nwbrrn Wegverkeer Verkeersstremming",
+    "description": "Prio 1 A12 Li 38,1 NWBRRN Wegverkeer verkeersstremming",
+    "link": "https://112-nu.nl/melding/17661596/bodegraven-reeuwijk/a12/381/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-07-20T23:41:24+02:00",
+    "plaats": "verkeersstremming",
+    "straat": "Wegverkeer",
+    "lat": null,
+    "lon": null
+  },
+  {
+    "title": "Geen Spoed Nwbrrn Wegverkeer Verkeersstremming (Soort Stremming: Pechgeval)",
+    "description": "Prio 3 A12 Re 37,8 NWBRRN Wegverkeer verkeersstremming (soort stremming: pechgeval)",
+    "link": "https://112-nu.nl/melding/17661593/bodegraven-reeuwijk/a12/378/brandweer-geen-spoed.html",
+    "pubDate": "2026-07-20T23:39:43+02:00",
+    "plaats": "pechgeval)",
+    "straat": "Wegverkeer verkeersstremming stremming:",
+    "lat": null,
+    "lon": null
+  },
+  {
+    "title": "Met Grote Spoed BON-11 Brandmelding Bos (Uitbr.: Laag) 082331 089285",
+    "description": "P 1 BON-11 BR bos (Uitbr.: laag) Elshofweg Nijmegen 082331 089285",
+    "link": "https://112-nu.nl/melding/17661551/nijmegen/elshofweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-07-20T23:23:54+02:00",
+    "plaats": "Nijmegen",
+    "straat": "Elshofweg",
+    "lat": 51.8060653,
+    "lon": 5.8412239
+  },
+  {
     "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 2 Brandmelding Bos (Uitbr.: Normaal) Oprijlaan 089091 081161 083131 083231 089285",
     "description": "P 1 BON-02 BR bos (Uitbr.: normaal) Oprijlaan Malden 089091 081161 083131 083231 089285",
     "link": "https://112-nu.nl/melding/17660405/malden/brandweer-met-grote-spoed.html",
