@@ -486,5 +486,9 @@
   "Zeddamseweg, 's-Heerenberg": {
     "lat": 51.876729,
     "lon": 6.2462802
+  },
+  "Asdonkseweg, Aarle-Rixtel": {
+    "lat": 51.5120822,
+    "lon": 5.6727614
   }
 }
