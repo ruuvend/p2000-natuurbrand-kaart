@@ -1,5 +1,45 @@
 [
   {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Zeeland/West-Brabant, Incidentkanaal 2 Brandmelding Bos (Uitbr.: Hoog) 203301",
+    "description": "P 1 BZB-02 BR bos (Uitbr.: hoog) Baden Powellweg Loon op Zand 203301",
+    "link": "https://112-nu.nl/melding/17664425/loon-op-zand/baden-powellweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-07-21T16:02:02+02:00",
+    "plaats": "Zand",
+    "straat": "Baden Powellweg Loon op",
+    "lat": 51.6299036,
+    "lon": 5.0951642
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Zeeland/West-Brabant, Incidentkanaal 2 Brandmelding Bos (Uitbr.: Hoog) 209203",
+    "description": "P 1 BZB-02 BR bos (Uitbr.: hoog) Baden Powellweg Loon op Zand 209203",
+    "link": "https://112-nu.nl/melding/17664423/loon-op-zand/baden-powellweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-07-21T16:01:46+02:00",
+    "plaats": "Zand",
+    "straat": "Baden Powellweg Loon op",
+    "lat": 51.6299036,
+    "lon": 5.0951642
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Zeeland/West-Brabant, Incidentkanaal 2 Brandmelding Bos (Uitbr.: Hoog) 209461",
+    "description": "P 1 BZB-02 BR bos (Uitbr.: hoog) Baden Powellweg Loon op Zand 209461",
+    "link": "https://112-nu.nl/melding/17664420/loon-op-zand/baden-powellweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-07-21T16:01:28+02:00",
+    "plaats": "Zand",
+    "straat": "Baden Powellweg Loon op",
+    "lat": 51.6299036,
+    "lon": 5.0951642
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Zeeland/West-Brabant, Incidentkanaal 2 Brandmelding Duin (Uitbr.: Hoog) 207201",
+    "description": "P 1 BZB-02 BR duin (Uitbr.: hoog) Baden Powellweg Loon op Zand 207201",
+    "link": "https://112-nu.nl/melding/17664397/loon-op-zand/baden-powellweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-07-21T15:57:28+02:00",
+    "plaats": "Zand",
+    "straat": "Baden Powellweg Loon op",
+    "lat": 51.6299036,
+    "lon": 5.0951642
+  },
+  {
     "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 3 Brandmelding Bos (Uitbr.: Normaal) 210631",
     "description": "P 1 BOB-03 BR bos (Uitbr.: normaal) Graafseweg Boxmeer 210631",
     "link": "https://112-nu.nl/melding/17663678/boxmeer/graafseweg/brandweer-met-grote-spoed.html",
