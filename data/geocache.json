@@ -494,5 +494,9 @@
   "Elshofweg, Nijmegen": {
     "lat": 51.8060653,
     "lon": 5.8412239
+  },
+  "Scheidijk, Helmond": {
+    "lat": 51.4810901,
+    "lon": 5.691307
   }
 }
