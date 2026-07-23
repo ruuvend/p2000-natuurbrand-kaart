@@ -1,5 +1,15 @@
 [
   {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Zeeland/West-Brabant, Incidentkanaal 2 Brandmelding Duin 194636",
+    "description": "P 1 BZB-02 BR duin Zeedijk Westkapelle 194636",
+    "link": "https://112-nu.nl/melding/17673984/westkapelle/zeedijk/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-07-23T22:40:27+02:00",
+    "plaats": "Westkapelle",
+    "straat": "Zeedijk",
+    "lat": 51.5285571,
+    "lon": 3.4351786
+  },
+  {
     "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 1 Brandmelding Bos (Uitbr.: Normaal) Scheidijk 225195 223231 223241",
     "description": "P 1 BOB-01 BR bos (Uitbr.: normaal) Scheidijk Helmond 225195 223231 223241",
     "link": "https://112-nu.nl/melding/17666704/helmond/brandweer-met-grote-spoed.html",
@@ -938,15 +948,5 @@
     "straat": "ZLD Segeerssingel",
     "lat": 51.4996784,
     "lon": 3.6137371
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 3 Brandmelding Bos (Uitbr.: Normaal) 225197 222332 224741",
-    "description": "P 1 BOB-03 BR bos (Uitbr.: normaal) Heihoefpad Eindhoven 225197 222332 224741",
-    "link": "https://112-nu.nl/melding/17529843/eindhoven/heihoefpad/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-06-23T22:24:59+02:00",
-    "plaats": "Eindhoven",
-    "straat": "Heihoefpad",
-    "lat": 51.4064723,
-    "lon": 5.4921742
   }
 ]
