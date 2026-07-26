@@ -534,5 +534,9 @@
   "Annendaalderweg Maria, Hoop": {
     "lat": 51.0846527,
     "lon": 5.9317291
+  },
+  "Tilburgseweg, Breda": {
+    "lat": 51.5930425,
+    "lon": 4.8270616
   }
 }
