@@ -988,25 +988,5 @@
     "straat": "Wegverkeer verkeersstremming stremming:",
     "lat": null,
     "lon": null
-  },
-  {
-    "title": "Geen Spoed Nwbrrn Wegverkeer Verkeersstremming (Soort Stremming: Pechgeval)",
-    "description": "Prio 3 A12 Re 38,4 NWBRRN Wegverkeer verkeersstremming (soort stremming: pechgeval)",
-    "link": "https://112-nu.nl/melding/17546798/bodegraven-reeuwijk/a12/384/brandweer-geen-spoed.html",
-    "pubDate": "2026-06-26T22:38:31+02:00",
-    "plaats": "pechgeval)",
-    "straat": "Wegverkeer verkeersstremming stremming:",
-    "lat": null,
-    "lon": null
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Noord-Holland, Incidentkanaal 3 Brandmelding Duin (Uitbr.: Zeer Hoog) Tapuitenpad 106592 104481 105681 106562 106682 106581 106542 106543 104431 105031 105039 106699 104489 104402 106693 106692",
-    "description": "P 1 BNH-03 BR duin (Uitbr.: zeer hoog) Tapuitenpad Den Helder 106592 104481 105681 106562 106682 106581 106542 106543 104431 105031 105039 106699 104489 104402 106693 106692",
-    "link": "https://112-nu.nl/melding/17546797/den-helder/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-06-26T22:38:23+02:00",
-    "plaats": "Helder",
-    "straat": "Tapuitenpad Den",
-    "lat": 52.9312751,
-    "lon": 4.7215457
   }
 ]
