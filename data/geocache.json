@@ -538,5 +538,9 @@
   "Tilburgseweg, Breda": {
     "lat": 51.5930425,
     "lon": 4.8270616
+  },
+  "Staverdenseweg, Elspeet": {
+    "lat": 52.2892799,
+    "lon": 5.7597216
   }
 }
