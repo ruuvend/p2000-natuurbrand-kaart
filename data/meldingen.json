@@ -1,5 +1,35 @@
 [
   {
+    "title": "Met Grote Spoed BON-15 (Pel. Gw Nbb 1) Brandmelding Bos (Uitbr.: Hoog) 073096 072762 071662 079266 073182 079269 073141",
+    "description": "P 1 BON-15 (Pel. GW NBB 1) BR bos (Uitbr.: hoog) Houtkampweg Otterlo 073096 072762 071662 079266 073182 079269 073141",
+    "link": "https://112-nu.nl/melding/17699349/otterlo/houtkampweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-07-29T22:12:54+02:00",
+    "plaats": "Otterlo",
+    "straat": "Houtkampweg",
+    "lat": 52.1027102,
+    "lon": 5.7815181
+  },
+  {
+    "title": "Met Grote Spoed BON-10 Brandmelding Bos (Uitbr.: Hoog) 079291 079295 072096 072341 072141 063041 072241",
+    "description": "P 1 BON-10 BR bos (Uitbr.: hoog) Houtkampweg Otterlo 079291 079295 072096 072341 072141 063041 072241",
+    "link": "https://112-nu.nl/melding/17699347/otterlo/houtkampweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-07-29T22:12:39+02:00",
+    "plaats": "Otterlo",
+    "straat": "Houtkampweg",
+    "lat": 52.1027102,
+    "lon": 5.7815181
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 2 Brandmelding Bos (Uitbr.: Normaal) Het Broek 222641",
+    "description": "P 1 BOB-02 BR bos (Uitbr.: normaal) Het Broek Lierop 222641",
+    "link": "https://112-nu.nl/melding/17699220/lierop/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-07-29T21:29:24+02:00",
+    "plaats": "Lierop",
+    "straat": "Het Broek",
+    "lat": 51.4226195,
+    "lon": 5.6417155
+  },
+  {
     "title": "Met Grote Spoed Meldkamer: Brandweer Limburg, Incidentkanaal 1 Brandmelding Heide (Uitbr.: Hoog) Snelweg Links 231491 231361 231381 231261 231281 231331 231231",
     "description": "P 1 BLB-01 BR heide (Uitbr.: hoog) Ontginningsweg Bergen L 231491 231361 231381 231261 231281 231331 231231",
     "link": "https://112-nu.nl/melding/17699111/bergen/ontginningsweg/brandweer-met-grote-spoed.html",

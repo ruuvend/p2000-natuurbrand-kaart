@@ -558,5 +558,13 @@
   "Ontginningsweg Bergen, L": {
     "lat": 51.6025815,
     "lon": 6.0666947
+  },
+  "Houtkampweg, Otterlo": {
+    "lat": 52.1027102,
+    "lon": 5.7815181
+  },
+  "Het Broek, Lierop": {
+    "lat": 51.4226195,
+    "lon": 5.6417155
   }
 }
