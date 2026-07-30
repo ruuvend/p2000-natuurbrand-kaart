@@ -1108,35 +1108,5 @@
     "straat": "Mierlose Dijk",
     "lat": 51.3832098,
     "lon": 5.5715902
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Noord-Holland, Incidentkanaal 2 Brandmelding Bos (Uitbr.: Zeer Hoog) Parkeerplaats 106591 105984 105904 106561 106681 105902 106541 106542 105931 105932 104431 106699 106693 106692",
-    "description": "P 1 BNH-02 BR bos (Uitbr.: zeer hoog) PKP Boodtlaan De Koog 106591 105984 105904 106561 106681 105902 106541 106542 105931 105932 104431 106699 106693 106692",
-    "link": "https://112-nu.nl/melding/17569608/de-koog/boodtlaan/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-06-30T21:00:00+02:00",
-    "plaats": "Koog",
-    "straat": "PKP Boodtlaan De",
-    "lat": 51.8302162,
-    "lon": 4.6474344
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Midden-Nederland, Incidentkanaal 1 Brandmelding Bos (Uitbr.: Normaal) 092244",
-    "description": "P 1 BMD-01 BR bos (Uitbr.: normaal) Fornheselaan Den Dolder 092244",
-    "link": "https://112-nu.nl/melding/17569480/den-dolder/fornheselaan/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-06-30T20:20:20+02:00",
-    "plaats": "Dolder",
-    "straat": "Fornheselaan Den",
-    "lat": 52.1418434,
-    "lon": 5.2497182
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Midden-Nederland, Incidentkanaal 1 Brandmelding Bos (Uitbr.: Normaal) 098494 091044 090744",
-    "description": "P 1 BMD-01 BR bos (Uitbr.: normaal) Fornheselaan Den Dolder 098494 091044 090744",
-    "link": "https://112-nu.nl/melding/17569469/den-dolder/fornheselaan/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-06-30T20:18:58+02:00",
-    "plaats": "Dolder",
-    "straat": "Fornheselaan Den",
-    "lat": 52.1418434,
-    "lon": 5.2497182
   }
 ]
