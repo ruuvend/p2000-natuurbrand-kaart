@@ -590,5 +590,17 @@
   "Maasheseweg, Venray": {
     "lat": 51.5372365,
     "lon": 5.9845187
+  },
+  "Schadijkerpeelweg, Meterik": {
+    "lat": 51.4711711,
+    "lon": 5.9899734
+  },
+  "hoog) Oosterduinpad, Ouddorp": {
+    "lat": 51.8093104,
+    "lon": 3.9359204
+  },
+  "Oosterduinpad, Ouddorp": {
+    "lat": 51.8286324,
+    "lon": 3.931411
   }
 }
