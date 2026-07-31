@@ -578,5 +578,17 @@
   "Arnhemsebovenweg, Driebergen-Rijsenburg": {
     "lat": 52.0655027,
     "lon": 5.2725695
+  },
+  "hoog) Maasheseweg, Venray": {
+    "lat": 51.5082754,
+    "lon": 5.9589011
+  },
+  "Maldensebaan, Groesbeek": {
+    "lat": 51.7854093,
+    "lon": 5.8879867
+  },
+  "Maasheseweg, Venray": {
+    "lat": 51.5372365,
+    "lon": 5.9845187
   }
 }

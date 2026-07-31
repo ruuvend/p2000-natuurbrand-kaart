@@ -1,5 +1,55 @@
 [
   {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Limburg, Incidentkanaal 1 Brandmelding Bos (Team Digitale Verkenning) (Uitbr.: Hoog) 236183",
+    "description": "P 1 BLB-01 BR bos (Team Digitale Verkenning) (Uitbr.: hoog) Maasheseweg Venray 236183",
+    "link": "https://112-nu.nl/melding/17705109/venray/maasheseweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-07-31T09:24:54+02:00",
+    "plaats": "Venray",
+    "straat": "hoog) Maasheseweg",
+    "lat": 51.5082754,
+    "lon": 5.9589011
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 6 Brandmelding Bos (Uitbr.: Hoog) 083231 082231",
+    "description": "P 1 BON-06 BR bos (Uitbr.: hoog) Maldensebaan Groesbeek 083231 082231",
+    "link": "https://112-nu.nl/melding/17705104/groesbeek/maldensebaan/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-07-31T09:23:39+02:00",
+    "plaats": "Groesbeek",
+    "straat": "Maldensebaan",
+    "lat": 51.7854093,
+    "lon": 5.8879867
+  },
+  {
+    "title": "Met Grote Spoed BON-10 (Pel. Gw Nbb 1) Brandmelding Bos (Uitbr.: Hoog) 089092 074162 085461 084131 084181 089664 089585",
+    "description": "P 1 BON-10 (Pel. GW NBB 1) BR bos (Uitbr.: hoog) Maldensebaan Groesbeek 089092 074162 085461 084131 084181 089664 089585",
+    "link": "https://112-nu.nl/melding/17705095/groesbeek/maldensebaan/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-07-31T09:21:41+02:00",
+    "plaats": "Groesbeek",
+    "straat": "Maldensebaan",
+    "lat": 51.7854093,
+    "lon": 5.8879867
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 6 Brandmelding Bos (Uitbr.: Hoog) 089291 089091 081161 081131 083131 082331 081331 088181 089285 089286",
+    "description": "P 1 BON-06 BR bos (Uitbr.: hoog) Maldensebaan Groesbeek 089291 089091 081161 081131 083131 082331 081331 088181 089285 089286",
+    "link": "https://112-nu.nl/melding/17705093/groesbeek/maldensebaan/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-07-31T09:21:07+02:00",
+    "plaats": "Groesbeek",
+    "straat": "Maldensebaan",
+    "lat": 51.7854093,
+    "lon": 5.8879867
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Limburg, Incidentkanaal 1 Brandmelding Bos (Uitbr.: Hoog) 231491 231461 231481 232361 232381 231431 231432",
+    "description": "P 1 BLB-01 BR bos (Uitbr.: hoog) Maasheseweg Venray 231491 231461 231481 232361 232381 231431 231432",
+    "link": "https://112-nu.nl/melding/17705075/venray/maasheseweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-07-31T09:16:18+02:00",
+    "plaats": "Venray",
+    "straat": "Maasheseweg",
+    "lat": 51.5372365,
+    "lon": 5.9845187
+  },
+  {
     "title": "Met Grote Spoed Meldkamer: Brandweer Midden-Nederland, Incidentkanaal 2 Brandmelding Bos (Uitbr.: Hoog) 095169",
     "description": "P 1 BMD-02 BR bos (Uitbr.: hoog) Arnhemsebovenweg Driebergen-Rijsenburg 095169",
     "link": "https://112-nu.nl/melding/17703945/driebergen-rijsenburg/arnhemsebovenweg/brandweer-met-grote-spoed.html",
