@@ -1,5 +1,45 @@
 [
   {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 2 (Grote Brandmelding) Brandmelding Heide (Uitbr.: Normaal) Voskampweg 210021 210098 212641 213861",
+    "description": "P 1 BOB-02 (Grote BR) BR heide (Uitbr.: normaal) Voskampweg Schaijk 210021 210098 212641 213861",
+    "link": "https://112-nu.nl/melding/17712073/schaijk/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-01T21:47:24+02:00",
+    "plaats": "Schaijk",
+    "straat": "Voskampweg",
+    "lat": 51.7214587,
+    "lon": 5.6055376
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 6 (Pel. Gw Nbb 1) Brandmelding Bos (Uitbr.: Hoog) 059096 052261 052761",
+    "description": "P 1 BON-06 (Pel. GW NBB 1) BR bos (Uitbr.: hoog) Tiekenveenweg Overdinkel 059096 052261 052761",
+    "link": "https://112-nu.nl/melding/17712026/overdinkel/tiekenveenweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-01T21:33:30+02:00",
+    "plaats": "Overdinkel",
+    "straat": "Tiekenveenweg",
+    "lat": 52.2282283,
+    "lon": 7.0225234
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 5 Brandmelding Bos (Uitbr.: Hoog) 059004 059091 059094 052231 052541 054441 052341 051541 059088 059001 059002",
+    "description": "P 1 BON-05 BR bos (Uitbr.: hoog) Tiekenveenweg Overdinkel 059004 059091 059094 052231 052541 054441 052341 051541 059088 059001 059002",
+    "link": "https://112-nu.nl/melding/17712024/overdinkel/tiekenveenweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-01T21:33:00+02:00",
+    "plaats": "Overdinkel",
+    "straat": "Tiekenveenweg",
+    "lat": 52.2282283,
+    "lon": 7.0225234
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 2 (Middel Brandmelding) Brandmelding Heide (Uitbr.: Normaal) Voskampweg 210091 211761 212741",
+    "description": "P 1 BOB-02 (Middel BR) BR heide (Uitbr.: normaal) Voskampweg Schaijk 210091 211761 212741",
+    "link": "https://112-nu.nl/melding/17712017/schaijk/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-01T21:31:18+02:00",
+    "plaats": "Schaijk",
+    "straat": "Voskampweg",
+    "lat": 51.7214587,
+    "lon": 5.6055376
+  },
+  {
     "title": "Met Grote Spoed Meldkamer: Brandweer Noord-Holland, Incidentkanaal 1 (Middel Brandmelding) Brandmelding Duin (Uitbr.: Zeer Hoog) 105982",
     "description": "P 1 BNH-01 (Middel BR) BR duin (Uitbr.: zeer hoog) Badweg De Koog 105982",
     "link": "https://112-nu.nl/melding/17711552/de-koog/badweg/brandweer-met-grote-spoed.html",

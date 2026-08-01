@@ -622,5 +622,13 @@
   "Badweg De, Koog": {
     "lat": 53.1012717,
     "lon": 4.7579627
+  },
+  "Voskampweg, Schaijk": {
+    "lat": 51.7214587,
+    "lon": 5.6055376
+  },
+  "Tiekenveenweg, Overdinkel": {
+    "lat": 52.2282283,
+    "lon": 7.0225234
   }
 }
