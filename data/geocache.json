@@ -614,5 +614,9 @@
   "Bremstraat Den, Helder": {
     "lat": 52.9385464,
     "lon": 4.7320734
+  },
+  "Budel-Dorplein": {
+    "lat": 51.2373689,
+    "lon": 5.5785545
   }
 }
