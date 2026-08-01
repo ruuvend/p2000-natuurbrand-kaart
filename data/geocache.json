@@ -606,5 +606,13 @@
   "Zandlaan, Soest": {
     "lat": 52.1498578,
     "lon": 5.334678
+  },
+  "Grote Beerstraat, IJmuiden": {
+    "lat": 52.4524131,
+    "lon": 4.6058201
+  },
+  "Bremstraat Den, Helder": {
+    "lat": 52.9385464,
+    "lon": 4.7320734
   }
 }
