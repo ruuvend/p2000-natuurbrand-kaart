@@ -630,5 +630,9 @@
   "Tiekenveenweg, Overdinkel": {
     "lat": 52.2282283,
     "lon": 7.0225234
+  },
+  "Elshofpad, Malden": {
+    "lat": 51.8007666,
+    "lon": 5.8341275
   }
 }
