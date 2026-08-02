@@ -646,5 +646,9 @@
   "Kolthoornseweg, Putten": {
     "lat": 52.2297811,
     "lon": 5.6120256
+  },
+  "Cantineweg, Katwijk": {
+    "lat": 52.1895403,
+    "lon": 4.411621
   }
 }
