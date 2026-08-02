@@ -1,5 +1,65 @@
 [
   {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 2 Brandmelding Heide (Uitbr.: Hoog) 213561",
+    "description": "P 1 BOB-02 BR heide (Uitbr.: hoog) Goordreef Erp 213561",
+    "link": "https://112-nu.nl/melding/17714957/erp/goordreef/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-02T15:45:14+02:00",
+    "plaats": "Erp",
+    "straat": "Goordreef",
+    "lat": 51.613832,
+    "lon": 5.6276063
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 2 Brandmelding Heide (Uitbr.: Hoog) 213831",
+    "description": "P 1 BOB-02 BR heide (Uitbr.: hoog) Goordreef Erp 213831",
+    "link": "https://112-nu.nl/melding/17714954/erp/goordreef/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-02T15:43:40+02:00",
+    "plaats": "Erp",
+    "straat": "Goordreef",
+    "lat": 51.613832,
+    "lon": 5.6276063
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 2 Brandmelding Heide (Uitbr.: Hoog) 210531",
+    "description": "P 1 BOB-02 BR heide (Uitbr.: hoog) Goordreef Erp 210531",
+    "link": "https://112-nu.nl/melding/17714942/erp/goordreef/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-02T15:41:22+02:00",
+    "plaats": "Erp",
+    "straat": "Goordreef",
+    "lat": 51.613832,
+    "lon": 5.6276063
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Zeeland/West-Brabant, Incidentkanaal 5 (Middel Brandmelding) Brandmelding Bos Lamoenweg 194736 194995",
+    "description": "P 1 BZB-05 (Middel BR) BR bos Lamoenweg 's-Heer Arendskerke 194736 194995",
+    "link": "https://112-nu.nl/melding/17714934/s-heer-arendskerke/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-02T15:39:11+02:00",
+    "plaats": "Arendskerke",
+    "straat": "Lamoenweg 's-Heer",
+    "lat": 51.4869072,
+    "lon": 3.8322989
+  },
+  {
+    "title": "Met Grote Spoed Brandmelding Heide (Uitbr.: Hoog)",
+    "description": "P 1 BR heide (Uitbr.: hoog) Goordreef Erp",
+    "link": "https://112-nu.nl/melding/17714931/erp/goordreef/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-02T15:38:59+02:00",
+    "plaats": "Erp",
+    "straat": "Goordreef",
+    "lat": 51.613832,
+    "lon": 5.6276063
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 2 Brandmelding Heide (Uitbr.: Hoog) 210093 210091 213861 214131 222841",
+    "description": "P 1 BOB-02 BR heide (Uitbr.: hoog) Goordreef Erp 210093 210091 213861 214131 222841",
+    "link": "https://112-nu.nl/melding/17714911/erp/goordreef/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-02T15:34:09+02:00",
+    "plaats": "Erp",
+    "straat": "Goordreef",
+    "lat": 51.613832,
+    "lon": 5.6276063
+  },
+  {
     "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 3 (Middel Brandmelding) Brandmelding Bos (Uitbr.: Normaal) Elshofpad",
     "description": "P 1 BON-03 (Middel BR) BR bos (Uitbr.: normaal) Elshofpad Malden",
     "link": "https://112-nu.nl/melding/17713298/malden/brandweer-met-grote-spoed.html",

@@ -634,5 +634,13 @@
   "Elshofpad, Malden": {
     "lat": 51.8007666,
     "lon": 5.8341275
+  },
+  "Goordreef, Erp": {
+    "lat": 51.613832,
+    "lon": 5.6276063
+  },
+  "Lamoenweg 's-Heer, Arendskerke": {
+    "lat": 51.4869072,
+    "lon": 3.8322989
   }
 }
