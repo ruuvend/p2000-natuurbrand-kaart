@@ -654,5 +654,21 @@
   "uitbreidingsrisico, hoog.": {
     "lat": 51.8652855,
     "lon": 4.3641111
+  },
+  "Brw.) adv. NB) Venray - Vierlingsbeek, Oostrum": {
+    "lat": 53.3305927,
+    "lon": 6.0608026
+  },
+  "Witrijt, Bergeijk": {
+    "lat": 51.3132105,
+    "lon": 5.2647769
+  },
+  "Venray - Vierlingsbeek, Oostrum": {
+    "lat": 53.3305927,
+    "lon": 6.0608026
+  },
+  "hoog) Venray - Vierlingsbeek, Oostrum": {
+    "lat": 53.3305927,
+    "lon": 6.0608026
   }
 }
