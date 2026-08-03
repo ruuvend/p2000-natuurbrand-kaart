@@ -650,5 +650,9 @@
   "Cantineweg, Katwijk": {
     "lat": 52.1895403,
     "lon": 4.411621
+  },
+  "uitbreidingsrisico, hoog.": {
+    "lat": 51.8652855,
+    "lon": 4.3641111
   }
 }
