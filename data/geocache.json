@@ -682,5 +682,13 @@
   "Schoterweg, Bant": {
     "lat": 52.783727,
     "lon": 5.772049
+  },
+  "Heistraat, Waalre": {
+    "lat": 51.3953945,
+    "lon": 5.4471666
+  },
+  "St. Annastraat, Sluis": {
+    "lat": 51.311133,
+    "lon": 3.3762543
   }
 }
