@@ -1,5 +1,25 @@
 [
   {
+    "title": "Met Grote Spoed BLB-12 (Zeer Groep . Brandmelding) Brandmelding Bos (Uitbr.: Zeer Hoog) Li 232921",
+    "description": "P 1 BLB-12 (Zeer gr. BR) BR bos (Uitbr.: zeer hoog) de Meeren Baarlo LI 232921",
+    "link": "https://112-nu.nl/melding/17729577/baarlo/de-meeren/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-05T23:55:29+02:00",
+    "plaats": "Baarlo",
+    "straat": "de Meeren",
+    "lat": 51.3284077,
+    "lon": 6.0473884
+  },
+  {
+    "title": "Met Grote Spoed BLB-12 (Zeer Groep . Brandmelding) Brandmelding Bos (Uitbr.: Zeer Hoog) Li 236121",
+    "description": "P 1 BLB-12 (Zeer gr. BR) BR bos (Uitbr.: zeer hoog) de Meeren Baarlo LI 236121",
+    "link": "https://112-nu.nl/melding/17729550/baarlo/de-meeren/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-05T23:40:54+02:00",
+    "plaats": "Baarlo",
+    "straat": "de Meeren",
+    "lat": 51.3284077,
+    "lon": 6.0473884
+  },
+  {
     "title": "Met Grote Spoed BLB-12 Brandmelding Bos (Uitbr.: Zeer Hoog) Li 233291 236191 233261 232661 232682 233232 232631 234331",
     "description": "P 1 BLB-12 BR bos (Uitbr.: zeer hoog) Heierhof Baarlo LI 233291 236191 233261 232661 232682 233232 232631 234331",
     "link": "https://112-nu.nl/melding/17729274/baarlo/heierhof/brandweer-met-grote-spoed.html",
@@ -1728,15 +1748,5 @@
     "straat": "Peelvenweg",
     "lat": 51.6004804,
     "lon": 5.8290665
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 1 (Middel Brandmelding) Brandmelding Bos (Uitbr.: Normaal)",
-    "description": "P 1 BOB-01 (Middel BR) BR bos (Uitbr.: normaal) Fazantlaan Maarheeze",
-    "link": "https://112-nu.nl/melding/17598305/maarheeze/fazantlaan/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-07-06T23:26:46+02:00",
-    "plaats": "Maarheeze",
-    "straat": "Fazantlaan",
-    "lat": 51.3062917,
-    "lon": 5.6383464
   }
 ]
