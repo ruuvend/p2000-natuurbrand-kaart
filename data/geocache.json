@@ -722,5 +722,9 @@
   "Broekeindsedijk Oost West en, Middelbeers": {
     "lat": 51.4358779,
     "lon": 5.2233186
+  },
+  "Oos": {
+    "lat": 52.2933982,
+    "lon": 6.1788324
   }
 }
