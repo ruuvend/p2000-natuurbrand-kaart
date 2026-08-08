@@ -750,5 +750,9 @@
   "Kampweg, Burgh-Haamstede": {
     "lat": 51.6709019,
     "lon": 3.7083238
+  },
+  "Driftakkerweg, Amersfoort": {
+    "lat": 52.142932,
+    "lon": 5.4086558
   }
 }
