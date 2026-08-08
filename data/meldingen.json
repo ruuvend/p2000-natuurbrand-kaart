@@ -1,5 +1,35 @@
 [
   {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Limburg, Incidentkanaal 6 Brand Bos (Uitbr.: Zeer Hoog) 242131",
+    "description": "P 1 BLB-06 BR bos (Uitbr.: zeer hoog) Hamstraat Kerkrade 242131",
+    "link": "https://112-nu.nl/melding/17740580/kerkrade/hamstraat/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-08T14:46:33+02:00",
+    "plaats": "Kerkrade",
+    "straat": "Hamstraat",
+    "lat": 50.8553434,
+    "lon": 6.0481667
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Limburg, Incidentkanaal 4 Brand Bos (Uitbr.: Zeer Hoog) 235183",
+    "description": "P 1 BLB-04 BR bos (Uitbr.: zeer hoog) Meinweg Herkenbosch 235183",
+    "link": "https://112-nu.nl/melding/17740563/herkenbosch/meinweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-08T14:40:52+02:00",
+    "plaats": "Herkenbosch",
+    "straat": "Meinweg",
+    "lat": 51.1898391,
+    "lon": 6.1738948
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Limburg, Incidentkanaal 4 Brand Bos (Uitbr.: Zeer Hoog) 235191 236192 235161 233261 235132 235231 236134 235131",
+    "description": "P 1 BLB-04 BR bos (Uitbr.: zeer hoog) Meinweg Herkenbosch 235191 236192 235161 233261 235132 235231 236134 235131",
+    "link": "https://112-nu.nl/melding/17740555/herkenbosch/meinweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-08T14:38:26+02:00",
+    "plaats": "Herkenbosch",
+    "straat": "Meinweg",
+    "lat": 51.1898391,
+    "lon": 6.1738948
+  },
+  {
     "title": "Met Grote Spoed Meldkamer: Brandweer Zeeland/West-Brabant, Incidentkanaal 1 Brand Bos 201331 201342 201092 203361 203381",
     "description": "P 1 BZB-01 BR bos Rozenvendreef Roosendaal 201331 201342 201092 203361 203381",
     "link": "https://112-nu.nl/melding/17740198/roosendaal/rozenvendreef/brandweer-met-grote-spoed.html",

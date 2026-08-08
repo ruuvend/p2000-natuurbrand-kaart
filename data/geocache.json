@@ -766,5 +766,13 @@
   "Rozenvendreef, Roosendaal": {
     "lat": 51.5148314,
     "lon": 4.4895317
+  },
+  "Hamstraat, Kerkrade": {
+    "lat": 50.8553434,
+    "lon": 6.0481667
+  },
+  "Meinweg, Herkenbosch": {
+    "lat": 51.1898391,
+    "lon": 6.1738948
   }
 }
