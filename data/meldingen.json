@@ -1,5 +1,15 @@
 [
   {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Regio Den Haag, Incidentkanaal 1 Brand Bos (Uitbr.: Zeer Hoog) 155030",
+    "description": "P 1 BDH-01 BR bos (Uitbr.: zeer hoog) Duinrell Wassenaar 155030",
+    "link": "https://112-nu.nl/melding/17740916/wassenaar/duinrell/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-08T16:10:24+02:00",
+    "plaats": "Wassenaar",
+    "straat": "Duinrell",
+    "lat": 52.1475159,
+    "lon": 4.3803108
+  },
+  {
     "title": "Met Grote Spoed Meldkamer: Brandweer Limburg, Incidentkanaal 6 Brand Bos (Uitbr.: Zeer Hoog) 242131",
     "description": "P 1 BLB-06 BR bos (Uitbr.: zeer hoog) Hamstraat Kerkrade 242131",
     "link": "https://112-nu.nl/melding/17740580/kerkrade/hamstraat/brandweer-met-grote-spoed.html",
@@ -1948,15 +1958,5 @@
     "straat": "Reigerlaan",
     "lat": 51.5023817,
     "lon": 5.5763333
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Limburg, Incidentkanaal 3 Brandmelding Bos (Uitbr.: Hoog) 235183",
-    "description": "P 1 BLB-03 BR bos (Uitbr.: hoog) Rieterweg Swalmen 235183",
-    "link": "https://112-nu.nl/melding/17610391/swalmen/rieterweg/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-07-09T15:52:11+02:00",
-    "plaats": "Swalmen",
-    "straat": "Rieterweg",
-    "lat": 51.2175265,
-    "lon": 6.0463257
   }
 ]
