@@ -1,5 +1,35 @@
 [
   {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Noord-Nederland, Incidentkanaal 2 Brand Bos 038693 038868 038367 038661 038833 038835 030386",
+    "description": "P 1 BNN-02 BR bos Klaas Buiststraat Schoonoord 038693 038868 038367 038661 038833 038835 030386",
+    "link": "https://112-nu.nl/melding/17742187/schoonoord/klaas-buiststraat/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-08T22:37:11+02:00",
+    "plaats": "Schoonoord",
+    "straat": "Klaas Buiststraat",
+    "lat": 52.8492806,
+    "lon": 6.7481892
+  },
+  {
+    "title": "Inzet Vervalt! Brand Bos",
+    "description": "Inzet vervalt! BR bos Philibert Grimaudpad Leeuwarden",
+    "link": "https://112-nu.nl/melding/17742161/leeuwarden/philibert-grimaudpad/brandweer.html",
+    "pubDate": "2026-08-08T22:28:35+02:00",
+    "plaats": "Leeuwarden",
+    "straat": "Philibert Grimaudpad",
+    "lat": 53.2180581,
+    "lon": 5.7885612
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Noord-Nederland, Incidentkanaal 1 Brand Bos 026132 026131 026193 010186",
+    "description": "P 1 BNN-01 BR bos Philibert Grimaudpad Leeuwarden 026132 026131 026193 010186",
+    "link": "https://112-nu.nl/melding/17742155/leeuwarden/philibert-grimaudpad/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-08T22:26:28+02:00",
+    "plaats": "Leeuwarden",
+    "straat": "Philibert Grimaudpad",
+    "lat": 53.2180581,
+    "lon": 5.7885612
+  },
+  {
     "title": "Met Grote Spoed Meldkamer: Brandweer Noord-Nederland, Incidentkanaal 3 Brand Bos 026432 026631 025793 020286",
     "description": "P 1 BNN-03 BR bos Scharweg Rotsterhaule 026432 026631 025793 020286",
     "link": "https://112-nu.nl/melding/17742020/rotsterhaule/scharweg/brandweer-met-grote-spoed.html",

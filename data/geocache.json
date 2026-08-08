@@ -814,5 +814,13 @@
   "Scharweg, Rotsterhaule": {
     "lat": 52.9187056,
     "lon": 5.8846427
+  },
+  "Klaas Buiststraat, Schoonoord": {
+    "lat": 52.8492806,
+    "lon": 6.7481892
+  },
+  "Philibert Grimaudpad, Leeuwarden": {
+    "lat": 53.2180581,
+    "lon": 5.7885612
   }
 }
