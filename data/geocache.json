@@ -802,5 +802,13 @@
   "Helmondsingel, Deurne": {
     "lat": 51.4688027,
     "lon": 5.7402514
+  },
+  "Jan van Zutphenpad, Hilversum": {
+    "lat": 52.2041467,
+    "lon": 5.1532951
+  },
+  "hoog) Eindhovensedijk, Oirschot": {
+    "lat": 51.4889616,
+    "lon": 5.300595
   }
 }

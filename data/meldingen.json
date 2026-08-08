@@ -1,5 +1,25 @@
 [
   {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Midden-Nederland, Incidentkanaal 1 Brand Bos (Uitbr.: Zeer Hoog) 142091 142744",
+    "description": "P 1 BMD-01 BR bos (Uitbr.: zeer hoog) Jan van Zutphenpad Hilversum 142091 142744",
+    "link": "https://112-nu.nl/melding/17741865/hilversum/jan-van-zutphenpad/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-08T20:43:11+02:00",
+    "plaats": "Hilversum",
+    "straat": "Jan van Zutphenpad",
+    "lat": 52.2041467,
+    "lon": 5.1532951
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 4 (Middel Brand) Brand Bos (Kw 500) (Uitbr.: Hoog) 225068",
+    "description": "P 1 BOB-04 (Middel BR) BR bos (kw 500) (Uitbr.: hoog) Eindhovensedijk Oirschot 225068",
+    "link": "https://112-nu.nl/melding/17741835/oirschot/eindhovensedijk/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-08T20:32:45+02:00",
+    "plaats": "Oirschot",
+    "straat": "hoog) Eindhovensedijk",
+    "lat": 51.4889616,
+    "lon": 5.300595
+  },
+  {
     "title": "Met Grote Spoed Meldkamer: Brandweer Limburg, Incidentkanaal 2 Brand Bos (Team Digitale Verkenning) (Uitbr.: Zeer Hoog) 236183",
     "description": "P 1 BLB-02 BR bos (Team Digitale Verkenning) (Uitbr.: zeer hoog) Kesselseweg Helden 236183",
     "link": "https://112-nu.nl/melding/17741665/helden/kesselseweg/brandweer-met-grote-spoed.html",
