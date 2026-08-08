@@ -782,5 +782,25 @@
   "Oude Rogkamp, Herpen": {
     "lat": 51.7728234,
     "lon": 5.6422866
+  },
+  "zeer hoog) Kesselseweg, Helden": {
+    "lat": 51.3203339,
+    "lon": 6.000166
+  },
+  "Kesselseweg, Helden": {
+    "lat": 51.3116308,
+    "lon": 6.0137903
+  },
+  "Ooftweg, Deurne": {
+    "lat": 51.4739089,
+    "lon": 5.7335307
+  },
+  "hoog) N270 - Helmondsingel, Deurne": {
+    "lat": 51.4283287,
+    "lon": 5.8279653
+  },
+  "Helmondsingel, Deurne": {
+    "lat": 51.4688027,
+    "lon": 5.7402514
   }
 }
