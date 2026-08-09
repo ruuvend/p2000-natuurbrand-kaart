@@ -1,5 +1,75 @@
 [
   {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Regio Den Haag, Incidentkanaal 1 Brand Bos (Uitbr.: Zeer Hoog) Tweede Kamer (Tijdelijk) 157230",
+    "description": "P 1 BDH-01 BR bos (Uitbr.: zeer hoog) Tweede Kamer (tijdelijk) Bezuidenhoutseweg 's-Gravenhage 157230",
+    "link": "https://112-nu.nl/melding/17743075/den-haag/bezuidenhoutseweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-09T06:01:22+02:00",
+    "plaats": "'s-Gravenhage",
+    "straat": "Tweede Kamer Bezuidenhoutseweg",
+    "lat": 52.0828818,
+    "lon": 4.3264173
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 4 (Zeer Gr. Brand) Brand Bos (Bsa) (Uitbr.: Normaal) 210088",
+    "description": "P 1 BOB-04 (Zeer gr. BR) BR bos (BSA) (Uitbr.: normaal) Domineeshoef Schaijk 210088",
+    "link": "https://112-nu.nl/melding/17743068/schaijk/domineeshoef/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-09T05:56:24+02:00",
+    "plaats": "Schaijk",
+    "straat": "normaal) Domineeshoef",
+    "lat": 51.746351,
+    "lon": 5.6314653
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 4 (Zeer Gr. Brand) Brand Bos (Bsa) (Uitbr.: Normaal) 213382 213381 213189",
+    "description": "P 1 BOB-04 (Zeer gr. BR) BR bos (BSA) (Uitbr.: normaal) Domineeshoef Schaijk 213382 213381 213189",
+    "link": "https://112-nu.nl/melding/17743066/schaijk/domineeshoef/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-09T05:54:56+02:00",
+    "plaats": "Schaijk",
+    "straat": "normaal) Domineeshoef",
+    "lat": 51.746351,
+    "lon": 5.6314653
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 4 (Zeer Gr. Brand) Brand Bos (Wts2500) (Uitbr.: Normaal) 212061 213561 210063 213331",
+    "description": "P 1 BOB-04 (Zeer gr. BR) BR bos (wts2500) (Uitbr.: normaal) Domineeshoef Schaijk 212061 213561 210063 213331",
+    "link": "https://112-nu.nl/melding/17743063/schaijk/domineeshoef/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-09T05:50:43+02:00",
+    "plaats": "Schaijk",
+    "straat": "normaal) Domineeshoef",
+    "lat": 51.746351,
+    "lon": 5.6314653
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 2 (Zeer Gr. Brand) Brand Bos (Persoonscontrole-Gw) (Uitbr.: Normaal) 210093",
+    "description": "P 1 BOB-02 (Zeer gr. BR) BR bos (PC-GW) (Uitbr.: normaal) Domineeshoef Schaijk 210093",
+    "link": "https://112-nu.nl/melding/17743054/schaijk/domineeshoef/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-09T05:42:37+02:00",
+    "plaats": "Schaijk",
+    "straat": "normaal) Domineeshoef",
+    "lat": 51.746351,
+    "lon": 5.6314653
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 2 (Zeer Gr. Brand) Brand Bos (Uitbr.: Normaal) 212841",
+    "description": "P 1 BOB-02 (Zeer gr. BR) BR bos (Uitbr.: normaal) Domineeshoef Schaijk 212841",
+    "link": "https://112-nu.nl/melding/17743049/schaijk/domineeshoef/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-09T05:39:16+02:00",
+    "plaats": "Schaijk",
+    "straat": "Domineeshoef",
+    "lat": 51.7482039,
+    "lon": 5.5995374
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 2 (Grote Brand) Brand Bos (Uitbr.: Normaal) 210091 210001 210098 211761 213861 213441 212641",
+    "description": "P 1 BOB-02 (Grote BR) BR bos (Uitbr.: normaal) Domineeshoef Schaijk 210091 210001 210098 211761 213861 213441 212641",
+    "link": "https://112-nu.nl/melding/17743037/schaijk/domineeshoef/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-09T05:25:13+02:00",
+    "plaats": "Schaijk",
+    "straat": "Domineeshoef",
+    "lat": 51.7482039,
+    "lon": 5.5995374
+  },
+  {
     "title": "Met Grote Spoed Meldkamer: Brandweer Noord-Nederland, Incidentkanaal 2 Brand Bos 038693 038868 038367 038661 038833 038835 030386",
     "description": "P 1 BNN-02 BR bos Klaas Buiststraat Schoonoord 038693 038868 038367 038661 038833 038835 030386",
     "link": "https://112-nu.nl/melding/17742187/schoonoord/klaas-buiststraat/brandweer-met-grote-spoed.html",
