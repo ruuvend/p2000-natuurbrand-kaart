@@ -854,5 +854,17 @@
   "kazerne, Wijchen": {
     "lat": 51.8202529,
     "lon": 5.6960903
+  },
+  "Schapendrift, Soest": {
+    "lat": 52.1586578,
+    "lon": 5.304981
+  },
+  "Essenhout 1e alarm, Julianadorp": {
+    "lat": 52.8907035,
+    "lon": 4.7446131
+  },
+  "Essenhout, Julianadorp": {
+    "lat": 52.8826477,
+    "lon": 4.7607754
   }
 }
