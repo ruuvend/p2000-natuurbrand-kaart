@@ -1,5 +1,45 @@
 [
   {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 4 (Zeer Gr. Brand) Brand Bos (Uitbr.: Normaal) 212671",
+    "description": "P 1 BOB-04 (Zeer gr. BR) BR bos (Uitbr.: normaal) Domineeshoef Schaijk 212671",
+    "link": "https://112-nu.nl/melding/17743119/schaijk/domineeshoef/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-09T06:34:05+02:00",
+    "plaats": "Schaijk",
+    "straat": "Domineeshoef",
+    "lat": 51.7482039,
+    "lon": 5.5995374
+  },
+  {
+    "title": "Met Spoed (Zeer Gr. Brand) Brand Bos (Uitbr.: Normaal)",
+    "description": "P 2 (Zeer gr. BR) BR bos (Uitbr.: normaal) Domineeshoef Schaijk",
+    "link": "https://112-nu.nl/melding/17743111/schaijk/domineeshoef/brandweer-met-spoed.html",
+    "pubDate": "2026-08-09T06:32:09+02:00",
+    "plaats": "Schaijk",
+    "straat": "Domineeshoef",
+    "lat": 51.7482039,
+    "lon": 5.5995374
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 4 (Zeer Gr. Brand) Brand Bos (Bsa) (Uitbr.: Normaal) 213471",
+    "description": "P 1 BOB-04 (Zeer gr. BR) BR bos (BSA) (Uitbr.: normaal) Domineeshoef Schaijk 213471",
+    "link": "https://112-nu.nl/melding/17743108/schaijk/domineeshoef/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-09T06:30:22+02:00",
+    "plaats": "Schaijk",
+    "straat": "normaal) Domineeshoef",
+    "lat": 51.746351,
+    "lon": 5.6314653
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 4 (Zeer Gr. Brand) Brand Bos (Uitbr.: Normaal) 210064 212431",
+    "description": "P 1 BOB-04 (Zeer gr. BR) BR bos (Uitbr.: normaal) Domineeshoef Schaijk 210064 212431",
+    "link": "https://112-nu.nl/melding/17743078/schaijk/domineeshoef/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-09T06:04:22+02:00",
+    "plaats": "Schaijk",
+    "straat": "Domineeshoef",
+    "lat": 51.7482039,
+    "lon": 5.5995374
+  },
+  {
     "title": "Met Grote Spoed Meldkamer: Brandweer Regio Den Haag, Incidentkanaal 1 Brand Bos (Uitbr.: Zeer Hoog) Tweede Kamer (Tijdelijk) 157230",
     "description": "P 1 BDH-01 BR bos (Uitbr.: zeer hoog) Tweede Kamer (tijdelijk) Bezuidenhoutseweg 's-Gravenhage 157230",
     "link": "https://112-nu.nl/melding/17743075/den-haag/bezuidenhoutseweg/brandweer-met-grote-spoed.html",
