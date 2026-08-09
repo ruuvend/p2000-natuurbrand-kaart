@@ -866,5 +866,13 @@
   "Essenhout, Julianadorp": {
     "lat": 52.8826477,
     "lon": 4.7607754
+  },
+  "Geitweg, Wijchen": {
+    "lat": 51.7902245,
+    "lon": 5.7778353
+  },
+  "Sparrenlaan, Soest": {
+    "lat": 52.1554127,
+    "lon": 5.3001573
   }
 }
