@@ -842,5 +842,13 @@
   "Leidsestraatweg, 's-Gravenhage": {
     "lat": 52.1050389,
     "lon": 4.357699
+  },
+  "Heumenseweg, Wijchen": {
+    "lat": 51.7943924,
+    "lon": 5.7749169
+  },
+  "Wijchen": {
+    "lat": 51.8202529,
+    "lon": 5.6960903
   }
 }
