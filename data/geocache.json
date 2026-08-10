@@ -906,5 +906,13 @@
   "Erfsebosweg, Heijen": {
     "lat": 51.6540293,
     "lon": 5.9962674
+  },
+  "normaal) Velddoornweg, Eindhoven": {
+    "lat": 51.4485569,
+    "lon": 5.4501225
+  },
+  "Velddoornweg, Eindhoven": {
+    "lat": 51.4086112,
+    "lon": 5.4722425
   }
 }
