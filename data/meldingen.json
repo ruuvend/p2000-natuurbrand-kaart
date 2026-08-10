@@ -1,5 +1,15 @@
 [
   {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Midden-Nederland, Incidentkanaal 3 Brand Heide (Uitbr.: Zeer Hoog) Weg Over Anna's Hoeve 142344",
+    "description": "P 1 BMD-03 BR heide (Uitbr.: zeer hoog) Weg over Anna's Hoeve Laren NH 142344",
+    "link": "https://112-nu.nl/melding/17748745/laren/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-10T13:49:59+02:00",
+    "plaats": "Laren",
+    "straat": "Weg over Anna's Hoeve",
+    "lat": 52.2206931,
+    "lon": 5.2221035
+  },
+  {
     "title": "Bijzondere Verkeerszaken",
     "description": "Prio 4 A12 Li 40,0 NWBRRN Bijzondere verkeerszaken",
     "link": "https://112-nu.nl/melding/17748477/nieuwerbrug-aan-den-rijn/a12/40/politie.html",
@@ -2488,25 +2498,5 @@
     "straat": "Grotelseheide",
     "lat": 51.5080332,
     "lon": 5.6921682
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Regio Rotterdam, Incidentkanaal 1 Brandmelding Duin (Uitbr.: Hoog) Zh 179021 179091 179094 179981 179099 173931 174131 174231 172531 179197 173941 172340 172341 174561",
-    "description": "P 1 BRT-01 BR duin (Uitbr.: hoog) Jonkerstee Ouddorp ZH 179021 179091 179094 179981 179099 173931 174131 174231 172531 179197 173941 172340 172341 174561",
-    "link": "https://112-nu.nl/melding/17619231/ouddorp/jonkerstee/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-07-11T14:10:28+02:00",
-    "plaats": "Ouddorp",
-    "straat": "Jonkerstee",
-    "lat": 51.820469,
-    "lon": 3.9377797
-  },
-  {
-    "title": "Met Spoed Meldkamer: Brandweer Midden-Nederland, Incidentkanaal 1 Brandmelding Bos (Uitbr.: Normaal) Cafe Restaurant De Klink 061541 255533",
-    "description": "P 2 BMD-01 BR bos (Uitbr.: normaal) Cafe Restaurant de Klink Bremerbergdijk Biddinghuizen 061541 255533",
-    "link": "https://112-nu.nl/melding/17619203/biddinghuizen/bremerbergdijk/brandweer-met-spoed.html",
-    "pubDate": "2026-07-11T14:03:18+02:00",
-    "plaats": "Biddinghuizen",
-    "straat": "Cafe Restaurant de Klink Bremerbergdijk",
-    "lat": 52.4552216,
-    "lon": 5.6921598
   }
 ]
