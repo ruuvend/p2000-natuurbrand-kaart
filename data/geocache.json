@@ -914,5 +914,9 @@
   "Velddoornweg, Eindhoven": {
     "lat": 51.4086112,
     "lon": 5.4722425
+  },
+  "Braambergerweg, Kerkenveld": {
+    "lat": 52.6690474,
+    "lon": 6.515712
   }
 }
