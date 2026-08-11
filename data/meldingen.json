@@ -1,5 +1,15 @@
 [
   {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 1 Brand Bos (Uitbr.: Normaal) 225194 223231 223241",
+    "description": "P 1 BOB-01 BR bos (Uitbr.: normaal) Goorsebaan Helmond 225194 223231 223241",
+    "link": "https://112-nu.nl/melding/17754645/helmond/goorsebaan/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-11T21:03:11+02:00",
+    "plaats": "Helmond",
+    "straat": "Goorsebaan",
+    "lat": 51.4622924,
+    "lon": 5.6581461
+  },
+  {
     "title": "Met Grote Spoed Meldkamer: Brandweer Regio Den Haag, Incidentkanaal 2 Brand Duin (Uitbr.: Zeer Hoog) 157140 156740 155040 157141 156741 155041 157730 157468 157480 159591 159592 159694",
     "description": "P 1 BDH-02 BR duin (Uitbr.: zeer hoog) Kijkduinboulevard 's-Gravenhage 157140 156740 155040 157141 156741 155041 157730 157468 157480 159591 159592 159694",
     "link": "https://112-nu.nl/melding/17754375/den-haag/kijkduinboulevard/brandweer-met-grote-spoed.html",
@@ -2778,25 +2788,5 @@
     "straat": "Molenkampsweg",
     "lat": 51.8138721,
     "lon": 5.093353
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Regio Rotterdam, Incidentkanaal 5 (Kleine Brandmelding) Brandmelding Duin (Uitbr.: Hoog) 179201",
-    "description": "P 1 BRT-05 (Kleine BR) BR duin (Uitbr.: hoog) Noordoever Oostv Meer Oostvoorne 179201",
-    "link": "https://112-nu.nl/melding/17625416/oostvoorne/noordoever-oostv-meer/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-07-12T20:56:26+02:00",
-    "plaats": "Oostvoorne",
-    "straat": "Noordoever Oostv Meer",
-    "lat": 51.914271,
-    "lon": 4.1038932
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Regio Rotterdam, Incidentkanaal 5 (Kleine Brandmelding) Brandmelding Duin (Uitbr.: Hoog) 179202",
-    "description": "P 1 BRT-05 (Kleine BR) BR duin (Uitbr.: hoog) Noordoever Oostv Meer Oostvoorne 179202",
-    "link": "https://112-nu.nl/melding/17625406/oostvoorne/noordoever-oostv-meer/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-07-12T20:50:15+02:00",
-    "plaats": "Oostvoorne",
-    "straat": "Noordoever Oostv Meer",
-    "lat": 51.914271,
-    "lon": 4.1038932
   }
 ]

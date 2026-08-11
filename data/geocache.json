@@ -962,5 +962,9 @@
   "Kijkduinboulevard, 's-Gravenhage": {
     "lat": 52.0683876,
     "lon": 4.2195132
+  },
+  "Goorsebaan, Helmond": {
+    "lat": 51.4622924,
+    "lon": 5.6581461
   }
 }
