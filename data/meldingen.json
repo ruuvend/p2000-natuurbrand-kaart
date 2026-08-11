@@ -1,5 +1,55 @@
 [
   {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Noord-Holland, Incidentkanaal 1 Brand Bos (Uitbr.: Zeer Hoog) 121292 123302 122302 123062 123362 123540 123340 123030 121531 121194 122060 122002 121541 121296 121380 121285 121201 121205 121401 121294",
+    "description": "P 1 BNH-01 BR bos (Uitbr.: zeer hoog) Brouwerskolkweg Overveen 121292 123302 122302 123062 123362 123540 123340 123030 121531 121194 122060 122002 121541 121296 121380 121285 121201 121205 121401 121294",
+    "link": "https://112-nu.nl/melding/17753800/overveen/brouwerskolkweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-11T16:54:47+02:00",
+    "plaats": "Overveen",
+    "straat": "Brouwerskolkweg",
+    "lat": 52.3920955,
+    "lon": 4.5983633
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Zeeland/West-Brabant, Incidentkanaal 4 (Grote Brand) Brand Bos (Uitbr.: Zeer Hoog)",
+    "description": "P 1 BZB-04 (Grote BR) BR bos (Uitbr.: zeer hoog) Balsedreef Bergen op Zoom",
+    "link": "https://112-nu.nl/melding/17753759/bergen-op-zoom/balsedreef/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-11T16:46:18+02:00",
+    "plaats": "Zoom",
+    "straat": "Balsedreef Bergen op",
+    "lat": 51.4865778,
+    "lon": 4.3358956
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Midden-Nederland, Incidentkanaal 4 (Grote Brand) Brand Bos (Uitbr.: Zeer Hoog) 041463",
+    "description": "P 1 BMD-04 (Grote BR) BR bos (Uitbr.: zeer hoog) Roggebotweg Dronten 041463",
+    "link": "https://112-nu.nl/melding/17753726/dronten/roggebotweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-11T16:40:59+02:00",
+    "plaats": "Dronten",
+    "straat": "Roggebotweg",
+    "lat": 52.5668373,
+    "lon": 5.7956897
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Zeeland/West-Brabant, Incidentkanaal 4 Brand Bos (Uitbr.: Zeer Hoog) 203361 203381",
+    "description": "P 1 BZB-04 BR bos (Uitbr.: zeer hoog) Boslustweg Bergen op Zoom 203361 203381",
+    "link": "https://112-nu.nl/melding/17753676/bergen-op-zoom/boslustweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-11T16:27:39+02:00",
+    "plaats": "Zoom",
+    "straat": "Boslustweg Bergen op",
+    "lat": 51.4849885,
+    "lon": 4.3285278
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Zeeland/West-Brabant, Incidentkanaal 4 Brand Bos (Uitbr.: Zeer Hoog) 201380 201531 201441 201444 201045 201361 201382 201662 201681 200022 201092 201461 201503 201302 20",
+    "description": "P 1 BZB-04 BR bos (Uitbr.: zeer hoog) Balsedreef Bergen op Zoom 201380 201531 201441 201444 201045 201361 201382 201662 201681 200022 201092 201461 201503 201302 20",
+    "link": "https://112-nu.nl/melding/17753614/bergen-op-zoom/balsedreef/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-11T16:12:02+02:00",
+    "plaats": "Zoom",
+    "straat": "Balsedreef Bergen op",
+    "lat": 51.4865778,
+    "lon": 4.3358956
+  },
+  {
     "title": "Met Grote Spoed Meldkamer: Brandweer Midden-Nederland, Incidentkanaal 4 (Grote Brand) Brand Bos (Uitbr.: Zeer Hoog) 041432",
     "description": "P 1 BMD-04 (Grote BR) BR bos (Uitbr.: zeer hoog) Roggebotweg Dronten 041432",
     "link": "https://112-nu.nl/melding/17753547/dronten/roggebotweg/brandweer-met-grote-spoed.html",

@@ -938,5 +938,17 @@
   "Roggebotweg, Dronten": {
     "lat": 52.5668373,
     "lon": 5.7956897
+  },
+  "Brouwerskolkweg, Overveen": {
+    "lat": 52.3920955,
+    "lon": 4.5983633
+  },
+  "Balsedreef Bergen op, Zoom": {
+    "lat": 51.4865778,
+    "lon": 4.3358956
+  },
+  "Boslustweg Bergen op, Zoom": {
+    "lat": 51.4849885,
+    "lon": 4.3285278
   }
 }
