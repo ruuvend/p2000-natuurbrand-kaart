@@ -1,5 +1,35 @@
 [
   {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 5 Brand Heide (Uitbr.: Zeer Hoog) 210094 210091 207161 207181 211961 214542 214541 214641",
+    "description": "P 1 BOB-05 BR heide (Uitbr.: zeer hoog) Giersbergen Drunen 210094 210091 207161 207181 211961 214542 214541 214641",
+    "link": "https://112-nu.nl/melding/17759108/drunen/giersbergen/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-12T21:36:11+02:00",
+    "plaats": "Drunen",
+    "straat": "Giersbergen",
+    "lat": 51.6568858,
+    "lon": 5.1493686
+  },
+  {
+    "title": "Met Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 2 Brand Bos (Uitbr.: Normaal) 225161 225083",
+    "description": "P 2 BOB-02 BR bos (Uitbr.: normaal) Klotputten Eindhoven 225161 225083",
+    "link": "https://112-nu.nl/melding/17759094/eindhoven/klotputten/brandweer-met-spoed.html",
+    "pubDate": "2026-08-12T21:33:24+02:00",
+    "plaats": "Eindhoven",
+    "straat": "Klotputten",
+    "lat": 51.4070292,
+    "lon": 5.4354754
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Noord-Nederland, Incidentkanaal 1 Brand Bos 038693 038868 038367 038565 038833 038835 030386",
+    "description": "P 1 BNN-01 BR bos Albert Oostingweg De Kiel 038693 038868 038367 038565 038833 038835 030386",
+    "link": "https://112-nu.nl/melding/17759086/de-kiel/albert-oostingweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-12T21:32:03+02:00",
+    "plaats": "Kiel",
+    "straat": "Albert Oostingweg De",
+    "lat": 52.8482184,
+    "lon": 6.727568
+  },
+  {
     "title": "Met Grote Spoed BON-11 (Middel Brand) Brand Bos (Uitbr.: Normaal)",
     "description": "P 1 BON-11 (Middel BR) BR bos (Uitbr.: normaal) Lindeboomweg Eefde",
     "link": "https://112-nu.nl/melding/17759017/eefde/lindeboomweg/brandweer-met-grote-spoed.html",
