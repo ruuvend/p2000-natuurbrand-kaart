@@ -994,5 +994,13 @@
   "Kloosterstraat, Sibculo": {
     "lat": 52.4902637,
     "lon": 6.6582956
+  },
+  "Lindeboomweg, Eefde": {
+    "lat": 52.1891587,
+    "lon": 6.2228729
+  },
+  "Klotputten, Eindhoven": {
+    "lat": 51.4070292,
+    "lon": 5.4354754
   }
 }
