@@ -978,5 +978,13 @@
   "Hazeldonkseweg, Liessel": {
     "lat": 51.4138793,
     "lon": 5.8084701
+  },
+  "Bornia, Driebergen-Rijsenburg": {
+    "lat": 52.0731991,
+    "lon": 5.3019527
+  },
+  "Staverhul, Uddel": {
+    "lat": 52.2668555,
+    "lon": 5.7724676
   }
 }

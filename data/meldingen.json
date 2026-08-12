@@ -1,5 +1,55 @@
 [
   {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Midden-Nederland, Incidentkanaal 5 Brand Bos (Uitbr.: Zeer Hoog) 093364 093386 093366",
+    "description": "P 1 BMD-05 BR bos (Uitbr.: zeer hoog) Bornia Driebergen-Rijsenburg 093364 093386 093366",
+    "link": "https://112-nu.nl/melding/17757047/driebergen-rijsenburg/bornia/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-12T13:16:30+02:00",
+    "plaats": "Driebergen-Rijsenburg",
+    "straat": "Bornia",
+    "lat": 52.0731991,
+    "lon": 5.3019527
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Midden-Nederland, Incidentkanaal 5 (Pel. Gw Nbb 1) Brand Bos (Uitbr.: Zeer Hoog) 098794 099005 096464 096486 096466 095169",
+    "description": "P 1 BMD-05 (Pel. GW NBB 1) BR bos (Uitbr.: zeer hoog) Bornia Driebergen-Rijsenburg 098794 099005 096464 096486 096466 095169",
+    "link": "https://112-nu.nl/melding/17757035/driebergen-rijsenburg/bornia/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-12T13:12:26+02:00",
+    "plaats": "Driebergen-Rijsenburg",
+    "straat": "Bornia",
+    "lat": 52.0731991,
+    "lon": 5.3019527
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 1 (Pel. Gw Nbb 1) Brand Bos (Uitbr.: Hoog) 062561 061661 062162 069191",
+    "description": "P 1 BON-01 (Pel. GW NBB 1) BR bos (Uitbr.: hoog) Staverhul Uddel 062561 061661 062162 069191",
+    "link": "https://112-nu.nl/melding/17756981/uddel/staverhul/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-12T13:00:15+02:00",
+    "plaats": "Uddel",
+    "straat": "Staverhul",
+    "lat": 52.2668555,
+    "lon": 5.7724676
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 1 Brand Bos (Uitbr.: Hoog) 067044 061741 071341 062843 069801 069292",
+    "description": "P 1 BON-01 BR bos (Uitbr.: hoog) Staverhul Uddel 067044 061741 071341 062843 069801 069292",
+    "link": "https://112-nu.nl/melding/17756978/uddel/staverhul/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-12T12:59:56+02:00",
+    "plaats": "Uddel",
+    "straat": "Staverhul",
+    "lat": 52.2668555,
+    "lon": 5.7724676
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Midden-Nederland, Incidentkanaal 3 Brand Bos (Uitbr.: Zeer Hoog) 099294 098494 096644 095144 096444 095444",
+    "description": "P 1 BMD-03 BR bos (Uitbr.: zeer hoog) Bornia Driebergen-Rijsenburg 099294 098494 096644 095144 096444 095444",
+    "link": "https://112-nu.nl/melding/17756974/driebergen-rijsenburg/bornia/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-12T12:58:39+02:00",
+    "plaats": "Driebergen-Rijsenburg",
+    "straat": "Bornia",
+    "lat": 52.0731991,
+    "lon": 5.3019527
+  },
+  {
     "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 2 Brand Bos (Uitbr.: Normaal) 225164 225084",
     "description": "P 1 BOB-02 BR bos (Uitbr.: normaal) Hazeldonkseweg Liessel 225164 225084",
     "link": "https://112-nu.nl/melding/17756212/liessel/hazeldonkseweg/brandweer-met-grote-spoed.html",
