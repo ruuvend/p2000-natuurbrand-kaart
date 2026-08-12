@@ -1,5 +1,35 @@
 [
   {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 2 (Middel Brand) Brand Bos (Uitbr.: Normaal)",
+    "description": "P 1 BOB-02 (Middel BR) BR bos (Uitbr.: normaal) Randweg-Oost Budel",
+    "link": "https://112-nu.nl/melding/17755501/budel/randweg-oost/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-12T05:46:59+02:00",
+    "plaats": "Budel",
+    "straat": "Randweg-Oost",
+    "lat": 51.2980316,
+    "lon": 5.6285618
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 2 Brand Bos (Uitbr.: Normaal) 234462 234483",
+    "description": "P 1 BOB-02 BR bos (Uitbr.: normaal) Randweg-Oost Budel 234462 234483",
+    "link": "https://112-nu.nl/melding/17755499/budel/randweg-oost/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-12T05:43:18+02:00",
+    "plaats": "Budel",
+    "straat": "Randweg-Oost",
+    "lat": 51.2980316,
+    "lon": 5.6285618
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 2 Brand Bos (Uitbr.: Normaal) 225195 221841 221741",
+    "description": "P 1 BOB-02 BR bos (Uitbr.: normaal) Randweg-Oost Budel 225195 221841 221741",
+    "link": "https://112-nu.nl/melding/17755495/budel/randweg-oost/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-12T05:37:01+02:00",
+    "plaats": "Budel",
+    "straat": "Randweg-Oost",
+    "lat": 51.2980316,
+    "lon": 5.6285618
+  },
+  {
     "title": "Met Grote Spoed Meldkamer: Brandweer Noord-Nederland, Incidentkanaal 2 Brand Heide 038993 039065 038365 038961 039041 038931 030386",
     "description": "P 1 BNN-02 BR heide Hendrik Reindersweg Pesse Hoogeveen 038993 039065 038365 038961 039041 038931 030386",
     "link": "https://112-nu.nl/melding/17754906/pesse/hendrik-reindersweg/brandweer-met-grote-spoed.html",
