@@ -1,5 +1,25 @@
 [
   {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 4 (Pel. Gw Nbb 1) Brand Bos (Uitbr.: Hoog) 074096 075362 075262 079369 074631 079366 074682",
+    "description": "P 1 BON-04 (Pel. GW NBB 1) BR bos (Uitbr.: hoog) Juvenaathof Zevenaar 074096 075362 075262 079369 074631 079366 074682",
+    "link": "https://112-nu.nl/melding/17763867/zevenaar/juvenaathof/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-13T21:12:02+02:00",
+    "plaats": "Zevenaar",
+    "straat": "Juvenaathof",
+    "lat": 51.9276359,
+    "lon": 6.0823308
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 3 Brand Bos (Uitbr.: Hoog) 079391 079395 075096 075531 065041 073741 075341 075241",
+    "description": "P 1 BON-03 BR bos (Uitbr.: hoog) Juvenaathof Zevenaar 079391 079395 075096 075531 065041 073741 075341 075241",
+    "link": "https://112-nu.nl/melding/17763861/zevenaar/juvenaathof/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-13T21:11:26+02:00",
+    "plaats": "Zevenaar",
+    "straat": "Juvenaathof",
+    "lat": 51.9276359,
+    "lon": 6.0823308
+  },
+  {
     "title": "Met Grote Spoed Meldkamer: Brandweer Limburg, Incidentkanaal 1 Brand Bos (Uitbr.: Zeer Hoog) Rendifo 236197 236191 232361 232381 235831 232331 232231",
     "description": "P 1 BLB-01 BR bos (Uitbr.: zeer hoog) Rendifo Ulingsheide Ulingsheide Tegelen 236197 236191 232361 232381 235831 232331 232231",
     "link": "https://112-nu.nl/melding/17763579/tegelen/ulingsheide/brandweer-met-grote-spoed.html",
