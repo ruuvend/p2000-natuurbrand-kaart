@@ -1,5 +1,15 @@
 [
   {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Limburg, Incidentkanaal 1 Brand Bos (Uitbr.: Zeer Hoog) Rendifo 236197 236191 232361 232381 235831 232331 232231",
+    "description": "P 1 BLB-01 BR bos (Uitbr.: zeer hoog) Rendifo Ulingsheide Ulingsheide Tegelen 236197 236191 232361 232381 235831 232331 232231",
+    "link": "https://112-nu.nl/melding/17763579/tegelen/ulingsheide/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-13T20:01:02+02:00",
+    "plaats": "Tegelen",
+    "straat": "Rendifo Ulingsheide Ulingsheide",
+    "lat": 51.3429314,
+    "lon": 6.1362198
+  },
+  {
     "title": "Met Grote Spoed Meldkamer: Brandweer Noord-Nederland, Incidentkanaal 2 Brand Bos Herenkampsweg 038293 038465 038565 038466 038433 038432 030386",
     "description": "P 1 BNN-02 BR bos Herenkampsweg Gasselte 038293 038465 038565 038466 038433 038432 030386",
     "link": "https://112-nu.nl/melding/17763341/gasselte/brandweer-met-grote-spoed.html",
@@ -3038,15 +3048,5 @@
     "straat": "Lage Kant",
     "lat": 51.5879577,
     "lon": 4.8091159
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Limburg, Incidentkanaal 1 Brandmelding Bos (Uitbr.: Zeer Hoog) 241431",
-    "description": "P 1 BLB-01 BR bos (Uitbr.: zeer hoog) Passartweg Heerlen 241431",
-    "link": "https://112-nu.nl/melding/17634962/heerlen/passartweg/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-07-14T19:45:39+02:00",
-    "plaats": "Heerlen",
-    "straat": "Passartweg",
-    "lat": 50.9281626,
-    "lon": 5.9473486
   }
 ]
