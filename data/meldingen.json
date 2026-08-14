@@ -3308,25 +3308,5 @@
     "straat": "Kempenweg",
     "lat": 51.3880521,
     "lon": 5.6663371
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Zeeland/West-Brabant, Incidentkanaal 4 Brandmelding Bos 198662 198681",
-    "description": "P 1 BZB-04 BR bos Langeweg Axel 198662 198681",
-    "link": "https://112-nu.nl/melding/17638988/axel/langeweg/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-07-15T17:32:33+02:00",
-    "plaats": "Axel",
-    "straat": "Langeweg",
-    "lat": 51.2541457,
-    "lon": 3.9204225
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Noord-Holland, Incidentkanaal 4 Brandmelding Duin (Uitbr.: Zeer Hoog) 121292 123302 122302 123362 123062 123340 123540 122230 123030 121194 122060 122002 121541 121296 121380 121285 121201 121205 121401 121294",
-    "description": "P 1 BNH-04 BR duin (Uitbr.: zeer hoog) Brederodestraat Zandvoort 121292 123302 122302 123362 123062 123340 123540 122230 123030 121194 122060 122002 121541 121296 121380 121285 121201 121205 121401 121294",
-    "link": "https://112-nu.nl/melding/17638963/zandvoort/brederodestraat/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-07-15T17:26:53+02:00",
-    "plaats": "Zandvoort",
-    "straat": "Brederodestraat",
-    "lat": 52.3617493,
-    "lon": 4.5188559
   }
 ]
