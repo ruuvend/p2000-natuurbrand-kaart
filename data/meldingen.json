@@ -1,5 +1,35 @@
 [
   {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 1 (Grote Brand) Brand Bos (Uitbr.: Zeer Hoog)",
+    "description": "P 1 BOB-01 (Grote BR) BR bos (Uitbr.: zeer hoog) Merseloseweg Overloon",
+    "link": "https://112-nu.nl/melding/17767408/overloon/merseloseweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-14T16:14:18+02:00",
+    "plaats": "Overloon",
+    "straat": "Merseloseweg",
+    "lat": 51.5671016,
+    "lon": 5.9454923
+  },
+  {
+    "title": "Met Grote Spoed BON-11 (Pel. Gw Nbb 1) Brand Heide (Uitbr.: Hoog) 062561 062661 062162 069991",
+    "description": "P 1 BON-11 (Pel. GW NBB 1) BR heide (Uitbr.: hoog) Aardhuisweg Uddel 062561 062661 062162 069991",
+    "link": "https://112-nu.nl/melding/17767357/uddel/aardhuisweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-14T16:05:06+02:00",
+    "plaats": "Uddel",
+    "straat": "Aardhuisweg",
+    "lat": 52.2563867,
+    "lon": 5.7858416
+  },
+  {
+    "title": "Met Grote Spoed BON-10 Brand Heide (Uitbr.: Hoog) 069904 069693 069905 067044 061741 071341 062843 069801 069291",
+    "description": "P 1 BON-10 BR heide (Uitbr.: hoog) Aardhuisweg Uddel 069904 069693 069905 067044 061741 071341 062843 069801 069291",
+    "link": "https://112-nu.nl/melding/17767355/uddel/aardhuisweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-14T16:04:47+02:00",
+    "plaats": "Uddel",
+    "straat": "Aardhuisweg",
+    "lat": 52.2563867,
+    "lon": 5.7858416
+  },
+  {
     "title": "Met Grote Spoed Meldkamer: Brandweer Limburg, Incidentkanaal 3 (Zeer Gr. Brand) Brand Bos (Adviseur Gevaarlijke Stoffen, Voorlichter Brandweer) (Uitbr.: Zeer Hoog) - Vierlingsbeek 231461 231481 231431",
     "description": "P 1 BLB-03 (Zeer gr. BR) BR bos (AGS, voorlichter brw) (Uitbr.: zeer hoog) Venray - Vierlingsbeek Oostrum LI 231461 231481 231431",
     "link": "https://112-nu.nl/melding/17767118/venray/brandweer-met-grote-spoed.html",
