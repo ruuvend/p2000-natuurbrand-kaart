@@ -1,5 +1,15 @@
 [
   {
+    "title": "Met Spoed BON-12 (Middel Brand) Brand Bos (Uitbr.: Hoog) 042684 042685",
+    "description": "P 2 BON-12 (Middel BR) BR bos (Uitbr.: hoog) IJhorsterveldweg Punthorst 042684 042685",
+    "link": "https://112-nu.nl/melding/17768812/punthorst/ijhorsterveldweg/brandweer-met-spoed.html",
+    "pubDate": "2026-08-14T22:57:03+02:00",
+    "plaats": "Punthorst",
+    "straat": "IJhorsterveldweg",
+    "lat": 52.6228555,
+    "lon": 6.3046266
+  },
+  {
     "title": "Met Grote Spoed BON-11 (Middel Brand) Brand Bos (Uitbr.: Hoog)",
     "description": "P 1 BON-11 (Middel BR) BR bos (Uitbr.: hoog) IJhorsterveldweg Punthorst",
     "link": "https://112-nu.nl/melding/17768776/punthorst/ijhorsterveldweg/brandweer-met-grote-spoed.html",
@@ -3298,25 +3308,5 @@
     "straat": "Wegverkeer afgevallen",
     "lat": null,
     "lon": null
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 2 Brandmelding Bos (Uitbr.: Normaal) 225165 225182",
-    "description": "P 1 BOB-02 BR bos (Uitbr.: normaal) Eikestraat Riethoven 225165 225182",
-    "link": "https://112-nu.nl/melding/17640099/riethoven/eikestraat/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-07-15T22:55:35+02:00",
-    "plaats": "Riethoven",
-    "straat": "Eikestraat",
-    "lat": 51.3384088,
-    "lon": 5.3658978
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 2 Brandmelding Bos (Uitbr.: Normaal) 225197 221141 222141",
-    "description": "P 1 BOB-02 BR bos (Uitbr.: normaal) Eikestraat Riethoven 225197 221141 222141",
-    "link": "https://112-nu.nl/melding/17640092/riethoven/eikestraat/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-07-15T22:53:46+02:00",
-    "plaats": "Riethoven",
-    "straat": "Eikestraat",
-    "lat": 51.3384088,
-    "lon": 5.3658978
   }
 ]
