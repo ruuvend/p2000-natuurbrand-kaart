@@ -1,5 +1,35 @@
 [
   {
+    "title": "Met Spoed BMD-11 Brand Bos (Uitbr.: Zeer Hoog) 093344",
+    "description": "P 2 BMD-11 BR bos (Uitbr.: zeer hoog) Defensieweg Rhenen 093344",
+    "link": "https://112-nu.nl/melding/17764957/rhenen/defensieweg/brandweer-met-spoed.html",
+    "pubDate": "2026-08-14T05:39:20+02:00",
+    "plaats": "Rhenen",
+    "straat": "Defensieweg",
+    "lat": 51.9768185,
+    "lon": 5.5428914
+  },
+  {
+    "title": "Met Grote Spoed BMD-11 Brand Bos (Uitbr.: Zeer Hoog)",
+    "description": "P 1 BMD-11 BR bos (Uitbr.: zeer hoog) Defensieweg Rhenen",
+    "link": "https://112-nu.nl/melding/17764952/rhenen/defensieweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-14T05:36:20+02:00",
+    "plaats": "Rhenen",
+    "straat": "Defensieweg",
+    "lat": 51.9768185,
+    "lon": 5.5428914
+  },
+  {
+    "title": "Met Spoed BMD-11 Brand Bos (Uitbr.: Zeer Hoog) 093544 091044",
+    "description": "P 2 BMD-11 BR bos (Uitbr.: zeer hoog) Defensieweg Rhenen 093544 091044",
+    "link": "https://112-nu.nl/melding/17764950/rhenen/defensieweg/brandweer-met-spoed.html",
+    "pubDate": "2026-08-14T05:35:41+02:00",
+    "plaats": "Rhenen",
+    "straat": "Defensieweg",
+    "lat": 51.9768185,
+    "lon": 5.5428914
+  },
+  {
     "title": "Met Grote Spoed Meldkamer: Brandweer Limburg, Incidentkanaal 1 Brand Bos (Uitbr.: Zeer Hoog) 233288",
     "description": "P 1 BLB-01 BR bos (Uitbr.: zeer hoog) Sportparklaan Swalmen 233288",
     "link": "https://112-nu.nl/melding/17764615/swalmen/sportparklaan/brandweer-met-grote-spoed.html",
@@ -3178,25 +3208,5 @@
     "straat": "Kempenweg",
     "lat": 51.3880521,
     "lon": 5.6663371
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 2 Brandmelding Bos (Uitbr.: Normaal) Bussersdijk 225164 225084",
-    "description": "P 1 BOB-02 BR bos (Uitbr.: normaal) Bussersdijk Lierop 225164 225084",
-    "link": "https://112-nu.nl/melding/17636282/lierop/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-07-15T06:53:01+02:00",
-    "plaats": "Lierop",
-    "straat": "Bussersdijk",
-    "lat": 51.4001596,
-    "lon": 5.6681595
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 2 Brandmelding Bos (Uitbr.: Normaal) Bussersdijk 225192 224241 221041",
-    "description": "P 1 BOB-02 BR bos (Uitbr.: normaal) Bussersdijk Lierop 225192 224241 221041",
-    "link": "https://112-nu.nl/melding/17636279/lierop/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-07-15T06:52:13+02:00",
-    "plaats": "Lierop",
-    "straat": "Bussersdijk",
-    "lat": 51.4001596,
-    "lon": 5.6681595
   }
 ]
