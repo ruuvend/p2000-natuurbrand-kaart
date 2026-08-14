@@ -1062,5 +1062,13 @@
   "Sportparklaan, Swalmen": {
     "lat": 51.2385925,
     "lon": 6.0605946
+  },
+  "Vliegveldstraat Deurningen, Dinkelland": {
+    "lat": 52.2944606,
+    "lon": 6.8434695
+  },
+  "Vledderweg, Vledderveen": {
+    "lat": 52.9837389,
+    "lon": 7.0113319
   }
 }
