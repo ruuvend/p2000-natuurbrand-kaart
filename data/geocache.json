@@ -1070,5 +1070,9 @@
   "Vledderweg, Vledderveen": {
     "lat": 52.9837389,
     "lon": 7.0113319
+  },
+  "Autoweg, Rhenen": {
+    "lat": 51.9764739,
+    "lon": 5.5422185
   }
 }
