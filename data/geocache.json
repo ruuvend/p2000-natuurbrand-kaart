@@ -1110,5 +1110,9 @@
   "Koningsweg, Arnhem": {
     "lat": 52.0346849,
     "lon": 5.8891119
+  },
+  "Rondweg, Emmen": {
+    "lat": 52.7573142,
+    "lon": 6.887923
   }
 }
