@@ -1,5 +1,55 @@
 [
   {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 4 (Zeer Gr. Brand) Brand Bos (Uitbr.: Hoog) 079129 072097 074096 079191 072781",
+    "description": "P 1 BON-04 (Zeer gr. BR) BR bos (Uitbr.: hoog) Koningsweg Arnhem 079129 072097 074096 079191 072781",
+    "link": "https://112-nu.nl/melding/17769449/arnhem/koningsweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-15T02:49:20+02:00",
+    "plaats": "Arnhem",
+    "straat": "Koningsweg",
+    "lat": 52.0346849,
+    "lon": 5.8891119
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 4 Brand Heide (Uitbr.: Hoog) 063041",
+    "description": "P 1 BON-04 BR heide (Uitbr.: hoog) Koningsweg Arnhem 063041",
+    "link": "https://112-nu.nl/melding/17769436/arnhem/koningsweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-15T02:43:31+02:00",
+    "plaats": "Arnhem",
+    "straat": "Koningsweg",
+    "lat": 52.0346849,
+    "lon": 5.8891119
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 5 (Pel. Gw Nbb 1) Brand Heide (Uitbr.: Hoog) 075096 075362 072762 079369 074631 079366 074682",
+    "description": "P 1 BON-05 (Pel. GW NBB 1) BR heide (Uitbr.: hoog) Koningsweg Arnhem 075096 075362 072762 079369 074631 079366 074682",
+    "link": "https://112-nu.nl/melding/17769413/arnhem/koningsweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-15T02:34:34+02:00",
+    "plaats": "Arnhem",
+    "straat": "Koningsweg",
+    "lat": 52.0346849,
+    "lon": 5.8891119
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 4 Brand Heide (Uitbr.: Hoog) 079391 079395 073096 073241 073641 072341 072141",
+    "description": "P 1 BON-04 BR heide (Uitbr.: hoog) Koningsweg Arnhem 079391 079395 073096 073241 073641 072341 072141",
+    "link": "https://112-nu.nl/melding/17769412/arnhem/koningsweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-15T02:34:05+02:00",
+    "plaats": "Arnhem",
+    "straat": "Koningsweg",
+    "lat": 52.0346849,
+    "lon": 5.8891119
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 1 (Middel Brand) Brand Bos (Uitbr.: Normaal)",
+    "description": "P 1 BON-01 (Middel BR) BR bos (Uitbr.: normaal) Konijnenpad Nijmegen",
+    "link": "https://112-nu.nl/melding/17769392/nijmegen/konijnenpad/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-15T02:25:33+02:00",
+    "plaats": "Nijmegen",
+    "straat": "Konijnenpad",
+    "lat": 51.8254944,
+    "lon": 5.8317149
+  },
+  {
     "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 1 Brand Bos (Uitbr.: Normaal) 081161",
     "description": "P 1 BON-01 BR bos (Uitbr.: normaal) Konijnenpad Nijmegen 081161",
     "link": "https://112-nu.nl/melding/17769386/nijmegen/konijnenpad/brandweer-met-grote-spoed.html",
