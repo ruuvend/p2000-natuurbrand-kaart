@@ -1,5 +1,15 @@
 [
   {
+    "title": "Met Grote Spoed",
+    "description": "A1 A12 Re 37,5 NWBRRN :",
+    "link": "https://112-nu.nl/melding/17789938/nieuwerbrug-aan-den-rijn/a12/375/ambulance-met-grote-spoed.html",
+    "pubDate": "2026-08-19T23:20:40+02:00",
+    "plaats": ":",
+    "straat": "",
+    "lat": 52.2434979,
+    "lon": 5.6343227
+  },
+  {
     "title": "Alarm (Uitbr.: Normaal) Fasewisseling Natuurbrand Zld",
     "description": "P 4  Alarm (Uitbr.: normaal) Fasewisseling Natuurbrand ZLD Segeerssingel Middelburg",
     "link": "https://112-nu.nl/melding/17783455/middelburg/segeerssingel/brandweer.html",
@@ -3428,15 +3438,5 @@
     "straat": "Wegverkeer verkeersstremming stremming:",
     "lat": null,
     "lon": null
-  },
-  {
-    "title": "Met Grote Spoed BON-11 Brandmelding Bos (Uitbr.: Laag) 082331 089285",
-    "description": "P 1 BON-11 BR bos (Uitbr.: laag) Elshofweg Nijmegen 082331 089285",
-    "link": "https://112-nu.nl/melding/17661551/nijmegen/elshofweg/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-07-20T23:23:54+02:00",
-    "plaats": "Nijmegen",
-    "straat": "Elshofweg",
-    "lat": 51.8060653,
-    "lon": 5.8412239
   }
 ]
