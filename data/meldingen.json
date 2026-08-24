@@ -1,5 +1,45 @@
 [
   {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Midden-Nederland, Incidentkanaal 6 (Pel. Gw Nbb 1) Brand Bos (Uitbr.: Normaal) 098494 093364 093386 093366 095169",
+    "description": "P 1 BMD-06 (Pel. GW NBB 1) BR bos (Uitbr.: normaal) Verlengde Paltzerweg Soest 098494 093364 093386 093366 095169",
+    "link": "https://112-nu.nl/melding/17808263/soest/verlengde-paltzerweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-24T14:17:48+02:00",
+    "plaats": "Soest",
+    "straat": "Verlengde Paltzerweg",
+    "lat": 52.1303601,
+    "lon": 5.2843698
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Midden-Nederland, Incidentkanaal 6 (Pel. Nbb 1) Brand Bos (Uitbr.: Normaal) 099005 099944 093344",
+    "description": "P 1 BMD-06 (Pel. NBB 1) BR bos (Uitbr.: normaal) Verlengde Paltzerweg Soest 099005 099944 093344",
+    "link": "https://112-nu.nl/melding/17808259/soest/verlengde-paltzerweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-24T14:17:20+02:00",
+    "plaats": "Soest",
+    "straat": "Verlengde Paltzerweg",
+    "lat": 52.1303601,
+    "lon": 5.2843698
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Midden-Nederland, Incidentkanaal 6 Brand Bos (Uitbr.: Normaal) 092265 092286",
+    "description": "P 1 BMD-06 BR bos (Uitbr.: normaal) Verlengde Paltzerweg Soest 092265 092286",
+    "link": "https://112-nu.nl/melding/17808239/soest/verlengde-paltzerweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-24T14:13:50+02:00",
+    "plaats": "Soest",
+    "straat": "Verlengde Paltzerweg",
+    "lat": 52.1303601,
+    "lon": 5.2843698
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Midden-Nederland, Incidentkanaal 6 Brand Bos (Uitbr.: Normaal) 098794 093544 096644",
+    "description": "P 1 BMD-06 BR bos (Uitbr.: normaal) Verlengde Paltzerweg Soest 098794 093544 096644",
+    "link": "https://112-nu.nl/melding/17808213/soest/verlengde-paltzerweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-24T14:07:16+02:00",
+    "plaats": "Soest",
+    "straat": "Verlengde Paltzerweg",
+    "lat": 52.1303601,
+    "lon": 5.2843698
+  },
+  {
     "title": "Met Grote Spoed Meldkamer: Brandweer Regio Amsterdam, Incidentkanaal 2 Brand Bos (Uitbr.: Normaal) 132631",
     "description": "P 1 BAD-02 BR bos (Uitbr.: normaal) Jaagpad Amsterdam 132631",
     "link": "https://112-nu.nl/melding/17804636/amsterdam/jaagpad/brandweer-met-grote-spoed.html",
