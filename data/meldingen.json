@@ -1,5 +1,65 @@
 [
   {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 1 (Zeer Gr. Brand) Brand Bos (Uitbr.: Normaal) 225091 225281 225192 225692 225183 225025 225021 223141",
+    "description": "P 1 BOB-01 (Zeer gr. BR) BR bos (Uitbr.: normaal) Leenderweg Waalre 225091 225281 225192 225692 225183 225025 225021 223141",
+    "link": "https://112-nu.nl/melding/17809040/waalre/leenderweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-24T17:03:41+02:00",
+    "plaats": "Waalre",
+    "straat": "Leenderweg",
+    "lat": 51.3877127,
+    "lon": 5.5063358
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 3 Brand Heide (Uitbr.: Normaal) Waterjuffer 225193 222641 225047",
+    "description": "P 1 BOB-03 BR heide (Uitbr.: normaal) Waterjuffer Mierlo 225193 222641 225047",
+    "link": "https://112-nu.nl/melding/17809024/mierlo/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-24T17:00:35+02:00",
+    "plaats": "Mierlo",
+    "straat": "Waterjuffer",
+    "lat": 51.4451934,
+    "lon": 5.605705
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 1 (Grote Brand) Brand Bos (Uitbr.: Normaal) 225125 225046",
+    "description": "P 1 BOB-01 (Grote BR) BR bos (Uitbr.: normaal) Leenderweg Waalre 225125 225046",
+    "link": "https://112-nu.nl/melding/17809005/waalre/leenderweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-24T16:55:41+02:00",
+    "plaats": "Waalre",
+    "straat": "Leenderweg",
+    "lat": 51.3877127,
+    "lon": 5.5063358
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 1 (Middel Brand) Brand Bos (Uitbr.: Normaal) 225161 225083",
+    "description": "P 1 BOB-01 (Middel BR) BR bos (Uitbr.: normaal) Leenderweg Waalre 225161 225083",
+    "link": "https://112-nu.nl/melding/17808989/waalre/leenderweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-24T16:53:13+02:00",
+    "plaats": "Waalre",
+    "straat": "Leenderweg",
+    "lat": 51.3877127,
+    "lon": 5.5063358
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 1 Brand Bos (Uitbr.: Normaal) 225164 225084",
+    "description": "P 1 BOB-01 BR bos (Uitbr.: normaal) Leenderweg Waalre 225164 225084",
+    "link": "https://112-nu.nl/melding/17808920/waalre/leenderweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-24T16:39:11+02:00",
+    "plaats": "Waalre",
+    "straat": "Leenderweg",
+    "lat": 51.3877127,
+    "lon": 5.5063358
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 1 Brand Bos (Uitbr.: Normaal) 225196 224741 224841",
+    "description": "P 1 BOB-01 BR bos (Uitbr.: normaal) Leenderweg Waalre 225196 224741 224841",
+    "link": "https://112-nu.nl/melding/17808906/waalre/leenderweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-24T16:35:20+02:00",
+    "plaats": "Waalre",
+    "straat": "Leenderweg",
+    "lat": 51.3877127,
+    "lon": 5.5063358
+  },
+  {
     "title": "Met Grote Spoed Meldkamer: Brandweer Midden-Nederland, Incidentkanaal 6 (Pel. Gw Nbb 1) Brand Bos (Uitbr.: Normaal) 098494 093364 093386 093366 095169",
     "description": "P 1 BMD-06 (Pel. GW NBB 1) BR bos (Uitbr.: normaal) Verlengde Paltzerweg Soest 098494 093364 093386 093366 095169",
     "link": "https://112-nu.nl/melding/17808263/soest/verlengde-paltzerweg/brandweer-met-grote-spoed.html",
