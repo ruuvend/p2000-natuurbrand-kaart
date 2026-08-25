@@ -1178,5 +1178,13 @@
   "normaal) Leenderweg, Waalre": {
     "lat": 51.3856734,
     "lon": 5.4661157
+  },
+  "Amersfoortseweg, Doorn": {
+    "lat": 52.0422453,
+    "lon": 5.3466419
+  },
+  "Meijendelseweg, Wassenaar": {
+    "lat": 52.129269,
+    "lon": 4.356981
   }
 }
