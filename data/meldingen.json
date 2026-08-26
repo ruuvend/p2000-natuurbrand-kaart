@@ -1,5 +1,15 @@
 [
   {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Noord-Holland, Incidentkanaal 1 Brand Duin (Uitbr.: Normaal) 121292 123302 123362 123062 123540 122060 122002 121541 121201 121685",
+    "description": "P 1 BNH-01 BR duin (Uitbr.: normaal) Rob Slotemakerstraat Zandvoort 121292 123302 123362 123062 123540 122060 122002 121541 121201 121685",
+    "link": "https://112-nu.nl/melding/17818924/zandvoort/rob-slotemakerstraat/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-08-26T22:18:28+02:00",
+    "plaats": "Zandvoort",
+    "straat": "Rob Slotemakerstraat",
+    "lat": 52.3831089,
+    "lon": 4.5351142
+  },
+  {
     "title": "Met Grote Spoed BON-11 Brand Heide (Uitbr.: Normaal) 069904 062061 061341 061841 069801 069191",
     "description": "P 1 BON-11 BR heide (Uitbr.: normaal) Kolonel D.J. Teesweg Wezep 069904 062061 061341 061841 069801 069191",
     "link": "https://112-nu.nl/melding/17817148/wezep/kolonel-dj-teesweg/brandweer-met-grote-spoed.html",
@@ -3358,35 +3368,5 @@
     "straat": "",
     "lat": null,
     "lon": null
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Noord-Nederland, Incidentkanaal 1 Brandmelding Heide 026946 026445 026865 026931 026433 026993 020286",
-    "description": "P 1 BNN-01 BR heide Poostweg Olterterp 026946 026445 026865 026931 026433 026993 020286",
-    "link": "https://112-nu.nl/melding/17690354/olterterp/poostweg/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-07-27T21:51:52+02:00",
-    "plaats": "Olterterp",
-    "straat": "Poostweg",
-    "lat": 53.0585459,
-    "lon": 6.1316064
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 2 (Middel Brandmelding) Brandmelding Bos (Uitbr.: Normaal) 210092 213061 213441",
-    "description": "P 1 BOB-02 (Middel BR) BR bos (Uitbr.: normaal) Wijnroemer Gassel 210092 213061 213441",
-    "link": "https://112-nu.nl/melding/17690192/gassel/wijnroemer/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-07-27T20:59:09+02:00",
-    "plaats": "Gassel",
-    "straat": "Wijnroemer",
-    "lat": 51.7356361,
-    "lon": 5.766148
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 2 Brandmelding Bos (Uitbr.: Normaal) 211331",
-    "description": "P 1 BOB-02 BR bos (Uitbr.: normaal) Wijnroemer Gassel 211331",
-    "link": "https://112-nu.nl/melding/17690185/gassel/wijnroemer/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-07-27T20:57:16+02:00",
-    "plaats": "Gassel",
-    "straat": "Wijnroemer",
-    "lat": 51.7356361,
-    "lon": 5.766148
   }
 ]
