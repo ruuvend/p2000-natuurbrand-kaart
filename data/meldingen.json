@@ -3328,35 +3328,5 @@
     "straat": "Ontginningsweg Bergen",
     "lat": 51.6025815,
     "lon": 6.0666947
-  },
-  {
-    "title": "Met Spoed Nwbrrn Wegverkeer Afgevallen Lading",
-    "description": "Prio 2 A12 Re 38,2 NWBRRN Wegverkeer afgevallen lading",
-    "link": "https://112-nu.nl/melding/17694550/bodegraven-reeuwijk/a12/382/brandweer-met-spoed.html",
-    "pubDate": "2026-07-28T20:15:11+02:00",
-    "plaats": "lading",
-    "straat": "Wegverkeer afgevallen",
-    "lat": null,
-    "lon": null
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 4 Brandmelding Bos (Uitbr.: Normaal) 213861",
-    "description": "P 1 BOB-04 BR bos (Uitbr.: normaal) Heikantstraat Volkel 213861",
-    "link": "https://112-nu.nl/melding/17693044/volkel/heikantstraat/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-07-28T14:39:43+02:00",
-    "plaats": "Volkel",
-    "straat": "Heikantstraat",
-    "lat": 51.6355516,
-    "lon": 5.6657301
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 4 Brandmelding Bos (Uitbr.: Normaal) 213831",
-    "description": "P 1 BOB-04 BR bos (Uitbr.: normaal) Heikantstraat Volkel 213831",
-    "link": "https://112-nu.nl/melding/17693035/volkel/heikantstraat/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-07-28T14:38:09+02:00",
-    "plaats": "Volkel",
-    "straat": "Heikantstraat",
-    "lat": 51.6355516,
-    "lon": 5.6657301
   }
 ]
