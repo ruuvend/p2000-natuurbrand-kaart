@@ -3128,35 +3128,5 @@
     "straat": "Zandlaan",
     "lat": 52.1498578,
     "lon": 5.334678
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Limburg, Incidentkanaal 2 Brandmelding Bos (Uitbr.: Hoog) Schadijkerpeelweg 233291 231461 231481 232361 232381 231431 231432",
-    "description": "P 1 BLB-02 BR bos (Uitbr.: hoog) Schadijkerpeelweg Meterik 233291 231461 231481 232361 232381 231431 231432",
-    "link": "https://112-nu.nl/melding/17705677/meterik/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-07-31T11:43:32+02:00",
-    "plaats": "Meterik",
-    "straat": "Schadijkerpeelweg",
-    "lat": 51.4711711,
-    "lon": 5.9899734
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Regio Rotterdam, Incidentkanaal 2 (Middel Brandmelding) Brandmelding Duin (Team Digitale Verkenning) (Uitbr.: Hoog) Zh 179088",
-    "description": "P 1 BRT-02 (Middel BR) BR duin (Team Digitale Verkenning) (Uitbr.: hoog) Oosterduinpad Ouddorp ZH 179088",
-    "link": "https://112-nu.nl/melding/17705577/ouddorp/oosterduinpad/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-07-31T11:22:56+02:00",
-    "plaats": "Ouddorp",
-    "straat": "hoog) Oosterduinpad",
-    "lat": 51.8093104,
-    "lon": 3.9359204
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Regio Rotterdam, Incidentkanaal 2 Brandmelding Duin (Uitbr.: Hoog) Zh 172531",
-    "description": "P 1 BRT-02 BR duin (Uitbr.: hoog) Oosterduinpad Ouddorp ZH 172531",
-    "link": "https://112-nu.nl/melding/17705555/ouddorp/oosterduinpad/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-07-31T11:15:54+02:00",
-    "plaats": "Ouddorp",
-    "straat": "Oosterduinpad",
-    "lat": 51.8286324,
-    "lon": 3.931411
   }
 ]
