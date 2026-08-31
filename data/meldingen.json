@@ -3038,45 +3038,5 @@
     "straat": "Voskampweg",
     "lat": 51.7214587,
     "lon": 5.6055376
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Noord-Holland, Incidentkanaal 1 (Middel Brandmelding) Brandmelding Duin (Uitbr.: Zeer Hoog) 105982",
-    "description": "P 1 BNH-01 (Middel BR) BR duin (Uitbr.: zeer hoog) Badweg De Koog 105982",
-    "link": "https://112-nu.nl/melding/17711552/de-koog/badweg/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-08-01T19:08:28+02:00",
-    "plaats": "Koog",
-    "straat": "Badweg De",
-    "lat": 53.1012717,
-    "lon": 4.7579627
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Noord-Holland, Incidentkanaal 1 (Middel Brandmelding) Brandmelding Duin (Uitbr.: Zeer Hoog)",
-    "description": "P 1 BNH-01 (Middel BR) BR duin (Uitbr.: zeer hoog) Badweg De Koog",
-    "link": "https://112-nu.nl/melding/17711549/de-koog/badweg/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-08-01T19:07:31+02:00",
-    "plaats": "Koog",
-    "straat": "Badweg De",
-    "lat": 53.1012717,
-    "lon": 4.7579627
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Noord-Holland, Incidentkanaal 1 Brandmelding Duin (Uitbr.: Zeer Hoog) 106591 105984 105904 106561 106681 105902 106541 106542 105931 105932 104431 106699 106693 106692",
-    "description": "P 1 BNH-01 BR duin (Uitbr.: zeer hoog) Badweg De Koog 106591 105984 105904 106561 106681 105902 106541 106542 105931 105932 104431 106699 106693 106692",
-    "link": "https://112-nu.nl/melding/17711532/de-koog/badweg/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-08-01T19:01:56+02:00",
-    "plaats": "Koog",
-    "straat": "Badweg De",
-    "lat": 53.1012717,
-    "lon": 4.7579627
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 2 Brandmelding Bos (Uitbr.: Normaal) 225197 221741 221841",
-    "description": "P 1 BOB-02 BR bos (Uitbr.: normaal) Hoortweg Budel-Dorplein 225197 221741 221841",
-    "link": "https://112-nu.nl/melding/17710733/budel-dorplein/hoortweg/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-08-01T15:23:13+02:00",
-    "plaats": "Budel-Dorplein",
-    "straat": "",
-    "lat": 51.2373689,
-    "lon": 5.5785545
   }
 ]
