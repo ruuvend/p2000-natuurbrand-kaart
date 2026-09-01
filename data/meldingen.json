@@ -1,5 +1,25 @@
 [
   {
+    "title": "BMD-11 Brand Bos (Drone Buiten) (Uitbr.: Zeer Hoog) 099289 099189",
+    "description": "P 5 BMD-11 BR bos (drone buiten) (Uitbr.: zeer hoog) Biltseweg Bosch en Duin 099289 099189",
+    "link": "https://112-nu.nl/melding/17844291/bosch-en-duin/biltseweg/brandweer.html",
+    "pubDate": "2026-09-01T20:23:46+02:00",
+    "plaats": "Duin",
+    "straat": "zeer hoog) Biltseweg Bosch en",
+    "lat": 52.3418718,
+    "lon": 5.1400781
+  },
+  {
+    "title": "BMD-11 Brand Bos (Uitbr.: Zeer Hoog) 098894",
+    "description": "P 5 BMD-11 BR bos (Uitbr.: zeer hoog) Biltseweg Bosch en Duin 098894",
+    "link": "https://112-nu.nl/melding/17844281/bosch-en-duin/biltseweg/brandweer.html",
+    "pubDate": "2026-09-01T20:20:16+02:00",
+    "plaats": "Duin",
+    "straat": "Biltseweg Bosch en",
+    "lat": 52.1276424,
+    "lon": 5.2359964
+  },
+  {
     "title": "Met Grote Spoed Meldkamer: Brandweer Noord-Holland, Incidentkanaal 1 Brand Duin (Uitbr.: Normaal) 121292 123302 123362 123062 123540 122060 122002 121541 121201 121685",
     "description": "P 1 BNH-01 BR duin (Uitbr.: normaal) Rob Slotemakerstraat Zandvoort 121292 123302 123362 123062 123540 122060 122002 121541 121201 121685",
     "link": "https://112-nu.nl/melding/17818924/zandvoort/rob-slotemakerstraat/brandweer-met-grote-spoed.html",
@@ -2878,35 +2898,5 @@
     "straat": "Cantineweg",
     "lat": 52.1895403,
     "lon": 4.411621
-  },
-  {
-    "title": "Met Grote Spoed BON-10 (Middel Brandmelding) Brandmelding Heide (Uitbr.: Hoog)",
-    "description": "P 1 BON-10 (Middel BR) BR heide (Uitbr.: hoog) Kolthoornseweg Putten",
-    "link": "https://112-nu.nl/melding/17716138/putten/kolthoornseweg/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-08-02T21:08:54+02:00",
-    "plaats": "Putten",
-    "straat": "Kolthoornseweg",
-    "lat": 52.2297811,
-    "lon": 5.6120256
-  },
-  {
-    "title": "Met Grote Spoed BON-10 (Pel. Gw Nbb 1) Brandmelding Heide (Uitbr.: Hoog) 062561 071662 062162 071096",
-    "description": "P 1 BON-10 (Pel. GW NBB 1) BR heide (Uitbr.: hoog) Kolthoornseweg Putten 062561 071662 062162 071096",
-    "link": "https://112-nu.nl/melding/17716095/putten/kolthoornseweg/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-08-02T20:52:50+02:00",
-    "plaats": "Putten",
-    "straat": "Kolthoornseweg",
-    "lat": 52.2297811,
-    "lon": 5.6120256
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 6 Brandmelding Heide (Uitbr.: Hoog) 069904 069693 071341 062141 071441 067044 069801 069991",
-    "description": "P 1 BON-06 BR heide (Uitbr.: hoog) Kolthoornseweg Putten 069904 069693 071341 062141 071441 067044 069801 069991",
-    "link": "https://112-nu.nl/melding/17716093/putten/kolthoornseweg/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-08-02T20:52:34+02:00",
-    "plaats": "Putten",
-    "straat": "Kolthoornseweg",
-    "lat": 52.2297811,
-    "lon": 5.6120256
   }
 ]
