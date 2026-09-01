@@ -2978,25 +2978,5 @@
     "straat": "Goordreef",
     "lat": 51.613832,
     "lon": 5.6276063
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 3 (Middel Brandmelding) Brandmelding Bos (Uitbr.: Normaal) Elshofpad",
-    "description": "P 1 BON-03 (Middel BR) BR bos (Uitbr.: normaal) Elshofpad Malden",
-    "link": "https://112-nu.nl/melding/17713298/malden/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-08-02T08:06:07+02:00",
-    "plaats": "Malden",
-    "straat": "Elshofpad",
-    "lat": 51.8007666,
-    "lon": 5.8341275
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 3 Brandmelding Bos (Uitbr.: Normaal) Elshofpad 089091 081161 089462 089584 082331 083131 089285",
-    "description": "P 1 BON-03 BR bos (Uitbr.: normaal) Elshofpad Malden 089091 081161 089462 089584 082331 083131 089285",
-    "link": "https://112-nu.nl/melding/17713244/malden/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-08-02T07:36:13+02:00",
-    "plaats": "Malden",
-    "straat": "Elshofpad",
-    "lat": 51.8007666,
-    "lon": 5.8341275
   }
 ]
