@@ -2768,35 +2768,5 @@
     "straat": "Randweg-Oost",
     "lat": 51.2980316,
     "lon": 5.6285618
-  },
-  {
-    "title": "Met Grote Spoed BON-10 (Middel Brandmelding) Brandmelding Heide (Uitbr.: Hoog)",
-    "description": "P 1 BON-10 (Middel BR) BR heide (Uitbr.: hoog) 't Frusselt Vierhouten",
-    "link": "https://112-nu.nl/melding/17719869/vierhouten/t-frusselt/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-08-03T18:07:29+02:00",
-    "plaats": "Vierhouten",
-    "straat": "'t Frusselt",
-    "lat": 52.3302927,
-    "lon": 5.8219434
-  },
-  {
-    "title": "Met Grote Spoed BON-10 (Pel. Gw Nbb 1) Brandmelding Heide (Uitbr.: Hoog) 061661 062561 061562 069291",
-    "description": "P 1 BON-10 (Pel. GW NBB 1) BR heide (Uitbr.: hoog) 't Frusselt Vierhouten 061661 062561 061562 069291",
-    "link": "https://112-nu.nl/melding/17719829/vierhouten/t-frusselt/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-08-03T17:57:18+02:00",
-    "plaats": "Vierhouten",
-    "straat": "'t Frusselt",
-    "lat": 52.3302927,
-    "lon": 5.8219434
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 6 Brandmelding Heide (Uitbr.: Hoog) 069904 069693 061741 061642 061641 067044 069801 069191",
-    "description": "P 1 BON-06 BR heide (Uitbr.: hoog) 't Frusselt Vierhouten 069904 069693 061741 061642 061641 067044 069801 069191",
-    "link": "https://112-nu.nl/melding/17719827/vierhouten/t-frusselt/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-08-03T17:56:58+02:00",
-    "plaats": "Vierhouten",
-    "straat": "'t Frusselt",
-    "lat": 52.3302927,
-    "lon": 5.8219434
   }
 ]
