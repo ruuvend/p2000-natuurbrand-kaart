@@ -1,5 +1,35 @@
 [
   {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 1 (Grote Brand) Brand Heide (Uitbr.: Normaal) 225125 225164 225084 223041",
+    "description": "P 1 BOB-01 (Grote BR) BR heide (Uitbr.: normaal) Strabrechtseheideweg Heeze 225125 225164 225084 223041",
+    "link": "https://112-nu.nl/melding/17853551/heeze/strabrechtseheideweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-09-04T00:50:03+02:00",
+    "plaats": "Heeze",
+    "straat": "Strabrechtseheideweg",
+    "lat": 51.4116767,
+    "lon": 5.5804558
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 1 (Middel Brand) Brand Heide (Uitbr.: Normaal)",
+    "description": "P 1 BOB-01 (Middel BR) BR heide (Uitbr.: normaal) Strabrechtseheideweg Heeze",
+    "link": "https://112-nu.nl/melding/17853543/heeze/strabrechtseheideweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-09-04T00:47:33+02:00",
+    "plaats": "Heeze",
+    "straat": "Strabrechtseheideweg",
+    "lat": 51.4116767,
+    "lon": 5.5804558
+  },
+  {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 1 Brand Heide (Uitbr.: Normaal) 225195 222541 222641",
+    "description": "P 1 BOB-01 BR heide (Uitbr.: normaal) Strabrechtseheideweg Heeze 225195 222541 222641",
+    "link": "https://112-nu.nl/melding/17853539/heeze/strabrechtseheideweg/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-09-04T00:45:43+02:00",
+    "plaats": "Heeze",
+    "straat": "Strabrechtseheideweg",
+    "lat": 51.4116767,
+    "lon": 5.5804558
+  },
+  {
     "title": "BMD-11 Brand Bos (Drone Buiten) (Uitbr.: Zeer Hoog) 099289 099189",
     "description": "P 5 BMD-11 BR bos (drone buiten) (Uitbr.: zeer hoog) Biltseweg Bosch en Duin 099289 099189",
     "link": "https://112-nu.nl/melding/17844291/bosch-en-duin/biltseweg/brandweer.html",
@@ -2648,25 +2678,5 @@
     "straat": "Brinkweg",
     "lat": 52.4305288,
     "lon": 6.225905
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 1 Brandmelding Bos (Uitbr.: Normaal) 225161 225083 225197 224841 224741",
-    "description": "P 1 BOB-01 BR bos (Uitbr.: normaal) Heistraat Waalre 225161 225083 225197 224841 224741",
-    "link": "https://112-nu.nl/melding/17725543/waalre/heistraat/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-08-05T01:18:11+02:00",
-    "plaats": "Waalre",
-    "straat": "Heistraat",
-    "lat": 51.3953945,
-    "lon": 5.4471666
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Zeeland/West-Brabant, Incidentkanaal 3 Brandmelding Bos 196533 196535 196595 196560",
-    "description": "P 1 BZB-03 BR bos St. Annastraat Sluis 196533 196535 196595 196560",
-    "link": "https://112-nu.nl/melding/17725522/sluis/st-annastraat/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-08-05T01:05:28+02:00",
-    "plaats": "Sluis",
-    "straat": "St. Annastraat",
-    "lat": 51.311133,
-    "lon": 3.3762543
   }
 ]
