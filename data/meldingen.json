@@ -2608,25 +2608,5 @@
     "straat": "de Meeren",
     "lat": 51.3284077,
     "lon": 6.0473884
-  },
-  {
-    "title": "Met Grote Spoed BLB-12 Brandmelding Bos (Uitbr.: Zeer Hoog) Li 233291 236191 233261 232661 232682 233232 232631 234331",
-    "description": "P 1 BLB-12 BR bos (Uitbr.: zeer hoog) Heierhof Baarlo LI 233291 236191 233261 232661 232682 233232 232631 234331",
-    "link": "https://112-nu.nl/melding/17729274/baarlo/heierhof/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-08-05T21:42:07+02:00",
-    "plaats": "Baarlo",
-    "straat": "Heierhof",
-    "lat": 51.3278841,
-    "lon": 6.0841512
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 2 Brandmelding Bos (Uitbr.: Laag) Bosknooppunt 225 082331 089285",
-    "description": "P 1 BON-02 BR bos (Uitbr.: laag) bosknooppunt 225 Heumen 082331 089285",
-    "link": "https://112-nu.nl/melding/17728963/heumen/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-08-05T20:09:14+02:00",
-    "plaats": "Heumen",
-    "straat": "bosknooppunt 225",
-    "lat": 51.7811114,
-    "lon": 5.8248966
   }
 ]
