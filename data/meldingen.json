@@ -2568,35 +2568,5 @@
     "straat": "Oosterduinpad",
     "lat": 51.8286324,
     "lon": 3.931411
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 1 (Middel Brandmelding) Brandmelding Bos (Uitbr.: Normaal) Broekeindsedijk Oost West En 209261 209281",
-    "description": "P 1 BOB-01 (Middel BR) BR bos (Uitbr.: normaal) Broekeindsedijk Oost West en Middelbeers 209261 209281",
-    "link": "https://112-nu.nl/melding/17729688/middelbeers/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-08-06T00:47:09+02:00",
-    "plaats": "Middelbeers",
-    "straat": "Broekeindsedijk Oost West en",
-    "lat": 51.4358779,
-    "lon": 5.2233186
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 1 Brandmelding Bos (Uitbr.: Normaal) Broekeindsedijk Oost West En 225195 223941 222241",
-    "description": "P 1 BOB-01 BR bos (Uitbr.: normaal) Broekeindsedijk Oost West en Middelbeers 225195 223941 222241",
-    "link": "https://112-nu.nl/melding/17729657/middelbeers/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-08-06T00:34:39+02:00",
-    "plaats": "Middelbeers",
-    "straat": "Broekeindsedijk Oost West en",
-    "lat": 51.4358779,
-    "lon": 5.2233186
-  },
-  {
-    "title": "Met Grote Spoed BLB-12 (Zeer Groep . Brandmelding) Brandmelding Bos (Uitbr.: Zeer Hoog) Li 232921",
-    "description": "P 1 BLB-12 (Zeer gr. BR) BR bos (Uitbr.: zeer hoog) de Meeren Baarlo LI 232921",
-    "link": "https://112-nu.nl/melding/17729577/baarlo/de-meeren/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-08-05T23:55:29+02:00",
-    "plaats": "Baarlo",
-    "straat": "de Meeren",
-    "lat": 51.3284077,
-    "lon": 6.0473884
   }
 ]
