@@ -1,5 +1,15 @@
 [
   {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 3 Brand Bos (Uitbr.: Normaal) 225195 224241 221041",
+    "description": "P 1 BOB-03 BR bos (Uitbr.: normaal) Gezandebaan Heusden Asten 225195 224241 221041",
+    "link": "https://112-nu.nl/melding/17865330/heusden/gezandebaan/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-09-06T19:42:56+02:00",
+    "plaats": "Asten",
+    "straat": "Gezandebaan Heusden",
+    "lat": 51.3614667,
+    "lon": 5.7710797
+  },
+  {
     "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 1 (Grote Brand) Brand Heide (Uitbr.: Normaal) 225125 225164 225084 223041",
     "description": "P 1 BOB-01 (Grote BR) BR heide (Uitbr.: normaal) Strabrechtseheideweg Heeze 225125 225164 225084 223041",
     "link": "https://112-nu.nl/melding/17853551/heeze/strabrechtseheideweg/brandweer-met-grote-spoed.html",
@@ -2388,35 +2398,5 @@
     "straat": "Kampweg",
     "lat": 51.6709019,
     "lon": 3.7083238
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Noord-Holland, Incidentkanaal 1 (Middel Brandmelding) Brandmelding Bos (Team Brandonderzoek) (Uitbr.: Zeer Hoog) 121203",
-    "description": "P 1 BNH-01 (Middel BR) BR bos (TBO) (Uitbr.: zeer hoog) Haarlemmerstraat Bennebroek 121203",
-    "link": "https://112-nu.nl/melding/17737413/bennebroek/haarlemmerstraat/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-08-07T19:35:00+02:00",
-    "plaats": "Bennebroek",
-    "straat": "zeer hoog) Haarlemmerstraat",
-    "lat": 52.322419,
-    "lon": 4.5937366
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Noord-Holland, Incidentkanaal 1 Brandmelding Bos (Uitbr.: Zeer Hoog) 121292 123302 122302 124262 123162 123540 123340 161030 124230 121194 122060 122002 121541 121296 121380 121285 121201 121205 121401 121294",
-    "description": "P 1 BNH-01 BR bos (Uitbr.: zeer hoog) Haarlemmerstraat Bennebroek  121292 123302 122302 124262 123162 123540 123340 161030 124230 121194 122060 122002 121541 121296 121380 121285 121201 121205 121401 121294",
-    "link": "https://112-nu.nl/melding/17737306/bennebroek/haarlemmerstraat/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-08-07T18:59:40+02:00",
-    "plaats": "Bennebroek",
-    "straat": "Haarlemmerstraat",
-    "lat": 52.3177245,
-    "lon": 4.5909597
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Noord-Holland, Incidentkanaal 1 Brandmelding Bos (Uitbr.: Zeer Hoog) 123062",
-    "description": "P 1 BNH-01 BR bos (Uitbr.: zeer hoog) Haarlemmerstraat Bennebroek 123062",
-    "link": "https://112-nu.nl/melding/17737289/bennebroek/haarlemmerstraat/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-08-07T18:53:33+02:00",
-    "plaats": "Bennebroek",
-    "straat": "Haarlemmerstraat",
-    "lat": 52.3177245,
-    "lon": 4.5909597
   }
 ]
