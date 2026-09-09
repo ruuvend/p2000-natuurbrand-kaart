@@ -1588,35 +1588,5 @@
     "straat": "Braambergerweg",
     "lat": 52.6690474,
     "lon": 6.515712
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 1 Brand Bos (Kw 500) (Uitbr.: Normaal) 225069",
-    "description": "P 1 BOB-01 BR bos (kw 500) (Uitbr.: normaal) Velddoornweg Eindhoven 225069",
-    "link": "https://112-nu.nl/melding/17750719/eindhoven/velddoornweg/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-08-10T23:22:48+02:00",
-    "plaats": "Eindhoven",
-    "straat": "normaal) Velddoornweg",
-    "lat": 51.4485569,
-    "lon": 5.4501225
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 1 Brand Bos (Uitbr.: Normaal) 225262",
-    "description": "P 1 BOB-01 BR bos (Uitbr.: normaal) Velddoornweg Eindhoven 225262",
-    "link": "https://112-nu.nl/melding/17750714/eindhoven/velddoornweg/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-08-10T23:20:26+02:00",
-    "plaats": "Eindhoven",
-    "straat": "Velddoornweg",
-    "lat": 51.4086112,
-    "lon": 5.4722425
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 1 Brand Bos (Uitbr.: Normaal) 225192 222332 224741",
-    "description": "P 1 BOB-01 BR bos (Uitbr.: normaal) Velddoornweg Eindhoven 225192 222332 224741",
-    "link": "https://112-nu.nl/melding/17750696/eindhoven/velddoornweg/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-08-10T23:11:54+02:00",
-    "plaats": "Eindhoven",
-    "straat": "Velddoornweg",
-    "lat": 51.4086112,
-    "lon": 5.4722425
   }
 ]
