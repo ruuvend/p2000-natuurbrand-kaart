@@ -1498,55 +1498,5 @@
     "straat": "Zes-oktoberlaan",
     "lat": 51.3631936,
     "lon": 4.3970239
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Limburg, Incidentkanaal 3 (Zeer Gr. Brand) Brand Bos (Uitbr.: Zeer Hoog) - Vierlingsbeek 231331",
-    "description": "P 1 BLB-03 (Zeer gr. BR) BR bos (Uitbr.: zeer hoog) Venray - Vierlingsbeek Oostrum LI 231331",
-    "link": "https://112-nu.nl/melding/17752927/venray/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-08-11T13:33:43+02:00",
-    "plaats": "Oostrum",
-    "straat": "Venray - Vierlingsbeek",
-    "lat": 53.3305927,
-    "lon": 6.0608026
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Limburg, Incidentkanaal 3 (Zeer Gr. Brand) Brand Bos (Uitbr.: Zeer Hoog) - Vierlingsbeek 236121 234391 234381 234690",
-    "description": "P 1 BLB-03 (Zeer gr. BR) BR bos (Uitbr.: zeer hoog) Venray - Vierlingsbeek Oostrum LI 236121 234391 234381 234690",
-    "link": "https://112-nu.nl/melding/17752924/venray/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-08-11T13:31:24+02:00",
-    "plaats": "Oostrum",
-    "straat": "Venray - Vierlingsbeek",
-    "lat": 53.3305927,
-    "lon": 6.0608026
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Limburg, Incidentkanaal 3 Brand Bos (Uitbr.: Zeer Hoog) - Vierlingsbeek 232331 232231",
-    "description": "P 1 BLB-03 BR bos (Uitbr.: zeer hoog) Venray - Vierlingsbeek Oostrum LI 232331 232231",
-    "link": "https://112-nu.nl/melding/17752914/venray/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-08-11T13:29:13+02:00",
-    "plaats": "Oostrum",
-    "straat": "Venray - Vierlingsbeek",
-    "lat": 53.3305927,
-    "lon": 6.0608026
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Noord-Nederland, Incidentkanaal 2 Brand Bos 038993 038961 038867 039067 042332 042338 030386",
-    "description": "P 1 BNN-02 BR bos Schoonhovenweg Elim 038993 038961 038867 039067 042332 042338 030386",
-    "link": "https://112-nu.nl/melding/17752480/elim/schoonhovenweg/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-08-11T11:43:41+02:00",
-    "plaats": "Elim",
-    "straat": "Schoonhovenweg",
-    "lat": 52.6886409,
-    "lon": 6.5587001
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Brabant, Incidentkanaal 2 Brand Bos (Uitbr.: Normaal) 225192 222332 224741",
-    "description": "P 1 BOB-02 BR bos (Uitbr.: normaal) Velddoornweg Eindhoven 225192 222332 224741",
-    "link": "https://112-nu.nl/melding/17751682/eindhoven/velddoornweg/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-08-11T08:50:14+02:00",
-    "plaats": "Eindhoven",
-    "straat": "Velddoornweg",
-    "lat": 51.4086112,
-    "lon": 5.4722425
   }
 ]
