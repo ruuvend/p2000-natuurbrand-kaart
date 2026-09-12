@@ -1218,5 +1218,9 @@
   "Amperestraat Egelantierpad, IJmuiden": {
     "lat": 52.4574139,
     "lon": 4.6116211
+  },
+  "Millers Strand Zuid, 's-Gravenhage": {
+    "lat": 52.0786323,
+    "lon": 4.2323227
   }
 }

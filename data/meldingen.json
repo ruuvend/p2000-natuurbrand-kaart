@@ -1,5 +1,15 @@
 [
   {
+    "title": "Met Grote Spoed Meldkamer: Brandweer Regio Den Haag, Incidentkanaal 1 Brand Duin (Uitbr.: Normaal) Millers Zuid 157140 156740 157141 156741 157468 157480 159591",
+    "description": "P 1 BDH-01 BR duin (Uitbr.: normaal) Millers Strand Zuid 's-Gravenhage 157140 156740 157141 156741 157468 157480 159591",
+    "link": "https://112-nu.nl/melding/17892774/den-haag/strand/brandweer-met-grote-spoed.html",
+    "pubDate": "2026-09-13T00:51:18+02:00",
+    "plaats": "'s-Gravenhage",
+    "straat": "Millers Strand Zuid",
+    "lat": 52.0786323,
+    "lon": 4.2323227
+  },
+  {
     "title": "Met Grote Spoed Meldkamer: Brandweer Noord-Holland, Incidentkanaal 2 Brand Duin (Uitbr.: Normaal) Egelantierpad 121291 122502 122462 122362 122540 121537 121541 121201 121697",
     "description": "P 1 BNH-02 BR duin (Uitbr.: normaal) Amperestraat Egelantierpad IJmuiden 121291 122502 122462 122362 122540 121537 121541 121201 121697",
     "link": "https://112-nu.nl/melding/17865922/ijmuiden/amprestraat/brandweer-met-grote-spoed.html",
@@ -888,35 +898,5 @@
     "straat": "Defensieweg",
     "lat": 51.9768185,
     "lon": 5.5428914
-  },
-  {
-    "title": "Met Grote Spoed BMD-11 Brand Bos (Team Digitale Verkenning) (Uitbr.: Zeer Hoog) 099289 099189",
-    "description": "P 1 BMD-11 BR bos (Team Digitale Verkenning) (Uitbr.: zeer hoog) Sportweg Elst Ut 099289 099189",
-    "link": "https://112-nu.nl/melding/17764529/elst/sportweg/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-08-14T01:00:43+02:00",
-    "plaats": "Ut",
-    "straat": "zeer hoog) Sportweg Elst",
-    "lat": 52.0485887,
-    "lon": 5.1784277
-  },
-  {
-    "title": "Met Grote Spoed BMD-11 Brand Bos (Uitbr.: Zeer Hoog) 093172 093180",
-    "description": "P 1 BMD-11 BR bos (Uitbr.: zeer hoog) Sportweg Elst Ut 093172 093180",
-    "link": "https://112-nu.nl/melding/17764525/elst/sportweg/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-08-14T00:58:46+02:00",
-    "plaats": "Ut",
-    "straat": "Sportweg Elst",
-    "lat": 51.9897512,
-    "lon": 5.5018983
-  },
-  {
-    "title": "Met Grote Spoed BMD-11 Brand Bos (Uitbr.: Zeer Hoog) 099294 098694 093144 095044 095541 093244",
-    "description": "P 1 BMD-11 BR bos (Uitbr.: zeer hoog) Sportweg Elst Ut 099294 098694 093144 095044 095541 093244",
-    "link": "https://112-nu.nl/melding/17764497/elst/sportweg/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-08-14T00:45:28+02:00",
-    "plaats": "Ut",
-    "straat": "Sportweg Elst",
-    "lat": 51.9897512,
-    "lon": 5.5018983
   }
 ]
