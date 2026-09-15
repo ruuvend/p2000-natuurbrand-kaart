@@ -388,25 +388,5 @@
     "straat": "Oude Telgterweg",
     "lat": 52.2976911,
     "lon": 5.6293614
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 5 Brand Bos (Uitbr.: Laag) 073641",
-    "description": "P 1 BON-05 BR bos (Uitbr.: laag) Otterloseweg Arnhem 073641",
-    "link": "https://112-nu.nl/melding/17775305/arnhem/otterloseweg/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-08-16T13:47:44+02:00",
-    "plaats": "Arnhem",
-    "straat": "Otterloseweg",
-    "lat": 52.0340654,
-    "lon": 5.8286756
-  },
-  {
-    "title": "Met Grote Spoed Meldkamer: Brandweer Oost-Nederland, Incidentkanaal 5 Brand Bos (Uitbr.: Laag) 073241",
-    "description": "P 1 BON-05 BR bos (Uitbr.: laag) Otterloseweg Arnhem 073241",
-    "link": "https://112-nu.nl/melding/17775295/arnhem/otterloseweg/brandweer-met-grote-spoed.html",
-    "pubDate": "2026-08-16T13:45:52+02:00",
-    "plaats": "Arnhem",
-    "straat": "Otterloseweg",
-    "lat": 52.0340654,
-    "lon": 5.8286756
   }
 ]
