@@ -1222,5 +1222,9 @@
   "Millers Strand Zuid, 's-Gravenhage": {
     "lat": 52.0786323,
     "lon": 4.2323227
+  },
+  "Luttenbergerweg, Hellendoorn": {
+    "lat": 52.3875034,
+    "lon": 6.4355322
   }
 }
