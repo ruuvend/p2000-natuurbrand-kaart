@@ -1226,5 +1226,9 @@
   "Luttenbergerweg, Hellendoorn": {
     "lat": 52.3875034,
     "lon": 6.4355322
+  },
+  "MTB-Zeist, Zeist": {
+    "lat": 52.0885055,
+    "lon": 5.3022468
   }
 }
