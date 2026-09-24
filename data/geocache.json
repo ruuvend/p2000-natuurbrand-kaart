@@ -1230,5 +1230,9 @@
   "MTB-Zeist, Zeist": {
     "lat": 52.0885055,
     "lon": 5.3022468
+  },
+  "Groeneweg, Oostkapelle": {
+    "lat": 51.572683,
+    "lon": 3.530795
   }
 }
